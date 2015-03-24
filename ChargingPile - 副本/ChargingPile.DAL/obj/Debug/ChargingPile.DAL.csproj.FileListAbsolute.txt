@@ -1,0 +1,9 @@
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\ChargingPile.DAL.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\ChargingPile.DAL.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\ChargingPile.Model.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\log4net.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\YOUO.Framework.DataAccess.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\bin\Debug\ChargingPile.Model.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\obj\Debug\ChargingPile.DAL.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\obj\Debug\ChargingPile.DAL.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.DAL\obj\Debug\ChargingPile.DAL.csprojResolveAssemblyReference.cache

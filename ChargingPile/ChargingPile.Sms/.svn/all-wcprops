@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/txwh/!svn/ver/1759/trunk/TXWH/ChargingPile/ChargingPile.Sms
+END
+SendSmsForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/1744/trunk/TXWH/ChargingPile/ChargingPile.Sms/SendSmsForm.resx
+END
+SendSmsForm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1759/trunk/TXWH/ChargingPile/ChargingPile.Sms/SendSmsForm.Designer.cs
+END
+SendSmsForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/1759/trunk/TXWH/ChargingPile/ChargingPile.Sms/SendSmsForm.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/txwh/!svn/ver/1758/trunk/TXWH/ChargingPile/ChargingPile.Sms/app.config
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/txwh/!svn/ver/1744/trunk/TXWH/ChargingPile/ChargingPile.Sms/Program.cs
+END
+ChargingPile.Sms.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1744/trunk/TXWH/ChargingPile/ChargingPile.Sms/ChargingPile.Sms.csproj
+END

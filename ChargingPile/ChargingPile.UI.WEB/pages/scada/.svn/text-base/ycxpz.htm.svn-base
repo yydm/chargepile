@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>遥测项配置</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <!--验证session是否过期-->
+    <script type="text/javascript" src="../../WebService/Common.ashx?action=isoverdue"></script>
+    <link href="../../Scripts/jquery-easyui-1.3.1/themes/icon.css" rel="stylesheet" type="text/css" />
+    <link href="../../Scripts/jquery-easyui-1.3.1/themes/default/easyui.css" rel="stylesheet"
+        type="text/css" />
+    <script src="../../Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/easyui-validate.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.form.js" type="text/javascript"></script>
+    <script src="../../Scripts/scada/ycxpz.js" type="text/javascript"></script>
+    <style type="text/css">
+        .textright
+        {
+            width: 180px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'center',title:'系统配置>>遥信遥测配置>>遥测项参数配置'" id="d_main">
+        <table id="t_yxx">
+        </table>
+        <div id="d_tb" style="padding-top: 5px;">
+            <div style="float: left; margin-left: 50px;">
+                型号： &nbsp;&nbsp;<select name="s_xh" id="s_xh"></select>
+                &nbsp;&nbsp; 数据项：&nbsp;&nbsp;<input type="text" id="i_sjx" />
+            </div>
+            <div style="float: right; margin-right: 10px;">
+                <a href="#" class="easyui-linkbutton" iconcls="icon-search" plain="true" onclick="ycxQuery()">
+                    查询</a> <a href="#" class="easyui-linkbutton" iconcls="icon-add" plain="true" onclick="yxxAdd()">
+                        新增</a>
+            </div>
+        </div>
+    </div>
+    <div id="dlg_yxx" class="easyui-dialog" style="width: 650px; height: 590px;" data-options="closed:true,modal:true,buttons:'#dlg_buttons',title:'遥测项配置'">
+        <form action="" method="post" id="form1">
+        <input type="hidden" id="h_id" name="h_id" />
+        <table style="line-height: 22px;">
+            <tr>
+                <td class="textright">
+                    <label for="s_zcj">
+                        桩厂家：
+                    </label>
+                </td>
+                <td>
+                    <select id="s_zcj" name="s_zcj" style="width: 155px;">
+                        <option value="0">—请选择—</option>
+                    </select>&nbsp;<span style="color: red;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="s_zxh">
+                        桩型号：
+                    </label>
+                </td>
+                <td>
+                    <select id="s_zxh" name="s_zxh" style="width: 155px;">
+                        <option value="0">—请选择—</option>
+                    </select>&nbsp;<span style="color: red;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="i_zlx">
+                        桩类型：
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="i_zlx" name="i_zlx" readonly="readonly" />&nbsp;<span style="color: red;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="s_sjx">
+                        数据项：
+                    </label>
+                </td>
+                <td>
+                    <select id="s_sjx" name="s_sjx" style="width: 155px;">
+                        <option value="0">—请选择—</option>
+                    </select>&nbsp;<span style="color: red;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="i_yzzxz">
+                        阈值最小值：
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="i_yzzxz" name="i_yzzxz" class="easyui-validatebox" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="i_yzzdz">
+                        阈值最大值：
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="i_yzzdz" name="i_yzzdz" class="easyui-validatebox" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    超阈值告警：
+                </td>
+                <td>
+                    <input type="radio" id="i_cyzgj_y" name="i_cyzgj" value="1" />
+                    <label for="i_cyzgj_y">
+                        是</label>
+                    <input type="radio" id="i_cyzgj_n" name="i_cyzgj" value="0" checked="checked" />
+                    <label for="i_cyzgj_n">
+                        否</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="i_yxzzxz">
+                        有效值最小值：
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="i_yxzzxz" name="i_yxzzxz" class="easyui-validatebox" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    <label for="i_yxzzdz">
+                        有效值最大值：
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="i_yxzzdz" name="i_yxzzdz" class="easyui-validatebox" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    超有效值告警：
+                </td>
+                <td>
+                    <input type="radio" id="i_cyxzgj_y" name="i_cyxzgj" value="1" />
+                    <label for="i_cyxzgj_y">
+                        是</label>
+                    <input type="radio" id="i_cyxzgj_n" name="i_cyxzgj" value="0" checked="checked" />
+                    <label for="i_cyxzgj_n">
+                        否</label>
+                </td>
+            </tr>
+            <tr id="tr_gj">
+                <td class="textright" style="vertical-align: top;">
+                    告警方式：
+                </td>
+                <td>
+                    <input type="checkbox" id="i_dx" name="i_dx" disabled="disabled" />
+                    <label for="i_dx">
+                        短信</label>
+                    <input type="text" id="i_sjh" name="i_sjh" disabled="disabled" />
+                    <input type="hidden" id="h_dxmb" name="h_dxmb" value="【充电站简称】【装编号】桩，【数据项】【告警原因】，请及时处理。" />
+                    <a href="#" class="easyui-linkbutton" onclick="dxmb()">短信模板</a><br />
+                    <label style="color: red; font-size: 11.5px;">
+                        *注：多个手机号用英文状态的逗号（,）隔开</label>
+                    <br />
+                    <input type="checkbox" id="i_yj" name="i_yj" disabled="disabled" />
+                    <label for="i_yj">
+                        邮件</label>
+                    <input type="text" id="i_yxdz" name="i_yxdz" disabled="disabled" />
+                    <input type="hidden" id="h_yjmb" name="h_yjmb" value="充电站管理员，你好：\r\n    【充电站简称】【装编号】桩，【数据项】【告警原因】，请及时处理。 \r\n----------------------------------------\r\n合肥供电公司\r\n【告警时间】" />
+                    <a href="#" class="easyui-linkbutton" onclick="yjmb()">邮件模板</a><br />
+                    <label style="color: red; font-size: 11.5px;">
+                        *注：多个邮箱用英文状态的逗号（,）隔开</label>
+                    <br />
+                    <input type="checkbox" id="i_fs" name="i_fs" disabled="disabled" />
+                    <label for="i_fs">
+                        发声</label>，<label for="i_sywj">声音文件：</label>
+                    <input type="hidden" id="h_sylx" name="h_sylx" />
+                    <input type="file" id="i_sywj" name="i_sywj" disabled="disabled" /><br />
+                    <label style="color: red; font-size: 11.5px;">
+                        *注：文件大小请勿超过10M,格式只能为mp3、wma</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    是否自动灭警：
+                </td>
+                <td>
+                    <input type="radio" id="i_sfzdmj_y" name="i_sfzdmj" value="1" />
+                    <label for="i_sfzdmj_y">
+                        是</label>
+                    <input type="radio" id="i_sfzdmj_n" name="i_sfzdmj" checked="checked" value="0" />
+                    <label for="i_sfzdmj_n">
+                        否</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    自动灭警规则：
+                </td>
+                <td>
+                    连续
+                    <select name="s_zdmjgz" id="s_zdmjgz" disabled="disabled">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>5</option>
+                        <option>7</option>
+                        <option>9</option>
+                        <option>11</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>30</option>
+                    </select>
+                    次恢复到有效值范围内，视为自动灭警
+                </td>
+            </tr>
+            <tr>
+                <td class="textright">
+                    是否启用：
+                </td>
+                <td>
+                    <input type="radio" id="i_sfqy_y" name="i_sfqy" checked="checked" value="1" />
+                    <label for="i_sfqy_y">
+                        是</label>
+                    <input type="radio" id="i_sfqy_n" name="i_sfqy" value="0" />
+                    <label for="i_sfqy_n">
+                        否</label>
+                </td>
+            </tr>
+        </table>
+        </form>
+        <div id="dlg_buttons">
+            <a href="#" class="easyui-linkbutton" iconcls="icon-ok" onclick="yxxSave()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconcls="icon-remove" onclick="yxxCancel()">取消</a>
+        </div>
+    </div>
+    <div id="dlg_mb" class="easyui-dialog" style="width: 400px; height: 300px;" data-options="closed:true,modal:true,buttons:'#dlg_btn_mb'">
+        <span style="margin: 5px 10px;">
+            <textarea style="height: 200px; width: 350px;" rows="" cols="" id="ta_mb">
+            </textarea>
+        </span>
+        <div id="dlg_btn_mb">
+            <a href="#" class="easyui-linkbutton" iconcls="icon-ok" onclick="mbOk()">确认</a>
+            <a href="#" class="easyui-linkbutton" iconcls="icon-delete" onclick="$('#dlg_mb').dialog('close')">
+                取消</a>
+        </div>
+    </div>
+</body>
+</html>

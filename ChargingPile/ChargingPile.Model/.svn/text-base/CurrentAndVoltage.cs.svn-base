@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ChargingPile.Model
+{
+    public class CurrentAndVoltage
+    {
+        //电流
+        public decimal? Current { get; set; }
+
+        //电流最大值
+        public decimal? CurrentMax { get; set; }
+
+        //电流最小值
+        public decimal? CurrentMin { get; set; }
+
+        //电压
+        public decimal? Voltage { get; set; }
+
+        //电压最大值
+        public decimal? VoltageMax { get; set; }
+
+        //电压最小值
+        public decimal? VoltageMin { get; set; }
+
+    }
+}

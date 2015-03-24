@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩台账管理
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 6;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.923530;
+	viewMgr.visBBoxRight = 11.131215;
+	viewMgr.visBBoxBottom = 0.627456;
+	viewMgr.visBBoxTop = 7.143399;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="功能结构" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电桩运维检修" origTitle="充电桩运维检修" TITLE="充电桩运维检修" HREF="gif_16.htm" target="frmDrawing" COORDS="151,159,162,159,162,159,163,158,163,158,163,158,164,158,164,158,164,158,165,158,165,158,165,158,166,157,166,157,166,157,166,157,167,157,167,156,167,156,167,156,167,156,168,155,168,155,168,155,168,154,168,154,168,154,168,153,168,153,168,153,168,152,168,43,168,43,168,43,168,42,168,42,168,42,168,41,168,41,168,41,168,40,167,40,167,40,167,40,167,39,167,39,166,39,166,39,166,38,166,38,165,38,165,38,165,38,164,38,164,38,164,37,163,37,163,37,163,37,162,37,162,37,151,37,151,37,151,37,150,37,150,37,150,37,149,38,149,38,149,38,148,38,148,38,148,38,148,38,147,39,147,39,147,39,147,39,146,40,146,40,146,40,146,40,146,41,146,41,145,41,145,42,145,42,145,42,145,43,145,43,145,43,145,152,145,153,145,153,145,153,145,154,145,154,145,154,146,155,146,155,146,155,146,156,146,156,146,156,147,156,147,157,147,157,147,157,148,157,148,157,148,158,148,158,149,158,149,158,149,158,150,158,150,158,150,158,151,158,151,159,151,159" onmouseover="UpdateTooltip(this,6,50)" onfocus="UpdateTooltip(this,6,50)" onclick="return OnShapeClick(6,50);" onkeyup="OnShapeKey(6,50);">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电桩采集项维护" origTitle="充电桩采集项维护" TITLE="充电桩采集项维护" HREF="gif_20.htm" target="frmDrawing" COORDS="231,159,242,159,243,159,243,158,243,158,244,158,244,158,244,158,245,158,245,158,245,158,246,158,246,157,246,157,246,157,247,157,247,157,247,156,247,156,247,156,248,156,248,155,248,155,248,155,248,154,248,154,248,154,248,153,248,153,249,153,249,152,249,41,249,41,248,41,248,40,248,40,248,40,248,39,248,39,248,39,248,39,248,38,247,38,247,38,247,37,247,37,247,37,246,37,246,37,246,36,246,36,245,36,245,36,245,36,244,36,244,35,244,35,243,35,243,35,243,35,242,35,231,35,231,35,230,35,230,35,230,35,229,35,229,36,229,36,228,36,228,36,228,36,227,36,227,37,227,37,227,37,226,37,226,37,226,38,226,38,226,38,225,39,225,39,225,39,225,39,225,40,225,40,225,40,225,41,225,41,225,41,225,152,225,153,225,153,225,153,225,154,225,154,225,154,225,155,225,155,225,155,226,156,226,156,226,156,226,156,226,157,227,157,227,157,227,157,227,157,228,158,228,158,228,158,229,158,229,158,229,158,230,158,230,158,230,158,231,159,231,159" onmouseover="UpdateTooltip(this,6,49)" onfocus="UpdateTooltip(this,6,49)" onclick="return OnShapeClick(6,49);" onkeyup="OnShapeKey(6,49);">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电站 GI S 分布" origTitle="充电站 GI S 分布" TITLE="充电站 GI S 分布" HREF="gif_4.htm" target="frmDrawing" COORDS="29,159,42,159,42,159,42,158,43,158,43,158,43,158,43,158,44,158,44,158,44,158,45,158,45,157,45,157,46,157,46,157,46,157,46,156,46,156,47,156,47,156,47,155,47,155,47,155,47,154,47,154,48,154,48,153,48,153,48,153,48,152,48,41,48,41,48,41,48,40,48,40,47,40,47,39,47,39,47,39,47,39,47,38,47,38,46,38,46,37,46,37,46,37,46,37,45,37,45,36,45,36,44,36,44,36,44,36,43,36,43,35,43,35,43,35,42,35,42,35,42,35,29,35,29,35,29,35,28,35,28,35,28,35,27,36,27,36,27,36,27,36,26,36,26,36,26,37,25,37,25,37,25,37,25,37,25,38,24,38,24,38,24,39,24,39,24,39,24,39,23,40,23,40,23,40,23,41,23,41,23,41,23,152,23,153,23,153,23,153,23,154,23,154,24,154,24,155,24,155,24,155,24,156,24,156,25,156,25,156,25,157,25,157,25,157,26,157,26,157,26,158,27,158,27,158,27,158,27,158,28,158,28,158,28,158,29,158,29,159,29,159" onmouseover="UpdateTooltip(this,6,38)" onfocus="UpdateTooltip(this,6,38)" onclick="return OnShapeClick(6,38);" onkeyup="OnShapeKey(6,38);">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电桩类型维护" origTitle="充电桩类型维护" TITLE="充电桩类型维护" HREF="gif_19.htm" target="frmDrawing" COORDS="191,159,202,159,203,159,203,158,203,158,204,158,204,158,204,158,205,158,205,158,205,158,205,158,206,157,206,157,206,157,206,157,207,157,207,156,207,156,207,156,208,156,208,155,208,155,208,155,208,154,208,154,208,154,208,153,208,153,208,153,208,152,208,41,208,41,208,41,208,40,208,40,208,40,208,39,208,39,208,39,208,39,208,38,207,38,207,38,207,37,207,37,206,37,206,37,206,37,206,36,205,36,205,36,205,36,205,36,204,36,204,35,204,35,203,35,203,35,203,35,202,35,191,35,191,35,190,35,190,35,190,35,189,35,189,36,189,36,188,36,188,36,188,36,187,36,187,37,187,37,187,37,186,37,186,37,186,38,186,38,186,38,185,39,185,39,185,39,185,39,185,40,185,40,185,40,185,41,185,41,185,41,185,152,185,153,185,153,185,153,185,154,185,154,185,154,185,155,185,155,185,155,186,156,186,156,186,156,186,156,186,157,187,157,187,157,187,157,187,157,188,158,188,158,188,158,189,158,189,158,189,158,190,158,190,158,190,158,191,159,191,159" onmouseover="UpdateTooltip(this,6,35)" onfocus="UpdateTooltip(this,6,35)" onclick="return OnShapeClick(6,35);" onkeyup="OnShapeKey(6,35);">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电站台账绘制" origTitle="充电站台账绘制" TITLE="充电站台账绘制" HREF="gif_10.htm" target="frmDrawing" COORDS="70,159,82,159,82,159,82,158,83,158,83,158,83,158,84,158,84,158,84,158,85,158,85,158,85,157,85,157,86,157,86,157,86,157,86,156,87,156,87,156,87,156,87,155,87,155,87,155,87,154,88,154,88,154,88,153,88,153,88,153,88,152,88,41,88,41,88,41,88,40,88,40,88,40,87,39,87,39,87,39,87,39,87,38,87,38,87,38,86,37,86,37,86,37,86,37,85,37,85,36,85,36,85,36,84,36,84,36,84,36,83,35,83,35,83,35,82,35,82,35,82,35,70,35,69,35,69,35,69,35,68,35,68,35,68,36,67,36,67,36,67,36,66,36,66,36,66,37,66,37,65,37,65,37,65,37,65,38,64,38,64,38,64,39,64,39,64,39,64,39,64,40,64,40,63,40,63,41,63,41,63,41,63,152,63,153,63,153,63,153,64,154,64,154,64,154,64,155,64,155,64,155,64,156,64,156,65,156,65,156,65,157,65,157,66,157,66,157,66,157,66,158,67,158,67,158,67,158,68,158,68,158,68,158,69,158,69,158,69,159,70,159" onmouseover="UpdateTooltip(this,6,33)" onfocus="UpdateTooltip(this,6,33)" onclick="return OnShapeClick(6,33);" onkeyup="OnShapeKey(6,33);">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电桩基本信息维护" origTitle="充电桩基本信息维护" TITLE="充电桩基本信息维护" HREF="gif_14.htm" target="frmDrawing" COORDS="113,37,113,37,113,37,112,37,112,37,112,37,112,38,111,38,111,38,111,38,110,38,110,38,110,38,110,39,109,39,109,39,109,39,109,40,108,40,108,40,108,41,108,41,108,41,108,41,108,42,107,42,107,42,107,43,107,43,107,43,107,152,107,153,107,153,107,153,107,154,108,154,108,154,108,155,108,155,108,155,108,156,108,156,109,156,109,156,109,157,109,157,110,157,110,157,110,157,110,158,111,158,111,158,111,158,112,158,112,158,112,158,113,158,113,158,113,159,114,159,124,159,125,159,125,158,125,158,126,158,126,158,126,158,127,158,127,158,127,158,128,158,128,157,128,157,128,157,129,157,129,157,129,156,129,156,129,156,130,156,130,155,130,155,130,155,130,154,130,154,130,154,130,153,130,153,130,153,130,152,130,43,130,43,130,43,130,42,130,42,130,42,130,41,130,41,130,41,130,41,130,40,129,40,129,40,129,39,129,39,129,39,128,39,128,38,128,38,128,38,127,38,127,38,127,38,126,38,126,37,126,37,125,37,125,37,125,37,124,37,124,37,113,37,113,37" onmouseover="UpdateTooltip(this,6,4)" onfocus="UpdateTooltip(this,6,4)" onclick="return OnShapeClick(6,4);" onkeyup="OnShapeKey(6,4);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

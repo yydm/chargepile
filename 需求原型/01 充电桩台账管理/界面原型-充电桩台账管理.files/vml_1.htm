@@ -1,0 +1,185 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" 
+ xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>界面原型-充电桩台账管理</title>
+<style type="text/css">
+	 v\:* { behavior: url(#default#VML); }
+</style>
+
+<script src="vml_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+
+	var pageID = 6;
+	var viewMgr = null;
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+	function getPNZ()
+	{
+		var rawHTML = VMLDiv.innerHTML;
+		var strReturn = ""
+		
+		strReturn = rawHTML.slice( rawHTML.indexOf( '<v:group' ), rawHTML.indexOf( "</v:shape>" ) );
+		strReturn += "</v:shape></v:group>\n";
+				
+		return strReturn;
+	}
+	
+	function load()
+	{
+		viewMgr = new parent.CViewMgr("ConvertedImage", "arrowDiv");
+
+		viewMgr.put_Location = ViewMgrSetVMLLocation;
+
+
+		viewMgr.visBBoxLeft = 0.923530;
+		viewMgr.visBBoxRight = 11.131215;
+		viewMgr.visBBoxBottom = 0.627456;
+		viewMgr.visBBoxTop = 7.143399;
+
+		viewMgr.Zoom = VMLZoomChange;
+		viewMgr.setView= VMLSetView;
+
+		viewMgr.SupportsDetails = true;
+		viewMgr.SupportsSearch = true;
+
+		parent.viewMgr = viewMgr;
+
+		fit();
+	}
+
+	function unload()
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+
+	function fit()
+	{
+		if(parent.frmToolbar)
+		{
+			if (parent.g_WidgetsLoaded)
+			{
+				var zoom100 = parent.frmToolbar.document.all('a100');
+				if (zoom100)
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					zoom100.click();
+				}
+				else
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					viewMgr.Zoom(100);
+				}
+			}
+			else
+			{
+				window.setTimeout("fit()", 500);
+			}
+		}	
+		else
+		{
+			parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+			viewMgr.Zoom(100);
+		}
+	}
+
+	function PostZoomProcessing (newZoomLevel)
+	{
+		parent.viewMgr.PostZoomProcessing = null;
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.viewMgr.getPNZ = getPNZ;
+		parent.CurPageUpdate (pageIndex);
+	}
+
+
+	
+	var isUpLevel = parent.isUpLevel;
+	var OnShapeClick = parent.OnShapeClick;
+	var OnShapeKey = parent.OnShapeKey;
+	var UpdateTooltip = parent.UpdateTooltip;
+	var clickMenu = parent.clickMenu;
+	var toggleMenuDiv = parent.toggleMenuDiv;
+	var toggleMenuLink = parent.toggleMenuLink;
+	var GoToPage = parent.GoToPage;
+
+	window.onload = load;
+	window.onunload = unload;
+	document.onclick = clickMenu;
+
+
+
+
+</script>
+
+</head>
+
+<body style="MARGIN:10px" onresize="VMLOnResize();" onscroll="VMLOnScroll();">
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+
+
+
+<div id="VMLDiv" >
+
+
+<v:group  id="ConvertedImage" style="width:6.266283in;height:4.000000in;position:absolute;visibility=hidden;" coordSize="3133,2000" coordOrigin="-1000,-1000" >
+
+<v:shapetype 
+  id="VISSHAPE"
+  target="_parent"
+  coordsize="3133,2000"
+  coordorigin="-1000,-1000"
+  stroked="f"
+  strokecolor="red"
+  filled="t"
+>
+<v:fill opacity="0.0"/>
+</v:shapetype>
+
+
+<v:shape style="top:-1000.0;left:-1000.0;width:3133.1;height:2000.0;position:absolute" coordSize="3133,2000" coordOrigin="-1000,-1000" >
+<v:imagedata src="vml_1.emz"/>
+</v:shape>
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电桩基本信息维护" origTitle="充电桩基本信息维护"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -552,-850 l -554,-850 l -555,-850 l -556,-850 l -557,-849 l -559,-849 l -560,-849 l -561,-848 l -562,-848 l -563,-847 l -565,-846 l -566,-846 l -567,-845 l -568,-844 l -569,-843 l -570,-842 l -570,-841 l -571,-840 l -572,-839 l -573,-838 l -573,-837 l -574,-836 l -574,-835 l -575,-834 l -575,-832 l -576,-831 l -576,-830 l -576,-829 l -576,-827 l -576,-826 l -576,-401 l -576,-399 l -576,-398 l -576,-397 l -575,-395 l -575,-394 l -575,-393 l -574,-392 l -574,-391 l -573,-389 l -573,-388 l -572,-387 l -571,-386 l -570,-385 l -569,-384 l -569,-383 l -568,-382 l -567,-381 l -565,-381 l -564,-380 l -563,-379 l -562,-379 l -561,-378 l -560,-378 l -558,-377 l -557,-377 l -556,-377 l -555,-377 l -553,-377 l -552,-377 l -510,-377 l -508,-377 l -507,-377 l -506,-377 l -505,-377 l -503,-377 l -502,-378 l -501,-378 l -500,-379 l -499,-379 l -497,-380 l -496,-381 l -495,-381 l -494,-382 l -493,-383 l -492,-384 l -491,-385 l -491,-386 l -490,-387 l -489,-388 l -489,-389 l -488,-391 l -487,-392 l -487,-393 l -487,-394 l -486,-395 l -486,-397 l -486,-398 l -486,-399 l -486,-401 l -486,-826 l -486,-827 l -486,-829 l -486,-830 l -486,-831 l -487,-832 l -487,-834 l -487,-835 l -488,-836 l -488,-837 l -489,-838 l -490,-839 l -491,-840 l -491,-841 l -492,-842 l -493,-843 l -494,-844 l -495,-845 l -496,-846 l -497,-846 l -498,-847 l -500,-848 l -501,-848 l -502,-849 l -503,-849 l -504,-849 l -506,-850 l -507,-850 l -508,-850 l -510,-850 l -510,-851 l -552,-851 l -552,-850xe" onmouseover="UpdateTooltip(this,6,4)" onclick="OnShapeClick(6,4)" onfocus="UpdateTooltip(this,6,4);" onkeyup="OnShapeKey(6,4)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电站台账绘制" origTitle="充电站台账绘制"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -724,-377 l -676,-377 l -675,-377 l -674,-377 l -673,-377 l -671,-377 l -670,-377 l -669,-378 l -668,-378 l -666,-379 l -665,-379 l -664,-380 l -663,-381 l -662,-381 l -661,-382 l -660,-383 l -659,-384 l -658,-385 l -657,-386 l -657,-387 l -656,-388 l -655,-389 l -655,-391 l -654,-392 l -654,-393 l -653,-394 l -653,-395 l -653,-397 l -653,-398 l -652,-399 l -652,-401 l -652,-834 l -652,-835 l -653,-836 l -653,-837 l -653,-839 l -653,-840 l -654,-841 l -654,-842 l -655,-844 l -655,-845 l -656,-846 l -657,-847 l -657,-848 l -658,-849 l -659,-850 l -660,-851 l -661,-852 l -662,-853 l -663,-853 l -664,-854 l -665,-855 l -666,-855 l -668,-856 l -669,-856 l -670,-857 l -671,-857 l -673,-857 l -674,-857 l -675,-858 l -676,-858 l -724,-858 l -725,-858 l -726,-857 l -728,-857 l -729,-857 l -730,-857 l -731,-856 l -733,-856 l -734,-855 l -735,-855 l -736,-854 l -737,-853 l -738,-853 l -739,-852 l -740,-851 l -741,-850 l -742,-849 l -743,-848 l -744,-847 l -744,-846 l -745,-845 l -746,-844 l -746,-842 l -746,-841 l -747,-840 l -747,-839 l -747,-837 l -748,-836 l -748,-835 l -748,-834 l -748,-401 l -748,-399 l -748,-398 l -747,-397 l -747,-395 l -747,-394 l -746,-393 l -746,-392 l -746,-391 l -745,-389 l -744,-388 l -744,-387 l -743,-386 l -742,-385 l -741,-384 l -740,-383 l -739,-382 l -738,-381 l -737,-381 l -736,-380 l -735,-379 l -734,-379 l -733,-378 l -731,-378 l -730,-377 l -729,-377 l -728,-377 l -726,-377 l -725,-377 l -724,-377xe" onmouseover="UpdateTooltip(this,6,33)" onclick="OnShapeClick(6,33)" onfocus="UpdateTooltip(this,6,33);" onkeyup="OnShapeKey(6,33)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电桩类型维护" origTitle="充电桩类型维护"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -250,-377 l -206,-377 l -204,-377 l -203,-377 l -202,-377 l -200,-377 l -199,-377 l -198,-378 l -197,-378 l -195,-379 l -194,-379 l -193,-380 l -192,-381 l -191,-381 l -190,-382 l -189,-383 l -188,-384 l -187,-385 l -186,-386 l -186,-387 l -185,-388 l -184,-389 l -184,-391 l -183,-392 l -183,-393 l -182,-394 l -182,-395 l -182,-397 l -182,-398 l -182,-399 l -182,-401 l -182,-834 l -182,-835 l -182,-836 l -182,-837 l -182,-839 l -182,-840 l -183,-841 l -183,-842 l -184,-844 l -184,-845 l -185,-846 l -186,-847 l -186,-848 l -187,-849 l -188,-850 l -189,-851 l -190,-852 l -191,-853 l -192,-853 l -193,-854 l -194,-855 l -195,-855 l -197,-856 l -198,-856 l -199,-857 l -200,-857 l -202,-857 l -203,-857 l -204,-858 l -206,-858 l -250,-858 l -251,-858 l -253,-857 l -254,-857 l -255,-857 l -257,-857 l -258,-856 l -259,-856 l -260,-855 l -261,-855 l -263,-854 l -264,-853 l -265,-853 l -266,-852 l -267,-851 l -268,-850 l -268,-849 l -269,-848 l -270,-847 l -271,-846 l -271,-845 l -272,-844 l -272,-842 l -273,-841 l -273,-840 l -274,-839 l -274,-837 l -274,-836 l -274,-835 l -274,-834 l -274,-401 l -274,-399 l -274,-398 l -274,-397 l -274,-395 l -273,-394 l -273,-393 l -272,-392 l -272,-391 l -271,-389 l -271,-388 l -270,-387 l -269,-386 l -268,-385 l -268,-384 l -267,-383 l -266,-382 l -265,-381 l -264,-381 l -263,-380 l -261,-379 l -260,-379 l -259,-378 l -258,-378 l -257,-377 l -255,-377 l -254,-377 l -253,-377 l -251,-377 l -250,-377xe" onmouseover="UpdateTooltip(this,6,35)" onclick="OnShapeClick(6,35)" onfocus="UpdateTooltip(this,6,35);" onkeyup="OnShapeKey(6,35)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电站 GI S 分布" origTitle="充电站 GI S 分布"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -880,-377 l -833,-377 l -832,-377 l -830,-377 l -829,-377 l -828,-377 l -827,-377 l -825,-378 l -824,-378 l -823,-379 l -822,-379 l -821,-380 l -820,-381 l -818,-381 l -817,-382 l -817,-383 l -816,-384 l -815,-385 l -814,-386 l -813,-387 l -812,-388 l -812,-389 l -811,-391 l -811,-392 l -810,-393 l -810,-394 l -810,-395 l -809,-397 l -809,-398 l -809,-399 l -809,-401 l -809,-834 l -809,-835 l -809,-836 l -809,-837 l -810,-839 l -810,-840 l -810,-841 l -811,-842 l -811,-844 l -812,-845 l -812,-846 l -813,-847 l -814,-848 l -815,-849 l -816,-850 l -817,-851 l -817,-852 l -818,-853 l -820,-853 l -821,-854 l -822,-855 l -823,-855 l -824,-856 l -825,-856 l -827,-857 l -828,-857 l -829,-857 l -830,-857 l -832,-858 l -833,-858 l -880,-858 l -882,-858 l -883,-857 l -884,-857 l -885,-857 l -887,-857 l -888,-856 l -889,-856 l -890,-855 l -892,-855 l -893,-854 l -894,-853 l -895,-853 l -896,-852 l -897,-851 l -898,-850 l -899,-849 l -899,-848 l -900,-847 l -901,-846 l -902,-845 l -902,-844 l -903,-842 l -903,-841 l -903,-840 l -904,-839 l -904,-837 l -904,-836 l -904,-835 l -904,-834 l -904,-401 l -904,-399 l -904,-398 l -904,-397 l -904,-395 l -903,-394 l -903,-393 l -903,-392 l -902,-391 l -902,-389 l -901,-388 l -900,-387 l -899,-386 l -899,-385 l -898,-384 l -897,-383 l -896,-382 l -895,-381 l -894,-381 l -893,-380 l -892,-379 l -890,-379 l -889,-378 l -888,-378 l -887,-377 l -885,-377 l -884,-377 l -883,-377 l -882,-377 l -880,-377xe" onmouseover="UpdateTooltip(this,6,38)" onclick="OnShapeClick(6,38)" onfocus="UpdateTooltip(this,6,38);" onkeyup="OnShapeKey(6,38)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电桩采集项维护" origTitle="充电桩采集项维护"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -93,-377 l -49,-377 l -48,-377 l -46,-377 l -45,-377 l -44,-377 l -43,-377 l -41,-378 l -40,-378 l -39,-379 l -38,-379 l -37,-380 l -35,-381 l -34,-381 l -33,-382 l -32,-383 l -31,-384 l -31,-385 l -30,-386 l -29,-387 l -28,-388 l -28,-389 l -27,-391 l -27,-392 l -26,-393 l -26,-394 l -25,-395 l -25,-397 l -25,-398 l -25,-399 l -25,-401 l -25,-834 l -25,-835 l -25,-836 l -25,-837 l -25,-839 l -26,-840 l -26,-841 l -27,-842 l -27,-844 l -28,-845 l -28,-846 l -29,-847 l -30,-848 l -31,-849 l -31,-850 l -32,-851 l -33,-852 l -34,-853 l -35,-853 l -37,-854 l -38,-855 l -39,-855 l -40,-856 l -41,-856 l -43,-857 l -44,-857 l -45,-857 l -46,-857 l -48,-858 l -49,-858 l -93,-858 l -95,-858 l -96,-857 l -97,-857 l -99,-857 l -100,-857 l -101,-856 l -102,-856 l -104,-855 l -105,-855 l -106,-854 l -107,-853 l -108,-853 l -109,-852 l -110,-851 l -111,-850 l -112,-849 l -113,-848 l -113,-847 l -114,-846 l -115,-845 l -115,-844 l -116,-842 l -116,-841 l -117,-840 l -117,-839 l -117,-837 l -117,-836 l -118,-835 l -118,-834 l -118,-401 l -118,-399 l -117,-398 l -117,-397 l -117,-395 l -117,-394 l -116,-393 l -116,-392 l -115,-391 l -115,-389 l -114,-388 l -113,-387 l -113,-386 l -112,-385 l -111,-384 l -110,-383 l -109,-382 l -108,-381 l -107,-381 l -106,-380 l -105,-379 l -104,-379 l -102,-378 l -101,-378 l -100,-377 l -99,-377 l -97,-377 l -96,-377 l -95,-377 l -93,-377xe" onmouseover="UpdateTooltip(this,6,49)" onclick="OnShapeClick(6,49)" onfocus="UpdateTooltip(this,6,49);" onkeyup="OnShapeKey(6,49)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="充电桩运维检修" origTitle="充电桩运维检修"  style="top:-1000;left:-1000;width:3133;height:2000;position:absolute" path=" m -404,-377 l -362,-377 l -361,-377 l -360,-377 l -358,-377 l -357,-377 l -356,-377 l -355,-378 l -353,-378 l -352,-379 l -351,-379 l -350,-380 l -349,-381 l -348,-381 l -347,-382 l -346,-383 l -345,-384 l -344,-385 l -343,-386 l -342,-387 l -342,-388 l -341,-389 l -340,-391 l -340,-392 l -339,-393 l -339,-394 l -339,-395 l -338,-397 l -338,-398 l -338,-399 l -338,-401 l -338,-826 l -338,-827 l -338,-829 l -338,-830 l -339,-831 l -339,-832 l -339,-834 l -340,-835 l -340,-836 l -341,-837 l -342,-838 l -342,-839 l -343,-841 l -344,-842 l -345,-842 l -346,-843 l -347,-844 l -348,-845 l -349,-846 l -350,-847 l -351,-847 l -352,-848 l -353,-848 l -355,-849 l -356,-849 l -357,-849 l -358,-850 l -360,-850 l -361,-850 l -362,-850 l -404,-850 l -406,-850 l -407,-850 l -408,-850 l -410,-849 l -411,-849 l -412,-849 l -413,-848 l -415,-848 l -416,-847 l -417,-847 l -418,-846 l -419,-845 l -420,-844 l -421,-843 l -422,-842 l -423,-842 l -424,-841 l -424,-839 l -425,-838 l -426,-837 l -426,-836 l -427,-835 l -427,-834 l -428,-832 l -428,-831 l -428,-830 l -428,-829 l -428,-827 l -428,-826 l -428,-401 l -428,-399 l -428,-398 l -428,-397 l -428,-395 l -428,-394 l -427,-393 l -427,-392 l -426,-391 l -426,-389 l -425,-388 l -424,-387 l -424,-386 l -423,-385 l -422,-384 l -421,-383 l -420,-382 l -419,-381 l -418,-381 l -417,-380 l -416,-379 l -415,-379 l -413,-378 l -412,-378 l -411,-377 l -410,-377 l -408,-377 l -407,-377 l -406,-377 l -404,-377xe" onmouseover="UpdateTooltip(this,6,50)" onclick="OnShapeClick(6,50)" onfocus="UpdateTooltip(this,6,50);" onkeyup="OnShapeKey(6,50)"/> 
+
+</v:group>
+
+
+
+</div>
+
+
+
+</body>
+</html>
+

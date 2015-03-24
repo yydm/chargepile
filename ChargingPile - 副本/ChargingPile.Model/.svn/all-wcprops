@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/txwh/!svn/ver/1718/trunk/TXWH/ChargingPile/ChargingPile.Model
+END
+ResMenu.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/375/trunk/TXWH/ChargingPile/ChargingPile.Model/ResMenu.cs
+END
+MenuPower.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/MenuPower.cs
+END
+Items.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/txwh/!svn/ver/1560/trunk/TXWH/ChargingPile/ChargingPile.Model/Items.cs
+END
+Current.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1599/trunk/TXWH/ChargingPile/ChargingPile.Model/Current.cs
+END
+ChargRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/1251/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargRecord.cs
+END
+ChargPileTypes.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/txwh/!svn/ver/490/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargPileTypes.cs
+END
+CodeInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/757/trunk/TXWH/ChargingPile/ChargingPile.Model/CodeInfo.cs
+END
+ChargStationFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/txwh/!svn/ver/605/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargStationFile.cs
+END
+ChargStation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/txwh/!svn/ver/1059/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargStation.cs
+END
+PointCfgItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/txwh/!svn/ver/1398/trunk/TXWH/ChargingPile/ChargingPile.Model/PointCfgItem.cs
+END
+Common.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/1357/trunk/TXWH/ChargingPile/ChargingPile.Model/Common.cs
+END
+GatItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/501/trunk/TXWH/ChargingPile/ChargingPile.Model/GatItem.cs
+END
+BaseModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.Model/BaseModel.cs
+END
+WarnRec.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1396/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRec.cs
+END
+UseRoles.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/UseRoles.cs
+END
+OprLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/1451/trunk/TXWH/ChargingPile/ChargingPile.Model/OprLog.cs
+END
+ChargePileDetailInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/txwh/!svn/ver/926/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePileDetailInfo.cs
+END
+SmsOutBox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/553/trunk/TXWH/ChargingPile/ChargingPile.Model/SmsOutBox.cs
+END
+Department.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.Model/Department.cs
+END
+Warn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/Warn.cs
+END
+DTUInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1228/trunk/TXWH/ChargingPile/ChargingPile.Model/DTUInfo.cs
+END
+PointCfg.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1707/trunk/TXWH/ChargingPile/ChargingPile.Model/PointCfg.cs
+END
+Code.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/txwh/!svn/ver/753/trunk/TXWH/ChargingPile/ChargingPile.Model/Code.cs
+END
+ScheduleJobs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/ScheduleJobs.cs
+END
+Picture.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1426/trunk/TXWH/ChargingPile/ChargingPile.Model/Picture.cs
+END
+ChargPileJianXiuJL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1641/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargPileJianXiuJL.cs
+END
+CardInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1097/trunk/TXWH/ChargingPile/ChargingPile.Model/CardInfo.cs
+END
+ChargingPile.Model.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargingPile.Model.csproj
+END
+ChargePileStates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/txwh/!svn/ver/966/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePileStates.cs
+END
+CurrentAndVoltage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/txwh/!svn/ver/1028/trunk/TXWH/ChargingPile/ChargingPile.Model/CurrentAndVoltage.cs
+END
+WarnDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnDetail.cs
+END
+Employer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/750/trunk/TXWH/ChargingPile/ChargingPile.Model/Employer.cs
+END
+Branch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/txwh/!svn/ver/601/trunk/TXWH/ChargingPile/ChargingPile.Model/Branch.cs
+END
+ScheduleLog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/ScheduleLog.cs
+END
+ChargPile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/1623/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargPile.cs
+END
+Role.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/txwh/!svn/ver/352/trunk/TXWH/ChargingPile/ChargingPile.Model/Role.cs
+END
+Voltage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1599/trunk/TXWH/ChargingPile/ChargingPile.Model/Voltage.cs
+END
+ChargePileRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/txwh/!svn/ver/1004/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePileRecord.cs
+END
+JobsDetails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/JobsDetails.cs
+END
+YxYcErrorProcess.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/txwh/!svn/ver/805/trunk/TXWH/ChargingPile/ChargingPile.Model/YxYcErrorProcess.cs
+END
+ChargPrice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/511/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargPrice.cs
+END

@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩台账管理
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 7;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.612736;
+	viewMgr.visBBoxRight = 11.080178;
+	viewMgr.visBBoxBottom = 0.863434;
+	viewMgr.visBBoxTop = 7.404283;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_8.gif" ALT="充电站GIS分布-实景图" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_7.htm" target="frmDrawing" COORDS="629,382,769,382,770,382,770,382,770,382,770,382,770,382,770,382,771,382,771,382,771,382,771,382,771,381,771,381,771,381,771,381,772,381,772,381,772,380,772,380,772,314,772,314,772,314,772,313,771,313,771,313,771,313,771,313,771,313,771,312,771,312,771,312,770,312,770,312,770,312,770,312,770,312,770,312,769,312,629,312,629,312,629,312,629,312,629,312,628,312,628,312,628,312,628,312,628,312,628,313,628,313,627,313,627,313,627,313,627,313,627,314,627,314,627,314,627,380,627,380,627,381,627,381,627,381,627,381,627,381,628,381,628,382,628,382,628,382,628,382,628,382,628,382,629,382,629,382,629,382,629,382,629,382" onmouseover="UpdateTooltip(this,7,4)" onfocus="UpdateTooltip(this,7,4)" onclick="return OnShapeClick(7,4);" onkeyup="OnShapeKey(7,4);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_6.htm" target="frmDrawing" COORDS="629,292,769,292,770,292,770,292,770,292,770,292,770,292,770,292,771,292,771,292,771,292,771,291,771,291,771,291,771,291,771,291,772,291,772,290,772,290,772,290,772,219,772,219,772,219,772,219,771,219,771,219,771,218,771,218,771,218,771,218,771,218,771,218,770,218,770,217,770,217,770,217,770,217,770,217,769,217,629,217,629,217,629,217,629,217,629,217,628,217,628,218,628,218,628,218,628,218,628,218,628,218,627,218,627,219,627,219,627,219,627,219,627,219,627,219,627,290,627,290,627,290,627,291,627,291,627,291,627,291,628,291,628,291,628,292,628,292,628,292,628,292,628,292,629,292,629,292,629,292,629,292,629,292" onmouseover="UpdateTooltip(this,7,3)" onfocus="UpdateTooltip(this,7,3)" onclick="return OnShapeClick(7,3);" onkeyup="OnShapeKey(7,3);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_5.htm" target="frmDrawing" COORDS="635,196,775,196,776,196,776,196,776,196,776,196,776,196,776,196,777,196,777,196,777,196,777,195,777,195,777,195,777,195,777,195,778,195,778,194,778,194,778,194,778,117,778,117,778,117,778,117,777,117,777,116,777,116,777,116,777,116,777,116,777,116,777,115,776,115,776,115,776,115,776,115,776,115,776,115,775,115,635,115,635,115,635,115,635,115,635,115,634,115,634,115,634,115,634,116,634,116,634,116,634,116,633,116,633,116,633,117,633,117,633,117,633,117,633,117,633,194,633,194,633,194,633,195,633,195,633,195,633,195,634,195,634,195,634,196,634,196,634,196,634,196,634,196,635,196,635,196,635,196,635,196,635,196" onmouseover="UpdateTooltip(this,7,2)" onfocus="UpdateTooltip(this,7,2)" onclick="return OnShapeClick(7,2);" onkeyup="OnShapeKey(7,2);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_8.htm" target="frmDrawing" COORDS="631,468,768,468,768,468,768,468,768,468,769,468,769,468,769,468,769,468,769,467,769,467,770,467,770,467,770,467,770,467,770,467,770,466,770,466,770,466,770,466,770,404,770,404,770,404,770,404,770,403,770,403,770,403,770,403,770,403,769,403,769,402,769,402,769,402,769,402,769,402,768,402,768,402,768,402,768,402,631,402,631,402,631,402,630,402,630,402,630,402,630,402,630,402,629,402,629,403,629,403,629,403,629,403,629,403,629,403,629,404,629,404,629,404,629,404,629,466,629,466,629,466,629,466,629,467,629,467,629,467,629,467,629,467,629,467,629,467,630,468,630,468,630,468,630,468,630,468,631,468,631,468,631,468" onmouseover="UpdateTooltip(this,7,1)" onfocus="UpdateTooltip(this,7,1)" onclick="return OnShapeClick(7,1);" onkeyup="OnShapeKey(7,1);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

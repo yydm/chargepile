@@ -1,0 +1,9 @@
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.Model\bin\Debug\ChargingPile.Model.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.Model\bin\Debug\ChargingPile.Model.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.Model\obj\Debug\ChargingPile.Model.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.Model\obj\Debug\ChargingPile.Model.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.Model\obj\Debug\ChargingPile.Model.csprojResolveAssemblyReference.cache
+E:\zw\ChargingPile\ChargingPile.Model\bin\Debug\ChargingPile.Model.dll
+E:\zw\ChargingPile\ChargingPile.Model\bin\Debug\ChargingPile.Model.pdb
+E:\zw\ChargingPile\ChargingPile.Model\obj\Debug\ChargingPile.Model.dll
+E:\zw\ChargingPile\ChargingPile.Model\obj\Debug\ChargingPile.Model.pdb

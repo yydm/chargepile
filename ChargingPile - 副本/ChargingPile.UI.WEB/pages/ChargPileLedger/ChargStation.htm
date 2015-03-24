@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>充电站台账新增</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <!--验证session是否过期-->
+    <script type="text/javascript" src="../../WebService/Common.ashx?action=isoverdue"></script>
+    <link rel="stylesheet" type="text/css" href="../../Scripts/jquery-easyui-1.3.1/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/jquery-easyui-1.3.1/themes/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/ZTree/css/zTreeStyle/zTreeStyle.css" />
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/easyui-validate.js" type="text/javascript"></script>
+    <script src="../../Scripts/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    <script src="../../Scripts/ZTree/js/jquery.ztree.core-3.5.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../Scripts/ZTree/js/jquery.ztree.excheck-3.5.js"></script>
+	<script type="text/javascript" src="../../Scripts/ZTree/js/jquery.ztree.exedit-3.5.js"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.form.js" type="text/javascript"></script>
+    <script src="../../Scripts/chargpilemanger/ChargStation.js" type="text/javascript"></script>
+    <script src="../../swfconfig.js" type="text/javascript"></script>
+    <style type="text/css">
+        .textright
+        {
+            width: 100px;
+            text-align: right;
+        }
+        div#rMenu
+        {
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            background-color: #555;
+            text-align: left;
+            padding: 2px;
+        }
+        div#rMenu ul li
+        {
+            margin: 1px 0;
+            padding: 0 5px;
+            cursor: pointer;
+            list-style: none outside none;
+            background-color: #DFDFDF;
+        }
+    </style>
+</head>
+<body class="easyui-layout">
+    <!--充电站基本信息数据表格-->
+    <div data-options="region:'center',title:'台账管理>>充电台账>>新增充电场站'">
+        <table id="t_chargstation">
+        </table>
+        <div id="tb" style="padding: 5px; height: 25px;">
+            <div style="margin-bottom: 5px; float: right;">
+                <a href="javascript:gisfunc()" class="easyui-linkbutton" plain="true" iconcls="icon-search">GIS地图浏览</a>
+                <a href="javascript:gisAdd()" class="easyui-linkbutton" plain="true" iconcls="icon-add">GIS地图标注</a>
+                <a href="javascript:gisDelete()" class="easyui-linkbutton" plain="true" iconcls="icon-cancel">GIS标注删除</a>
+                <a href="javascript:addfunc()" class="easyui-linkbutton" plain="true" iconcls="icon-add">新增充电站</a>
+              <!--  <a href="javascript:editStation()" class="easyui-linkbutton" iconcls="icon-edit">修改</a>-->
+                <input type="hidden" id="boxcounts" />
+                <input type="hidden" id="h_zhanbh" />
+                <input type="hidden" id="d_zhanbh" />
+                <input type="hidden" id="d_zhanmc" />
+            </div>
+        </div>
+    </div>
+    <!--新建充电桩基本信息-->
+    <div id="pileinfo" class="easyui-dialog" style="width: 620px; height: 480px;" closed="true"
+        modal="true" buttons="#foots" data-options="onClose:onClosePile">
+        <form action="" id="Form2" method="post">
+        <table id="dgpile">
+        </table>
+        </form>
+    </div>
+    <!--新建分支箱编辑框-->
+    <div id="newpile" class="easyui-dialog" style="width: 580px; height: 480px;" closed="true"
+        modal="true" buttons="#ons" data-options="onClose:onCloseNPile">
+        <form action="" id="Form1" method="post">
+        <table id="t_box" cellpadding="4" cellspacing="1" width="100%" style="border: 0;
+            overflow: hidden;" class="detailtable">
+        </table>
+        </form>
+        <div id="ons">
+            <a href="#" class="easyui-linkbutton" iconcls="icon-save" onclick="saveBranch()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconcls="icon-cancel" onclick="javascript:$('#newpile').dialog('close')">
+                取消</a>
+        </div>
+    </div>
+    <!--充电站基本信息编辑框-->
+    <div id="dlg" class="easyui-dialog" style="width: 400px; height: 500px;" closed="true"
+        modal="true" buttons="#dlg-buttons">
+        <form action="" id="fm" method="post">
+        <table cellpadding="3" cellspacing="0" width="100%" style="border: 0; overflow: hidden;">
+            <tr style="height: 28px" id="typeid">
+                <td style="width: 100px" class="textright">
+                    充电站名称：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="ZhuanMc" name="ZhuanMc" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="maxLength[32]" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    详细地址：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="XiangXiDz" name="XiangXiDz" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="maxLength[32]" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    经度：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="Longtude" name="Longtude" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    纬度：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="Latitude" name="Latitude" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="intOrFloat" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    场地业主单位：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="YeZhuDw" name="YeZhuDw" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="maxLength[32]" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    场地业主联系人：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="LianXiR" name="LianXiR" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="maxLength[32]" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 110px" class="textright">
+                    场地业主联系电话：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" id="LianXiDh" name="LianXiDh" style="width: 200px" class="easyui-validatebox"
+                        required="true" validtype="maxLength[32]" onchange="DHchange()" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    分支箱数量：
+                </td>
+                <td class="textbox_b">
+                    <select id="BoxCounts" name="BoxCounts" style="width: 200px">
+                        <option value="">—请选择—</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    建站时间：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" placeholder=" —请选择— " readonly="readonly" id="CreateDT" name="CreateDT"
+                        style="width: 200px;" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',startDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'TouYun_Sj\')||\'%y-%M-%d\'}'})" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    投运时间：
+                </td>
+                <td class="textbox_b">
+                    <input type="text" placeholder=" —请选择— " readonly="readonly" id="TouYun_Sj" name="TouYun_Sj"
+                        style="width: 200px;" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'CreateDT\')}',maxDate:'%y-%M-%d',startDate:'%y-%M-%d'})" />
+                </td>
+            </tr>
+            <tr style="height: 28px">
+                <td style="width: 100px" class="textright">
+                    充电站实景照片：
+                </td>
+                <td class="textbox_b">
+                    <input type="file" id="picfile" name="picfile" />
+                </td>
+            </tr>
+            <tr style="height: 10px">
+                <td style="width: 100px" class="textright">
+                    
+                </td>
+                <td class="textbox_b">
+                    <label style="color: red; font-size: 12px;">
+                      注：请选择图片压缩文件（小于20M）</label>
+                </td>
+            </tr>
+        </table>
+        </form>
+        <div id="dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconcls="icon-save" onclick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconcls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">
+                取消</a>
+        </div>
+    </div>
+    <!--充电站编辑弹出框-->
+    <div id="div_zhan" class="easyui-dialog" style="width: 800px; height: 510px;" closed="true"
+        modal="true" data-options="onClose:onClosediv_zhan">
+        <div style="height: 28px; padding: 5px; background-color: #E9EEF4;">
+            <div style="margin-bottom: 5px; float: left;">
+                <a href="javascript:edit_addfunc()" class="easyui-linkbutton" iconcls="icon-add">新增</a>
+                <a href="#" onclick="edit_editfunc()" class="easyui-linkbutton" iconcls="icon-edit">修改</a>
+                <a href="javascript:edit_delfunc()" class="easyui-linkbutton" iconcls="icon-remove">删除</a> 
+                
+            </div>
+        </div>
+        <div data-options="" style="width: 380px; float: left; height: 427px; background-color: #dcdcdd;
+            padding: 5px;">
+            <div fit="true" style="height: 424px; background-color: #ffffff;">
+                <div style="padding: 5px; height: 410px; width: 370px; overflow: auto;">
+                    <ul id="treeDemo" class="ztree">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-options="" style="width: 380px; float: right; height: 427px; background-color: #dcdcdd;
+            padding: 5px;">
+            <div fit="true" style="height: 424px; background-color: #ffffff;">
+                <div style="padding: 5px;">
+                    <!--分支箱编辑框-->
+                    <div id="div_box" style="width: 370px; height: 415px; display: none;" closed="true"
+                        modal="true" buttons="#div_box_button">
+                        <form action="" id="Form3" method="post">
+                        <table cellpadding="4" cellspacing="1" width="100%" style="border: 0; overflow: hidden;"
+                            class="detailtable">
+                            <tr style="height: 28px" id="Tr2">
+                                <td style="width: 100px" class="textright">
+                                    充电桩数量：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_zcounts" name="d_zcounts" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    桩厂家：
+                                </td>
+                                <td class="textbox_b">
+                                    <select id="d_changjia" name="d_changjia" onchange="d_cjclick()" style="width: 204px">
+                                        <option value="">—请选择—</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    桩型号：
+                                </td>
+                                <td class="textbox_b">
+                                    <select id="d_xinghao" name="d_xinghao" onchange="CJchange()" style="width: 204px">
+                                        <option value="">—请选择—</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                        <div id="div1" style="position: absolute; bottom: 15px; right: 15px">
+                            <a href="#" class="easyui-linkbutton" iconcls="icon-save" onclick="d_box_save()">保存</a>
+                        </div>
+                    </div>
+                    <!--充电桩编辑框-->
+                    <div id="div_pile" style="width: 370px; height: 415px; display: none;" closed="true"
+                        modal="true" buttons="">
+                        <form action="" id="Form4" method="post">
+                        <table cellpadding="4" cellspacing="1" width="100%" style="border: 0; overflow: hidden;"
+                            class="detailtable">
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    厂家编号：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_cjbh" name="d_cjbh" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[30]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    运行编号：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_yxbh" name="d_yxbh" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[30]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    厂家：
+                                </td>
+                                <td class="textbox_b">
+                                    <select id="d_cj" name="d_cj" onchange="pileCJchange()" style="width: 204px">
+                                        <option value="">—请选择—</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    型号：
+                                </td>
+                                <td class="textbox_b">
+                                    <select id="d_xh" name="d_xh" onchange="pileXHchange()" style="width: 204px">
+                                        <option value="">—请选择—</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    类型：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_lx" name="d_lx" readonly="readonly" style="width: 200px"
+                                        class="easyui-validatebox" required="true" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px;">
+                                <td style="width: 100px;" class="textright">
+                                    状态：
+                                </td>
+                                <td colspan="3" class="textbox_b">
+                                    <select id="d_zt" name="d_zt" onchange="ztchange()" style="width: 204px">
+                                        <option value="">—请选择—</option>
+                                        <option value="已投运">已投运</option>
+                                        <option value="未投运">未投运</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="height: 28px" id="d_tr_tysj">
+                                <td style="width: 100px" class="textright">
+                                    投运时间：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" placeholder=" —请选择— " id="d_tysj" name="d_tysj" style="width: 200px;"
+                                        class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d',startDate:'%y-%M-%d'})" />
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                        <div id="Div3" style="position: absolute; bottom: 15px; right: 15px">
+                            <a href="#" class="easyui-linkbutton" iconcls="icon-save" onclick="d_pile_save()">保存</a>
+                        </div>
+                    </div>
+
+                    <!--充电站编辑框-->
+                    <div id="div_station" style="width: 370px; display:none; height: 415px;" closed="true"
+                        modal="true" buttons="">
+                        <form action="" id="Form5" method="post">
+                        <table cellpadding="4" cellspacing="1" width="100%" style="border: 0; overflow: hidden;"
+                            class="detailtable">
+                            <tr style="height: 28px" id="Tr1">
+                                <td style="width: 100px" class="textright">
+                                    充电站名称：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_ZhuanMc" name="d_ZhuanMc" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    详细地址：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_XiangXiDz" name="d_XiangXiDz" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    经度：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_Longtude" name="d_Longtude" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="intOrFloat" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    纬度：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_Latitude" name="d_Latitude" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="intOrFloat" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    场地业主单位：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_YeZhuDw" name="d_YeZhuDw" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    场地业主联系人：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_LianXiR" name="d_LianXiR" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 110px" class="textright">
+                                    场地业主联系电话：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" id="d_LianXiDh" name="d_LianXiDh" style="width: 200px" class="easyui-validatebox"
+                                        required="true" validtype="maxLength[32]" onchange="DHchange()" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    建站时间：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" placeholder=" —请选择— " readonly="readonly" id="d_CreateDT" name="d_CreateDT"
+                                        style="width: 200px;" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',startDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'TouYun_Sj\')||\'%y-%M-%d\'}'})" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    投运时间：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="text" placeholder=" —请选择— " readonly="readonly" id="d_TouYun_Sj" name="d_TouYun_Sj"
+                                        style="width: 200px;" class="Wdate" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'CreateDT\')}',maxDate:'%y-%M-%d',startDate:'%y-%M-%d'})" />
+                                </td>
+                            </tr>
+                            <tr style="height: 28px">
+                                <td style="width: 100px" class="textright">
+                                    充电站实景照片：
+                                </td>
+                                <td class="textbox_b">
+                                    <input type="file" id="d_picfile" name="d_picfile" />
+                                </td>
+                            </tr>
+                            <tr style="height: 10px">
+                                <td style="width: 100px" class="textright">
+                                </td>
+                                <td class="textbox_b">
+                                    <label style="color: red; font-size: 12px;">
+                                        注：请选择图片压缩文件（小于20M）</label>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                        <div id="Div4" style="position: absolute; bottom: 15px; right: 15px">
+                            <a href="#" class="easyui-linkbutton" iconcls="icon-save"  onclick="d_station_save()">保存</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="rMenu">
+	<ul>
+		<li id="m_add" onclick="addTreeNode();">增加节点</li>
+		<li id="m_del" onclick="removeTreeNode();">删除节点</li>
+	</ul>
+</div>
+
+
+</body>
+</html>

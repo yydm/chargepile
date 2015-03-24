@@ -1,0 +1,4 @@
+E:\Projects\ChargingPile\ChargingPile\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Projects\ChargingPile\ChargingPile\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Projects\ChargingPile\ChargingPile\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+E:\Projects\ChargingPile\ChargingPile\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

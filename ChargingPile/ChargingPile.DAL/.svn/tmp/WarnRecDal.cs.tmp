@@ -1,0 +1,237 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using ChargingPile.Model;
+
+namespace ChargingPile.DAL
+{
+    public class WarnRecDal : BaseDal<WarnRec>
+    {
+        public override bool Exist(WarnRec bean)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Add(WarnRec bean)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Del(WarnRec bean)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Modify(WarnRec bean)
+        {
+            Log.Debug("Modify方法参数：" + bean);
+            var sql = new StringBuilder("update oth_warnrec set");
+            var i = 0;
+            var dList = new List<object>();
+            if (bean.ProcessFlag != null)
+            {
+                sql.Append(" processflag={" + i++ + "},");
+                dList.Add(bean.ProcessFlag);
+            }
+            if (bean.ProcessDt != null)
+            {
+                sql.Append(" ProcessDt={" + i++ + "},");
+                dList.Add(bean.ProcessDt);
+            }
+            if (bean.ProcessEmp != null)
+            {
+                sql.Append(" ProcessEmp={" + i++ + "},");
+                dList.Add(bean.ProcessEmp);
+            }
+            sql.Append(" updatedt=sysdate where id={" + i++ + "}");
+            dList.Add(bean.Id);
+            Log.Debug("SQL:" + sql + ",params:" + dList.ToString());
+            Oop.Execute(sql.ToString(), dList.ToArray());
+        }
+
+        public override DataTable Query(WarnRec bean)
+        {
+            Log.Debug("Query方法参数：" + bean.ToString());
+            var sql = new StringBuilder();
+            sql.Append("select * from oth_warnrec where 1=1 ");
+            var list = new List<object>();
+            var i = -1;
+            if (!string.IsNullOrEmpty(bean.Id))
+            {
+                sql.Append(" and Id={" + ++i + "}");
+                list.Add(bean.Id);
+            }
+            if (!string.IsNullOrEmpty(bean.DataItemId))
+            {
+                sql.Append(" and DataItemId={" + ++i + "}");
+                list.Add(bean.DataItemId);
+            }
+            if (bean.TargetDev != 0)
+            {
+                sql.Append(" and TargetDev={" + ++i + "}");
+                list.Add(bean.TargetDev);
+            }
+            if (!string.IsNullOrEmpty(bean.DataGatherId))
+            {
+                sql.Append(" and DataGatherId={" + ++i + "}");
+                list.Add(bean.DataGatherId);
+            }
+            if (bean.Occurdt != null)
+            {
+                sql.Append(" and Occurdt={" + ++i + "}");
+                list.Add(bean.Occurdt);
+            }
+            if (!string.IsNullOrEmpty(bean.LogType))
+            {
+                sql.Append(" and LogType={" + ++i + "}");
+                list.Add(bean.LogType);
+            }
+            if (bean.M_Vlaue != 0)
+            {
+                sql.Append(" and M_Vlaue={" + ++i + "}");
+                list.Add(bean.M_Vlaue);
+            }
+            if (!string.IsNullOrEmpty(bean.LogDesc))
+            {
+                sql.Append(" and LogDesc={" + ++i + "}");
+                list.Add(bean.LogDesc);
+            }
+            if (bean.CreateDt != null)
+            {
+                sql.Append(" and CreateDt={" + ++i + "}");
+                list.Add(bean.CreateDt);
+            }
+            if (bean.UpdateDt != null)
+            {
+                sql.Append(" and UpdateDt={" + ++i + "}");
+                list.Add(bean.UpdateDt);
+            }
+            if (bean.ProcessFlag != 0)
+            {
+                sql.Append(" and ProcessFlag={" + ++i + "}");
+                list.Add(bean.ProcessFlag);
+            }
+            Log.Debug("SQL :" + sql + ",params:" + list.ToString());
+            return Oop.GetDataTable(sql.ToString(), list.ToArray());
+        }
+
+        /// <summary>
+        /// 根据异常类型查询未处理异常
+        /// </summary>
+        /// <param name="type">异常类型</param>
+        /// <param name="page"></param>
+        /// <param name="rows"></param>
+        /// <returns></returns>
+        public DataTable QueryByType(string type, int page, int rows, ref int count)
+        {
+            Log.Debug("Query方法参数：type：" + type);
+            const string sql = @"select ow.id, (select dcs.zhuan_mc from dev_chargstation dcs where dcs.zhan_bh = 
+(select db.zhuan_bh from DEV_BRANCH db where db.branchno=dcp.box_id)) zhanmc,dppt.parserkey,dppt.zhuanglei_x zhuangleix,
+ow.targetdev,(select gi.itemname from gat_item gi where gi.itemno=ow.dataitemid) itemname,gp.yxstates,
+gp.yxeff,gp.yxwarn,gp.limitmin,gp.limitmax,gp.eff_min,gp.eff_max ,ow.m_value mvalue,ow.logdesc, ow.processflag as processflag
+ from oth_warnrec ow left join dev_chargpile dcp on ow.targetdev=dcp.dev_chargpile left join DEV_POWERPILETYPES dppt 
+on dppt.parserkey=dcp.piletypeid left join gat_pointcfg gp on gp.gatitemid=ow.dataitemid 
+and gp.piletypeid=dppt.parserkey where ow.processflag=0 and ow.logtype={0} order by ow.createdt desc,ow.updatedt desc";
+            Log.Debug("SQL语句：" + sql);
+
+            const string sqlCount = @"select count(*) from oth_warnrec ow  
+where ow.logtype={0} and ow.processflag=0 order by ow.createdt desc,ow.updatedt desc";
+            var o = Oop.GetScalar(sqlCount, type);
+            count = int.Parse(o.ToString());
+            return Oop.GetDataTableByPage(sql, (page - 1) * rows, rows, type);
+        }
+        public override DataTable QueryByPage(WarnRec bean, int page, int rows)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override DataTable QueryByPage(WarnRec bean, int page, int rows, ref int count)
+        {
+            throw new NotImplementedException();
+        }
+        /// <summary>
+        /// 查询异常数据
+        /// </summary>
+        /// <param name="yclx">异常类型</param>
+        /// <param name="dateBegin">起始时间</param>
+        /// <param name="dateEnd">结束时间</param>
+        /// <returns></returns>
+        public DataTable Query(string yclx, DateTime dateBegin, DateTime dateEnd)
+        {
+            Log.Debug("Query方法参数：yclx：" + yclx + " dateBegin：" + dateBegin.ToString("yyyy-MM-dd")
+                      + ",dateEnd:" + dateEnd.ToString("yyyy-MM-dd"));
+            const string sql = @"select (select dcs.zhuan_mc from dev_chargstation dcs where dcs.zhan_bh = 
+(select db.zhuan_bh from DEV_BRANCH db where db.branchno=dcp.box_id)) zhanmc,dppt.parserkey,dppt.zhuanglei_x zhuangleix,
+ow.targetdev,(select gi.itemname from gat_item gi where gi.itemno=ow.dataitemid) itemname,gp.yxstates,
+gp.yxeff,gp.yxwarn,gp.limitmin,gp.limitmax,gp.eff_min,gp.eff_max ,ow.m_value mvalue,ow.logdesc,
+case when ow.processflag=0 then '是' else '否' end as processflag
+ from oth_warnrec ow left join dev_chargpile dcp on ow.targetdev=dcp.dev_chargpile left join DEV_POWERPILETYPES dppt 
+on dppt.parserkey=dcp.piletypeid left join gat_pointcfg gp on gp.gatitemid=ow.dataitemid 
+and gp.piletypeid=dppt.parserkey where ow.logtype={0} and  ow.createdt between {1} and {2} 
+order by ow.createdt desc,ow.updatedt desc";
+            Log.Debug("SQL语句：" + sql);
+            return Oop.GetDataTable(sql, yclx, dateBegin.AddDays(-1), dateEnd);
+        }
+        /// <summary>
+        /// 异常数据查询
+        /// </summary>
+        /// <param name="yclx">异常类型</param>
+        /// <param name="dateBegin">起始时间</param>
+        /// <param name="dateEnd">结束时间</param>
+        /// <param name="page">页码</param>
+        /// <param name="rows">每页行数</param>
+        /// <param name="count">总行数</param>
+        /// <returns></returns>
+        public DataTable QueryByPage(string yclx, DateTime dateBegin, DateTime dateEnd, int page, int rows, ref int count)
+        {
+            Log.Debug("QueryByPage方法参数：yclx：" + yclx + " dateBegin：" + dateBegin.ToString("yyyy-MM-dd")
+                      + ",dateEnd:" + dateEnd.ToString("yyyy-MM-dd") + ",page:" + page + ",rows:" + rows);
+            const string sql = @"select (select dcs.zhuan_mc from dev_chargstation dcs where dcs.zhan_bh = 
+(select db.zhuan_bh from DEV_BRANCH db where db.branchno=dcp.box_id)) zhanmc,dppt.parserkey,dppt.zhuanglei_x zhuangleix,
+ow.targetdev,(select gi.itemname from gat_item gi where gi.itemno=ow.dataitemid) itemname,gp.yxstates,ow.processemp,
+gp.yxeff,gp.yxwarn,gp.limitmin,gp.limitmax,gp.eff_min,gp.eff_max ,ow.m_value mvalue,ow.processflag,ow.logdesc,ow.processdt 
+from oth_warnrec ow left join dev_chargpile dcp on ow.targetdev=dcp.dev_chargpile left join DEV_POWERPILETYPES dppt 
+on dppt.parserkey=dcp.piletypeid left join gat_pointcfg gp on gp.gatitemid=ow.dataitemid 
+and gp.piletypeid=dppt.parserkey where ow.logtype={0} and  ow.createdt between {1} and {2} 
+order by ow.createdt desc,ow.updatedt desc";
+            Log.Debug("SQL语句：" + sql);
+            const string sqlCount = @"select count(*)from oth_warnrec ow  
+where ow.logtype={0} and  ow.createdt between {1} and {2} order by ow.createdt desc,ow.updatedt desc";
+            var o = Oop.GetScalar(sqlCount, yclx, dateBegin.AddDays(-1), dateEnd);
+            count = int.Parse(o.ToString());
+            return Oop.GetDataTableByPage(sql, (page - 1) * rows, rows, yclx, dateBegin.AddDays(-1), dateEnd);
+        }
+
+        /// <summary>
+        /// 查询格式化告警信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable FindBy()
+        {
+            Log.Debug("FindBy方法没有参数");
+            var sql = new StringBuilder();
+            sql.Append("select logtype,occurdt,logdesc ");
+            sql.Append("from oth_warnrec t ");
+            sql.Append("order by occurdt desc");
+            return Oop.GetDataTable(sql.ToString());
+        }
+
+
+        /// <summary>
+        /// 根据充电桩id查询格式化告警信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable FindBy(int zhuanid)
+        {
+            Log.Debug("FindBy方法没有参数");
+            var sql = new StringBuilder();
+            sql.Append("select logtype,occurdt,logdesc ");
+            sql.Append("from oth_warnrec t ");
+            sql.Append("where t.targetdev='" + zhuanid + "' ");
+            sql.Append("order by occurdt desc");
+            return Oop.GetDataTable(sql.ToString());
+        }
+    }
+}

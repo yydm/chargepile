@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩远程控制
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 6;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.923530;
+	viewMgr.visBBoxRight = 10.769383;
+	viewMgr.visBBoxBottom = 1.124318;
+	viewMgr.visBBoxTop = 7.143399;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="功能结构" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="充电单价维护" origTitle="充电单价维护" TITLE="充电单价维护" HREF="gif_11.htm" target="frmDrawing" COORDS="621,164,640,164,640,164,641,164,641,164,641,164,642,164,642,164,642,164,643,164,643,163,643,163,644,163,644,163,644,163,644,162,645,162,645,162,645,162,645,161,645,161,646,161,646,160,646,160,646,160,646,160,646,159,646,159,646,159,646,158,646,158,646,43,646,43,646,42,646,42,646,42,646,41,646,41,646,41,646,40,646,40,645,40,645,39,645,39,645,39,645,39,644,38,644,38,644,38,644,38,643,37,643,37,643,37,642,37,642,37,642,37,641,37,641,37,641,37,640,37,640,37,621,37,620,37,620,37,620,37,619,37,619,37,619,37,618,37,618,37,618,37,617,37,617,38,617,38,617,38,616,38,616,39,616,39,616,39,615,39,615,40,615,40,615,40,615,41,615,41,615,41,614,42,614,42,614,42,614,43,614,43,614,158,614,158,614,159,614,159,614,159,615,160,615,160,615,160,615,160,615,161,615,161,615,161,616,162,616,162,616,162,616,162,617,163,617,163,617,163,617,163,618,163,618,164,618,164,619,164,619,164,619,164,620,164,620,164,620,164,621,164" onmouseover="UpdateTooltip(this,6,12)" onfocus="UpdateTooltip(this,6,12)" onclick="return OnShapeClick(6,12);" onkeyup="OnShapeKey(6,12);">
+  <AREA shape="POLYGON" tabindex="1" ALT="远程对时" origTitle="远程对时" TITLE="远程对时" HREF="gif_5.htm" target="frmDrawing" COORDS="518,164,538,164,538,164,538,164,539,164,539,164,539,164,540,164,540,164,540,164,541,163,541,163,541,163,541,163,542,163,542,162,542,162,542,162,543,162,543,161,543,161,543,161,543,160,543,160,544,160,544,160,544,159,544,159,544,159,544,158,544,158,544,43,544,43,544,42,544,42,544,42,544,41,544,41,543,41,543,40,543,40,543,40,543,39,543,39,542,39,542,39,542,38,542,38,541,38,541,38,541,37,541,37,540,37,540,37,540,37,539,37,539,37,539,37,538,37,538,37,538,37,518,37,518,37,518,37,517,37,517,37,517,37,516,37,516,37,516,37,515,37,515,37,515,38,514,38,514,38,514,38,514,39,513,39,513,39,513,39,513,40,513,40,513,40,512,41,512,41,512,41,512,42,512,42,512,42,512,43,512,43,512,158,512,158,512,159,512,159,512,159,512,160,512,160,512,160,513,160,513,161,513,161,513,161,513,162,513,162,514,162,514,162,514,163,514,163,515,163,515,163,515,163,516,164,516,164,516,164,517,164,517,164,517,164,518,164,518,164,518,164" onmouseover="UpdateTooltip(this,6,47)" onfocus="UpdateTooltip(this,6,47)" onclick="return OnShapeClick(6,47);" onkeyup="OnShapeKey(6,47);">
+  <AREA shape="POLYGON" tabindex="1" ALT="远程调价" origTitle="远程调价" TITLE="远程调价" HREF="gif_8.htm" target="frmDrawing" COORDS="570,162,589,162,589,162,589,162,590,162,590,162,590,162,591,162,591,162,591,162,592,162,592,161,592,161,593,161,593,161,593,161,593,160,594,160,594,160,594,159,594,159,594,159,595,159,595,158,595,158,595,158,595,157,595,157,595,157,595,156,595,156,595,41,595,41,595,40,595,40,595,40,595,39,595,39,595,39,595,38,594,38,594,38,594,37,594,37,594,37,593,37,593,36,593,36,593,36,592,36,592,36,592,35,591,35,591,35,591,35,590,35,590,35,590,35,589,35,589,35,589,35,570,35,569,35,569,35,569,35,568,35,568,35,567,35,567,35,567,35,567,35,566,36,566,36,566,36,565,36,565,36,565,37,565,37,564,37,564,37,564,38,564,38,564,38,564,39,563,39,563,39,563,40,563,40,563,40,563,41,563,41,563,156,563,156,563,157,563,157,563,157,563,158,563,158,564,158,564,159,564,159,564,159,564,159,564,160,565,160,565,160,565,161,565,161,566,161,566,161,566,161,567,162,567,162,567,162,567,162,568,162,568,162,569,162,569,162,569,162,570,162" onmouseover="UpdateTooltip(this,6,32)" onfocus="UpdateTooltip(this,6,32)" onclick="return OnShapeClick(6,32);" onkeyup="OnShapeKey(6,32);">
+  <AREA shape="POLYGON" tabindex="1" ALT="远程启动/停止" origTitle="远程启动/停止" TITLE="远程启动/停止" HREF="gif_2.htm" target="frmDrawing" COORDS="467,162,486,162,487,162,487,162,487,162,488,162,488,162,488,162,489,162,489,162,489,162,490,161,490,161,490,161,491,161,491,161,491,160,491,160,491,160,492,159,492,159,492,159,492,159,492,158,492,158,493,158,493,157,493,157,493,157,493,156,493,156,493,41,493,41,493,40,493,40,493,40,493,39,492,39,492,39,492,38,492,38,492,38,492,37,491,37,491,37,491,37,491,36,491,36,490,36,490,36,490,36,489,35,489,35,489,35,488,35,488,35,488,35,487,35,487,35,487,35,486,35,467,35,467,35,466,35,466,35,466,35,465,35,465,35,465,35,464,35,464,35,464,36,464,36,463,36,463,36,463,36,463,37,462,37,462,37,462,37,462,38,462,38,461,38,461,39,461,39,461,39,461,40,461,40,461,40,461,41,461,41,461,156,461,156,461,157,461,157,461,157,461,158,461,158,461,158,461,159,462,159,462,159,462,159,462,160,462,160,463,160,463,161,463,161,463,161,464,161,464,161,464,162,464,162,465,162,465,162,465,162,466,162,466,162,466,162,467,162,467,162" onmouseover="UpdateTooltip(this,6,31)" onfocus="UpdateTooltip(this,6,31)" onclick="return OnShapeClick(6,31);" onkeyup="OnShapeKey(6,31);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩台账管理
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 10;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.524545;
+	viewMgr.visBBoxRight = 10.993295;
+	viewMgr.visBBoxBottom = 0.863025;
+	viewMgr.visBBoxTop = 7.404692;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_11.gif" ALT="充电站台账绘制-新建充电站" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="477,390,477,403,477,417,477,430,507,430,507,417,507,403,507,390,507,376,477,376,477,390" onmouseover="UpdateTooltip(this,10,291)" onfocus="UpdateTooltip(this,10,291)" onclick="return OnShapeClick(10,291);" onkeyup="OnShapeKey(10,291);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="381,390,381,403,381,417,381,430,480,430,480,417,480,403,480,390,480,376,381,376,381,390" onmouseover="UpdateTooltip(this,10,249)" onfocus="UpdateTooltip(this,10,249)" onclick="return OnShapeClick(10,249);" onkeyup="OnShapeKey(10,249);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="351,390,351,403,351,417,351,430,381,430,381,417,381,403,381,390,381,376,351,376,351,390" onmouseover="UpdateTooltip(this,10,228)" onfocus="UpdateTooltip(this,10,228)" onclick="return OnShapeClick(10,228);" onkeyup="OnShapeKey(10,228);">
+  <AREA shape="POLYGON" tabindex="1" ALT="上一步" origTitle="上一步" TITLE="上一步" HREF="" target="_top" COORDS="224,448,221,448,220,448,220,448,220,448,220,448,220,448,219,448,219,448,219,449,219,449,219,449,219,449,219,449,218,449,218,450,218,450,218,450,218,450,218,450,218,463,218,463,218,463,218,464,218,464,218,464,219,464,219,464,219,465,219,465,219,465,219,465,219,465,220,465,220,465,220,465,220,465,220,465,221,465,271,465,271,465,271,465,272,465,272,465,272,465,272,465,272,465,272,465,273,465,273,465,273,464,273,464,273,464,273,464,273,464,273,463,273,463,273,463,273,450,273,450,273,450,273,450,273,450,273,449,273,449,273,449,273,449,273,449,272,449,272,448,272,448,272,448,272,448,272,448,271,448,271,448,271,448,224,448" onmouseover="UpdateTooltip(this,10,192)" onfocus="UpdateTooltip(this,10,192)" onclick="return OnShapeClick(10,192);" onkeyup="OnShapeKey(10,192);">
+  <AREA shape="POLYGON" tabindex="1" ALT="上一步" origTitle="上一步" TITLE="上一步" HREF="" target="_top" COORDS="262,449,271,449,271,449,271,449,271,449,272,449,272,449,272,449,272,449,272,449,272,449,272,450,272,450,272,450,272,450,272,450,272,450,272,463,272,463,272,463,272,464,272,464,272,464,272,464,272,464,272,464,272,464,272,464,272,464,271,465,271,465,271,465,271,465,221,465,220,465,220,465,220,465,220,464,220,464,220,464,220,464,219,464,219,464,219,464,219,464,219,464,219,463,219,463,219,463,219,450,219,450,219,450,219,450,219,450,219,450,219,449,219,449,220,449,220,449,220,449,220,449,220,449,220,449,220,449,221,449,224,449,230,449,230,463,262,463,262,449" onmouseover="UpdateTooltip(this,10,192)" onfocus="UpdateTooltip(this,10,192)" onclick="return OnShapeClick(10,192);" onkeyup="OnShapeKey(10,192);">
+  <AREA shape="POLYGON" tabindex="1" ALT="下一步" origTitle="下一步" TITLE="下一步" HREF="gif_12.htm" target="frmDrawing" COORDS="283,448,280,448,280,448,280,448,280,448,280,448,279,448,279,448,279,448,279,449,279,449,279,449,278,449,278,449,278,449,278,450,278,450,278,450,278,450,278,450,278,463,278,463,278,463,278,464,278,464,278,464,278,464,278,464,279,465,279,465,279,465,279,465,279,465,279,465,280,465,280,465,280,465,280,465,280,465,331,465,331,465,331,465,331,465,331,465,332,465,332,465,332,465,332,465,332,465,332,465,333,464,333,464,333,464,333,464,333,464,333,463,333,463,333,463,333,450,333,450,333,450,333,450,333,450,333,449,333,449,333,449,332,449,332,449,332,449,332,448,332,448,332,448,331,448,331,448,331,448,331,448,331,448,283,448" onmouseover="UpdateTooltip(this,10,11)" onfocus="UpdateTooltip(this,10,11)" onclick="return OnShapeClick(10,11);" onkeyup="OnShapeKey(10,11);">
+  <AREA shape="POLYGON" tabindex="1" ALT="下一步" origTitle="下一步" TITLE="下一步" HREF="gif_12.htm" target="frmDrawing" COORDS="322,449,331,449,331,449,331,449,331,449,331,449,331,449,332,449,332,449,332,449,332,449,332,450,332,450,332,450,332,450,332,450,332,450,332,463,332,463,332,463,332,464,332,464,332,464,332,464,332,464,332,464,332,464,331,464,331,464,331,465,331,465,331,465,331,465,280,465,280,465,280,465,280,465,280,464,280,464,279,464,279,464,279,464,279,464,279,464,279,464,279,464,279,463,279,463,279,463,279,450,279,450,279,450,279,450,279,450,279,450,279,449,279,449,279,449,279,449,280,449,280,449,280,449,280,449,280,449,280,449,283,449,290,449,290,463,322,463,322,449" onmouseover="UpdateTooltip(this,10,11)" onfocus="UpdateTooltip(this,10,11)" onclick="return OnShapeClick(10,11);" onkeyup="OnShapeKey(10,11);">
+  <AREA shape="POLYGON" tabindex="1" ALT="保存" origTitle="保存" TITLE="保存" HREF="gif_12.htm" target="frmDrawing" COORDS="344,448,341,448,341,448,340,448,340,448,340,448,340,448,340,448,340,448,339,449,339,449,339,449,339,449,339,449,339,449,339,450,339,450,339,450,339,450,339,450,339,463,339,463,339,463,339,464,339,464,339,464,339,464,339,464,339,465,339,465,339,465,340,465,340,465,340,465,340,465,340,465,340,465,341,465,341,465,391,465,391,465,392,465,392,465,392,465,392,465,392,465,393,465,393,465,393,465,393,465,393,464,393,464,393,464,393,464,393,464,393,463,394,463,394,463,394,450,394,450,393,450,393,450,393,450,393,449,393,449,393,449,393,449,393,449,393,449,393,448,392,448,392,448,392,448,392,448,392,448,391,448,391,448,344,448" onmouseover="UpdateTooltip(this,10,5)" onfocus="UpdateTooltip(this,10,5)" onclick="return OnShapeClick(10,5);" onkeyup="OnShapeKey(10,5);">
+  <AREA shape="POLYGON" tabindex="1" ALT="保存" origTitle="保存" TITLE="保存" HREF="gif_12.htm" target="frmDrawing" COORDS="377,449,391,449,391,449,392,449,392,449,392,449,392,449,392,449,392,449,392,449,392,449,393,450,393,450,393,450,393,450,393,450,393,450,393,463,393,463,393,463,393,464,393,464,393,464,392,464,392,464,392,464,392,464,392,464,392,464,392,465,392,465,391,465,391,465,341,465,341,465,341,465,340,465,340,464,340,464,340,464,340,464,340,464,340,464,340,464,340,464,339,464,339,463,339,463,339,463,339,450,339,450,339,450,339,450,340,450,340,450,340,449,340,449,340,449,340,449,340,449,340,449,340,449,341,449,341,449,341,449,344,449,355,449,355,463,377,463,377,449" onmouseover="UpdateTooltip(this,10,5)" onfocus="UpdateTooltip(this,10,5)" onclick="return OnShapeClick(10,5);" onkeyup="OnShapeKey(10,5);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

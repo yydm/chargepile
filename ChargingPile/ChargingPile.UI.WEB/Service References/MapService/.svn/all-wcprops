@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/1436/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService
+END
+WCFDataRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/WCFDataRequest.xsd
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/Reference.cs
+END
+Reference1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/txwh/!svn/ver/1436/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/Reference1.cs
+END
+Reference.svcmap
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/Reference.svcmap
+END
+configuration91.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/configuration91.svcinfo
+END
+service.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/service.wsdl
+END
+WCFDataRequest.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/WCFDataRequest.wsdl
+END
+configuration.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/configuration.svcinfo
+END
+service.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/txwh/!svn/ver/663/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/Service%20References/MapService/service.xsd
+END

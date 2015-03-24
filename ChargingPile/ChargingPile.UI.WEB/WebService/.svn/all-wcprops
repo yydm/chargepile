@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1896/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService
+END
+PairAdjustmentService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/txwh/!svn/ver/1888/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PairAdjustmentService.ashx.cs
+END
+ChargPileTypeService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/423/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileTypeService.ashx
+END
+RemoteControlService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/505/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RemoteControlService.ashx.cs
+END
+DTUService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/txwh/!svn/ver/1521/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/DTUService.ashx.cs
+END
+PriceAdjustmentService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/txwh/!svn/ver/457/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PriceAdjustmentService.ashx
+END
+RoleService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/txwh/!svn/ver/367/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RoleService.ashx
+END
+PasswordService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/373/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PasswordService.ashx
+END
+PriceService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/txwh/!svn/ver/408/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PriceService.ashx
+END
+ChargPileService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/1469/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileService.ashx.cs
+END
+ChargePileDetailInfoService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/txwh/!svn/ver/824/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargePileDetailInfoService.ashx
+END
+RoleService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/1448/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RoleService.ashx.cs
+END
+PriceAdjustmentService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/txwh/!svn/ver/1888/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PriceAdjustmentService.ashx.cs
+END
+ChargPileCollectionManage.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/txwh/!svn/ver/1370/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileCollectionManage.ashx.cs
+END
+JSonHandle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/txwh/!svn/ver/1542/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/JSonHandle.cs
+END
+IndexService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/txwh/!svn/ver/1139/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/IndexService.ashx
+END
+IndexService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/1702/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/IndexService.ashx.cs
+END
+BuildHomeService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/1523/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/BuildHomeService.ashx.cs
+END
+UseRoleService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/txwh/!svn/ver/414/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/UseRoleService.ashx
+END
+RequestHandling.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/1802/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RequestHandling.ashx.cs
+END
+Yxxpz.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/460/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/Yxxpz.ashx
+END
+ChargRecordService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/900/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargRecordService.ashx
+END
+Yxxpz.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/txwh/!svn/ver/1727/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/Yxxpz.ashx.cs
+END
+DepAndEmpManage.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/DepAndEmpManage.ashx
+END
+IcCardService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/txwh/!svn/ver/1097/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/IcCardService.ashx
+END
+PictureChargStationService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/txwh/!svn/ver/1545/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PictureChargStationService.ashx.cs
+END
+ChargRecordService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/txwh/!svn/ver/1370/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargRecordService.ashx.cs
+END
+ZtreeService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ZtreeService.ashx
+END
+DepAndEmpManage.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/758/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/DepAndEmpManage.ashx.cs
+END
+IcCardService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/txwh/!svn/ver/1123/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/IcCardService.ashx.cs
+END
+ChargStationService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/1623/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargStationService.ashx.cs
+END
+PairAdjustmentService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/txwh/!svn/ver/482/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PairAdjustmentService.ashx
+END
+RemoteControlService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/368/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RemoteControlService.ashx
+END
+DTUService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/txwh/!svn/ver/1003/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/DTUService.ashx
+END
+ZtreeService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ZtreeService.ashx.cs
+END
+ChargPileService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/468/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileService.ashx
+END
+WarnRecService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/1047/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/WarnRecService.ashx
+END
+StationTreeService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/657/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/StationTreeService.ashx
+END
+ChargPileCollectionManage.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/txwh/!svn/ver/395/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileCollectionManage.ashx
+END
+HistoryDetail.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/txwh/!svn/ver/645/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/HistoryDetail.ashx
+END
+ChargPileTypeService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/718/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileTypeService.ashx.cs
+END
+StationTreeService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/txwh/!svn/ver/1016/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/StationTreeService.ashx.cs
+END
+WarnRecService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/1896/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/WarnRecService.ashx.cs
+END
+PasswordService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/1660/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PasswordService.ashx.cs
+END
+PriceService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/1621/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PriceService.ashx.cs
+END
+ChargePileDetailInfoService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/txwh/!svn/ver/1789/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargePileDetailInfoService.ashx.cs
+END
+Common.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/txwh/!svn/ver/373/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/Common.ashx
+END
+HistoryDetail.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/txwh/!svn/ver/1727/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/HistoryDetail.ashx.cs
+END
+BuildHomeService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/778/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/BuildHomeService.ashx
+END
+Common.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/txwh/!svn/ver/1434/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/Common.ashx.cs
+END
+ZtreeRoleService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/376/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ZtreeRoleService.ashx
+END
+RequestHandling.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/txwh/!svn/ver/1357/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/RequestHandling.ashx
+END
+ZtreeRoleService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/914/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ZtreeRoleService.ashx.cs
+END
+ChargPileMaintainService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/txwh/!svn/ver/508/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileMaintainService.ashx
+END
+UseRoleService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/txwh/!svn/ver/414/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/UseRoleService.ashx.cs
+END
+PictureChargStationService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/txwh/!svn/ver/604/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/PictureChargStationService.ashx
+END
+ChargPileMaintainService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/txwh/!svn/ver/1641/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargPileMaintainService.ashx.cs
+END
+WarnProcess.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/txwh/!svn/ver/801/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/WarnProcess.ashx
+END
+ChargStationService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/544/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/ChargStationService.ashx
+END
+WarnProcess.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/1659/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/WebService/WarnProcess.ashx.cs
+END

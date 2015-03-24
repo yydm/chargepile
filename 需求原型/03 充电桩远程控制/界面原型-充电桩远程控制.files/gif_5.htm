@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩远程控制
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 0;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.600271;
+	viewMgr.visBBoxRight = 11.069021;
+	viewMgr.visBBoxBottom = 0.855151;
+	viewMgr.visBBoxTop = 7.396818;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_5.gif" ALT="远程对时" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_7.htm" target="frmDrawing" COORDS="622,249,663,249,663,249,663,249,663,249,663,249,664,249,664,249,664,248,664,248,664,248,664,248,664,248,665,248,665,248,665,247,665,247,665,247,665,247,665,247,665,221,665,221,665,221,665,221,665,220,665,220,665,220,664,220,664,220,664,220,664,219,664,219,664,219,664,219,663,219,663,219,663,219,663,219,663,219,622,219,622,219,622,219,621,219,621,219,621,219,621,219,621,219,621,219,620,220,620,220,620,220,620,220,620,220,620,220,620,221,620,221,620,221,620,221,620,247,620,247,620,247,620,247,620,247,620,248,620,248,620,248,620,248,620,248,621,248,621,248,621,249,621,249,621,249,621,249,622,249,622,249,622,249" onmouseover="UpdateTooltip(this,0,61)" onfocus="UpdateTooltip(this,0,61)" onclick="return OnShapeClick(0,61);" onkeyup="OnShapeKey(0,61);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="576,204,559,204,559,217,559,231,559,244,559,258,559,271,559,285,559,298,559,312,559,325,559,339,614,339,614,325,614,312,614,298,614,285,614,271,614,258,614,244,614,231,614,217,614,204,597,204,597,203,576,203,576,204" onmouseover="UpdateTooltip(this,0,3)" onfocus="UpdateTooltip(this,0,3)" onclick="return OnShapeClick(0,3);" onkeyup="OnShapeKey(0,3);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="488,204,481,204,481,217,481,231,481,244,481,258,481,271,481,285,481,298,481,312,481,325,481,339,559,339,559,325,559,312,559,298,559,285,559,271,559,258,559,244,559,231,559,217,559,204,552,204,552,203,488,203,488,204" onmouseover="UpdateTooltip(this,0,472)" onfocus="UpdateTooltip(this,0,472)" onclick="return OnShapeClick(0,472);" onkeyup="OnShapeKey(0,472);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="626,204,614,204,614,217,614,231,614,244,614,258,614,271,614,285,614,298,614,312,614,325,614,339,669,339,669,325,669,312,669,298,669,285,669,271,669,258,669,244,669,231,669,217,669,204,658,204,658,203,626,203,626,204" onmouseover="UpdateTooltip(this,0,430)" onfocus="UpdateTooltip(this,0,430)" onclick="return OnShapeClick(0,430);" onkeyup="OnShapeKey(0,430);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="356,204,273,204,273,217,273,231,273,244,273,258,273,271,273,285,273,298,273,312,273,325,273,339,481,339,481,325,481,312,481,298,481,285,481,271,481,258,481,244,481,231,481,217,481,204,399,204,399,203,356,203,356,204" onmouseover="UpdateTooltip(this,0,364)" onfocus="UpdateTooltip(this,0,364)" onclick="return OnShapeClick(0,364);" onkeyup="OnShapeKey(0,364);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="251,204,244,204,244,217,244,231,244,244,244,258,244,271,244,285,244,298,244,312,244,325,244,339,279,339,279,325,279,312,279,298,279,285,279,271,279,258,279,244,279,231,279,217,279,204,272,204,272,203,251,203,251,204" onmouseover="UpdateTooltip(this,0,343)" onfocus="UpdateTooltip(this,0,343)" onclick="return OnShapeClick(0,343);" onkeyup="OnShapeKey(0,343);">
+  <AREA shape="POLYGON" tabindex="1" ALT="新建" origTitle="新建" TITLE="新建" HREF="gif_6.htm" target="frmDrawing" COORDS="252,180,249,180,248,180,248,180,248,180,248,180,248,180,247,181,247,181,247,181,247,181,247,181,247,181,247,181,246,182,246,182,246,182,246,182,246,182,246,182,246,195,246,195,246,196,246,196,246,196,246,196,247,196,247,197,247,197,247,197,247,197,247,197,247,197,248,197,248,197,248,197,248,197,248,197,249,197,299,197,299,197,299,197,300,197,300,197,300,197,300,197,300,197,300,197,301,197,301,197,301,197,301,196,301,196,301,196,301,196,301,196,301,195,301,195,301,182,301,182,301,182,301,182,301,182,301,182,301,181,301,181,301,181,301,181,300,181,300,181,300,181,300,180,300,180,300,180,299,180,299,180,299,180,252,180" onmouseover="UpdateTooltip(this,0,12)" onfocus="UpdateTooltip(this,0,12)" onclick="return OnShapeClick(0,12);" onkeyup="OnShapeKey(0,12);">
+  <AREA shape="POLYGON" tabindex="1" ALT="新建" origTitle="新建" TITLE="新建" HREF="gif_6.htm" target="frmDrawing" COORDS="284,181,299,181,299,181,299,181,299,181,300,181,300,181,300,181,300,181,300,181,300,182,300,182,300,182,300,182,300,182,300,182,300,182,300,195,300,195,300,196,300,196,300,196,300,196,300,196,300,196,300,196,300,196,300,197,300,197,299,197,299,197,299,197,299,197,249,197,248,197,248,197,248,197,248,197,248,197,248,196,248,196,247,196,247,196,247,196,247,196,247,196,247,196,247,195,247,195,247,182,247,182,247,182,247,182,247,182,247,182,247,182,247,181,248,181,248,181,248,181,248,181,248,181,248,181,248,181,249,181,252,181,263,181,263,195,284,195,284,181" onmouseover="UpdateTooltip(this,0,12)" onfocus="UpdateTooltip(this,0,12)" onclick="return OnShapeClick(0,12);" onkeyup="OnShapeKey(0,12);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

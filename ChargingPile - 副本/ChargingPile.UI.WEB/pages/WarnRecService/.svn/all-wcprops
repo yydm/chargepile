@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1645/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService
+END
+RealTimeQuery.htm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/1614/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService/RealTimeQuery.htm
+END
+RealTimeWarn.htm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/txwh/!svn/ver/1567/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService/RealTimeWarn.htm
+END
+CommunicateWarn.htm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/txwh/!svn/ver/1645/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService/CommunicateWarn.htm
+END
+PowerCutWarn.htm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/txwh/!svn/ver/1645/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService/PowerCutWarn.htm
+END
+ChargCardWarn.htm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/1645/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/WarnRecService/ChargCardWarn.htm
+END

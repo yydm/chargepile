@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/1602/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRecService
+END
+PowerFailureWarn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/1080/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRecService/PowerFailureWarn.cs
+END
+CommunicationWarn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/1080/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRecService/CommunicationWarn.cs
+END
+CardWarn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/txwh/!svn/ver/1063/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRecService/CardWarn.cs
+END
+TelesignallingWarn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/1602/trunk/TXWH/ChargingPile/ChargingPile.Model/WarnRecService/TelesignallingWarn.cs
+END

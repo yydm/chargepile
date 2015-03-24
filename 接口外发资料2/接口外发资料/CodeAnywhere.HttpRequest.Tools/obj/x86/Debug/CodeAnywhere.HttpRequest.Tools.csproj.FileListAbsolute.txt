@@ -1,0 +1,12 @@
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\CodeAnywhere.HttpRequest.Tools.exe.config
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.csprojResolveAssemblyReference.cache
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.Form2.resources
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.Properties.Resources.resources
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.csproj.GenerateResource.Cache
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\CodeAnywhere.HttpRequest.Tools.exe
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\CodeAnywhere.HttpRequest.Tools.pdb
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\CodeAnywhere.Json.Rpc.dll
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\Newtonsoft.Json.dll
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\bin\Debug\CodeAnywhere.Core.dll
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.exe
+D:\2013workspace\Hefei-ChargingPile\接口外发资料\CodeAnywhere.HttpRequest.Tools\obj\x86\Debug\CodeAnywhere.HttpRequest.Tools.pdb

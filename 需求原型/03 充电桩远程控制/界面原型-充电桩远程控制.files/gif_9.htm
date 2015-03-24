@@ -1,0 +1,140 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-充电桩远程控制
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 13;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.600271;
+	viewMgr.visBBoxRight = 11.069021;
+	viewMgr.visBBoxBottom = 0.944283;
+	viewMgr.visBBoxTop = 7.485950;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_9.gif" ALT="远程调价-计划明细" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="390,204,390,217,390,231,390,244,390,258,390,272,390,285,390,299,390,312,390,326,440,326,440,312,440,299,440,285,440,272,440,258,440,244,440,231,440,217,440,204,440,190,390,190,390,204" onmouseover="UpdateTooltip(this,13,253)" onfocus="UpdateTooltip(this,13,253)" onclick="return OnShapeClick(13,253);" onkeyup="OnShapeKey(13,253);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="597,204,597,217,597,231,597,244,597,258,597,271,597,285,597,298,597,312,597,325,635,325,635,312,635,298,635,285,635,271,635,258,635,244,635,231,635,217,635,204,635,190,597,190,597,204" onmouseover="UpdateTooltip(this,13,169)" onfocus="UpdateTooltip(this,13,169)" onclick="return OnShapeClick(13,169);" onkeyup="OnShapeKey(13,169);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="558,204,558,217,558,231,558,244,558,258,558,271,558,285,558,298,558,312,558,325,597,325,597,312,597,298,597,285,597,271,597,258,597,244,597,231,597,217,597,204,597,190,558,190,558,204" onmouseover="UpdateTooltip(this,13,148)" onfocus="UpdateTooltip(this,13,148)" onclick="return OnShapeClick(13,148);" onkeyup="OnShapeKey(13,148);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="520,204,520,217,520,231,520,244,520,258,520,272,520,285,520,299,520,312,520,326,558,326,558,312,558,299,558,285,558,272,558,258,558,244,558,231,558,217,558,204,558,190,520,190,520,204" onmouseover="UpdateTooltip(this,13,109)" onfocus="UpdateTooltip(this,13,109)" onclick="return OnShapeClick(13,109);" onkeyup="OnShapeKey(13,109);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="341,204,341,217,341,231,341,244,341,258,341,272,341,285,341,299,341,312,341,326,390,326,390,312,390,299,390,285,390,272,390,258,390,244,390,231,390,217,390,204,390,190,341,190,341,204" onmouseover="UpdateTooltip(this,13,87)" onfocus="UpdateTooltip(this,13,87)" onclick="return OnShapeClick(13,87);" onkeyup="OnShapeKey(13,87);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="482,204,482,217,482,231,482,244,482,258,482,272,482,285,482,299,482,312,482,326,520,326,520,312,520,299,520,285,520,272,520,258,520,244,520,231,520,217,520,204,520,190,482,190,482,204" onmouseover="UpdateTooltip(this,13,65)" onfocus="UpdateTooltip(this,13,65)" onclick="return OnShapeClick(13,65);" onkeyup="OnShapeKey(13,65);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="427,204,427,217,427,231,427,244,427,258,427,271,427,285,427,298,427,312,427,325,482,325,482,312,482,298,482,285,482,271,482,258,482,244,482,231,482,217,482,204,482,190,427,190,427,204" onmouseover="UpdateTooltip(this,13,44)" onfocus="UpdateTooltip(this,13,44)" onclick="return OnShapeClick(13,44);" onkeyup="OnShapeKey(13,44);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="297,204,297,217,297,231,297,244,297,258,297,271,297,285,297,298,297,312,297,325,343,325,343,312,343,298,343,285,343,271,343,258,343,244,343,231,343,217,343,204,343,190,297,190,297,204" onmouseover="UpdateTooltip(this,13,23)" onfocus="UpdateTooltip(this,13,23)" onclick="return OnShapeClick(13,23);" onkeyup="OnShapeKey(13,23);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="267,204,267,217,267,231,267,244,267,258,267,271,267,285,267,298,267,312,267,325,297,325,297,312,297,298,297,285,297,271,297,258,297,244,297,231,297,217,297,204,297,190,267,190,267,204" onmouseover="UpdateTooltip(this,13,2)" onfocus="UpdateTooltip(this,13,2)" onclick="return OnShapeClick(13,2);" onkeyup="OnShapeKey(13,2);">
+  <AREA shape="POLYGON" tabindex="1" ALT="返回" origTitle="返回" TITLE="返回" HREF="gif_8.htm" target="frmDrawing" COORDS="574,373,571,373,571,373,571,373,571,373,571,373,570,373,570,373,570,373,570,373,570,373,570,374,570,374,569,374,569,374,569,374,569,374,569,375,569,375,569,375,569,388,569,388,569,388,569,388,569,389,569,389,569,389,570,389,570,389,570,389,570,390,570,390,570,390,570,390,571,390,571,390,571,390,571,390,571,390,622,390,622,390,622,390,622,390,623,390,623,390,623,390,623,390,623,390,623,389,624,389,624,389,624,389,624,389,624,389,624,388,624,388,624,388,624,388,624,375,624,375,624,375,624,374,624,374,624,374,624,374,624,374,624,374,623,373,623,373,623,373,623,373,623,373,623,373,622,373,622,373,622,373,622,373,574,373" onmouseover="UpdateTooltip(this,13,223)" onfocus="UpdateTooltip(this,13,223)" onclick="return OnShapeClick(13,223);" onkeyup="OnShapeKey(13,223);">
+  <AREA shape="POLYGON" tabindex="1" ALT="返回" origTitle="返回" TITLE="返回" HREF="gif_8.htm" target="frmDrawing" COORDS="607,374,622,374,622,374,622,374,622,374,622,374,623,374,623,374,623,374,623,374,623,374,623,374,623,374,623,375,623,375,623,375,623,375,623,388,623,388,623,388,623,388,623,388,623,389,623,389,623,389,623,389,623,389,623,389,622,389,622,389,622,389,622,389,622,389,571,389,571,389,571,389,571,389,571,389,571,389,571,389,570,389,570,389,570,389,570,389,570,388,570,388,570,388,570,388,570,388,570,375,570,375,570,375,570,375,570,374,570,374,570,374,570,374,570,374,571,374,571,374,571,374,571,374,571,374,571,374,571,374,574,374,586,374,586,388,607,388,607,374" onmouseover="UpdateTooltip(this,13,223)" onfocus="UpdateTooltip(this,13,223)" onclick="return OnShapeClick(13,223);" onkeyup="OnShapeKey(13,223);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

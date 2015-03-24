@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="6" Name="充电卡-IC卡基本信息" NameU="系统首页-缓存页面">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{16E8007B-44A1-4FF9-B2DA-9AE0D0E64603}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716535</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="20" UniqueID="{AA10B175-A893-4D9D-B772-4AD3095FA0E4}" Name="Sheet.20" NameU="Sheet.20">
+					<XForm>
+						<PinX Unit="MM">8.740157480314961</PinX>
+						<PinY Unit="MM">6.220472440944882</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{FA060ED3-8816-427A-B338-3FB424D3FBDD}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>充电卡发行</Text>
+					<XForm>
+						<PinX Unit="MM">8.778660254281739</PinX>
+						<PinY Unit="MM">6.222933070866141</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{E832B02E-8CBA-4606-B729-072EA1D01D84}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>充电卡充值</Text>
+					<XForm>
+						<PinX Unit="MM">9.610353167667565</PinX>
+						<PinY Unit="MM">6.222933070866141</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="14" UniqueID="{5D94E7E8-F1BF-412D-9002-77E369D6A54D}" Name="命令按钮.14" NameU="Command button.14" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">7.929016911072594</PinX>
+						<PinY Unit="MM">6.218011811023622</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="21" UniqueID="{2C30DF92-E690-473E-95B2-59F00F8A5175}" Name="Sheet.21" NameU="Sheet.21">
+					<Text>查询条件
+证件名称：身份证、军人证、驾驶证、护照
+卡状态：初始、正常、灰名单、黑名单、锁、注销、挂失
+卡类型：记名卡、积分卡、单位卡、不记名卡</Text>
+					<XForm>
+						<PinX Unit="MM">7.383868316961854</PinX>
+						<PinY Unit="MM">5.298712935506956</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="22" UniqueID="{B99F6135-9CB0-4124-8792-69B32E331BC7}" Name="Annotation.242" NameU="Annotation.242" Master="12">
+					<Text>充电卡发行、充值跳转链接到“充电卡计量计费系统”</Text>
+					<XForm>
+						<PinX Unit="MM">8.963401691644393</PinX>
+						<PinY Unit="MM">5.314358580265604</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="5" Name="充电卡-IC充值记录" NameU="系统首页">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{185E5915-4768-4F1A-9726-DA55CC008173}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716534</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{670B6E9B-F0B3-4B12-8D84-F8D8E7D97E1A}" Name="Annotation.242" NameU="Annotation.242" Master="12">
+					<Text>默认“现金”</Text>
+					<XForm>
+						<PinX Unit="MM">6.257863966502711</PinX>
+						<PinY Unit="MM">5.314960629921259</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="5" UniqueID="{742D5D57-615D-4339-8462-16D664AF4421}" Name="Sheet.5" NameU="Sheet.5">
+					<XForm>
+						<PinX Unit="MM">8.609885378887071</PinX>
+						<PinY Unit="MM">6.311515748031498</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{E3402C7F-D7AF-47A3-A0EE-7E375CE8C686}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>充电卡发行</Text>
+					<XForm>
+						<PinX Unit="MM">8.658230672538888</PinX>
+						<PinY Unit="MM">6.313976377952757</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="12" UniqueID="{C9101D66-31C7-477B-8572-EB2C25E0E4C5}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>充电卡充值</Text>
+					<XForm>
+						<PinX Unit="MM">9.480081066239675</PinX>
+						<PinY Unit="MM">6.313976377952757</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{5AF9B56F-6BCF-4E89-AA40-9683433CD187}" Name="命令按钮.14" NameU="Command button.14" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">7.798744809644704</PinX>
+						<PinY Unit="MM">6.309055118110239</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="24" UniqueID="{C087E83E-4337-4AAB-930F-B49C76BC90F2}" Name="Annotation.24" NameU="Annotation.24" Master="12">
+					<Text>充电卡发行、充值跳转链接到“充电卡计量计费系统”</Text>
+					<XForm>
+						<PinX Unit="MM">9.328730108234996</PinX>
+						<PinY Unit="MM">6.692913385826771</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="7" Name="充电卡-IC卡挂失信息" NameU="充电场站首页">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{A3DFDA72-2945-45D8-91C2-8115A6FB820C}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716535</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{C2BCEB42-2B69-4394-A597-E78B55B044FD}" Name="Sheet.2" NameU="Sheet.2">
+					<Text>应用场景：充电卡挂失后继续使用</Text>
+					<XForm>
+						<PinX Unit="MM">4.057096663418546</PinX>
+						<PinY Unit="MM">5.334384900705980</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{4603EB05-C493-42E6-8611-D20F0D6B67DC}" Name="Annotation.242" NameU="Annotation.242" Master="12">
+					<Text>充电卡发行、充值跳转链接到“充电卡计量计费系统”</Text>
+					<XForm>
+						<PinX Unit="MM">9.687017923261067</PinX>
+						<PinY Unit="MM">5.567428796776509</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="24" UniqueID="{268D692F-A865-49BD-B12D-746AB9C4A735}" Name="Sheet.24" NameU="Sheet.24">
+					<XForm>
+						<PinX Unit="MM">9.448818897637795</PinX>
+						<PinY Unit="MM">6.577263779527559</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{7A465EDA-994E-4126-B1AF-5AE374F2F82D}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>充电卡发行</Text>
+					<XForm>
+						<PinX Unit="MM">9.405034207922268</PinX>
+						<PinY Unit="MM">6.574803149606298</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="9" UniqueID="{7B7C4BB1-D9C6-4A7D-85A0-B394B9BEEA59}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>充电卡充值</Text>
+					<XForm>
+						<PinX Unit="MM">10.256412160678172</PinX>
+						<PinY Unit="MM">6.574803149606298</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{20CD4542-FA11-47C7-A5D8-D915AD729C2C}" Name="命令按钮.18" NameU="Command button.18" Master="8">
+					<Text>刷新</Text>
+					<XForm>
+						<PinX Unit="MM">8.599682203295799</PinX>
+						<PinY Unit="MM">6.579724409448819</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="0" Name="充电卡-IC卡异常结算信息" NameU="充电卡-IC卡未结算">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{F70D2F8B-7327-476F-B82C-0A8B8D6CC6CA}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716535</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{35055F2C-F093-451E-929C-4124656A404A}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>充电卡发行</Text>
+					<XForm>
+						<PinX Unit="MM">9.226601797900834</PinX>
+						<PinY Unit="MM">6.703240494562075</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{EE9ACF1E-AB0A-4F07-9266-D7D431F702EB}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>充电卡充值</Text>
+					<XForm>
+						<PinX Unit="MM">10.107507309711863</PinX>
+						<PinY Unit="MM">6.703240494562075</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="14" UniqueID="{E2236118-CB8F-4BC9-99AD-45F173071247}" Name="Sheet.14" NameU="Sheet.14">
+					<Text>应用场景：充电卡没有正常结算继续使用
+未结算原因：强拨、停电</Text>
+					<XForm>
+						<PinX Unit="MM">3.936732553649691</PinX>
+						<PinY Unit="MM">5.180602699286484</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{F0483ED9-FEE1-422F-A7E1-621143A058CA}" Name="Annotation.242" NameU="Annotation.242" Master="12">
+					<Text>充电卡发行、充值跳转链接到“充电卡计量计费系统”</Text>
+					<XForm>
+						<PinX Unit="MM">9.210619872014526</PinX>
+						<PinY Unit="MM">5.574303486688057</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="18" UniqueID="{64C11984-2478-41D5-B4AD-55F81FF4B1F0}" Name="命令按钮.18" NameU="Command button.18" Master="8">
+					<Text>刷新</Text>
+					<XForm>
+						<PinX Unit="MM">8.388769478313723</PinX>
+						<PinY Unit="MM">6.701271990625066</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

@@ -1,0 +1,17 @@
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.UI.WEB.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.UI.WEB.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.BLL.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.Model.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\log4net.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.DAL.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\YOUO.Framework.DataAccess.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.BLL.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.Model.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\ChargingPile.DAL.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\obj\Debug\ChargingPile.UI.WEB.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\obj\Debug\ChargingPile.UI.WEB.pdb
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\CodeAnywhere.Core.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\CodeAnywhere.Json.Rpc.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\Newtonsoft.Json.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\bin\NPOI.dll
+E:\Projects\ChargingPile\ChargingPile\ChargingPile.UI.WEB\obj\Debug\ChargingPile.UI.WEB.csprojResolveAssemblyReference.cache

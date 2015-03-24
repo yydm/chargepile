@@ -1,0 +1,194 @@
+﻿html, body
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    min-height: 600px;
+    background-color: #e6e6e6;
+}
+body *
+{
+    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+}
+#wrapper
+{
+    background-color: #fff;
+    width: 960px;
+    height: 675px;
+    /*margin: 0 0 0 -25px;
+    position: absolute;
+    left: 20%;*/
+}
+#wrapper img
+{
+    display: block;
+    float: left;
+}
+#images, #thumbs
+{
+    height: 350px;
+    overflow: hidden;
+}
+#images
+{
+    width: 450px;
+    margin: 35px 0 25px 285px;
+}
+#thumbs
+{
+    width: 450px;
+    height: 100px;
+    margin-left: 120px;
+}
+#thumbs img
+{
+    border: 1px solid #ccc;
+    padding: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#thumbs img.selected, #thumbs img:hover
+{
+    border-color: #333;
+}
+#prev, #next
+{
+    width: 15px;
+    height: 21px;
+    display: block;
+    text-indent: -999em;
+    background: transparent url(../../Scripts/coolcarousel/img/carousel_control.png) no-repeat 0 0;
+    position: absolute;
+    bottom: 105px;
+}
+#prev
+{
+    background-position: 0 0;
+    left: 65px;
+}
+#prev:hover
+{
+    left: 64px;
+}
+#next
+{
+    background-position: -18px 0;
+    right: 15px;
+}
+#next:hover
+{
+    right: 14px;
+}
+#prev.disabled, #next.disabled
+{
+    display: none !important;
+}
+.pagination
+{
+    padding-left: 495px;
+}
+
+.pagination a
+{
+    background: url(../../Scripts/coolcarousel/img/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+    width: 15px;
+    height: 15px;
+    margin: 15px 5px 0 0;
+    display: inline-block;
+}
+
+.pagination a.selected
+{
+    background-position: -25px -300px;
+    cursor: default;
+}
+
+.pagination a span
+{
+    display: none;
+}
+
+#source
+{
+    text-align: center;
+    width: 400px;
+    margin: 0 0 0 -200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+#source, #source a
+{
+    color: #999;
+    font-size: 12px;
+}
+#donate-spacer
+{
+    height: 100%;
+}
+#donate
+{
+    border-top: 1px solid #999;
+    width: 750px;
+    padding: 50px 75px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#donate p, #donate form
+{
+    margin: 0;
+    float: left;
+}
+#donate p
+{
+    width: 650px;
+}
+#donate form
+{
+    width: 100px;
+}
+.tdPile
+{
+    text-align: center;
+    
+}
+#chargstation
+{
+    width: 130px;
+}
+#cscount
+{
+    border: none;
+    width: 50px;
+    background: none;
+}
+.address
+{
+    width: 50px;
+    text-align: center;
+}
+#csaddress,#jd,#wd
+{
+    border: none;
+    background: none;
+    width: 200px;
+    height: 24px;
+}
+.tb-style
+{
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+}
+#jd,#wd
+{
+    border: none;
+    background: none;
+    width: 80px;
+}

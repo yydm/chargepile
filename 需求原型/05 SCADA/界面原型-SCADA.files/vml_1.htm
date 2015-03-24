@@ -1,0 +1,193 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" 
+ xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>界面原型-SCADA</title>
+<style type="text/css">
+	 v\:* { behavior: url(#default#VML); }
+</style>
+
+<script src="vml_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+
+	var pageID = 6;
+	var viewMgr = null;
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+	function getPNZ()
+	{
+		var rawHTML = VMLDiv.innerHTML;
+		var strReturn = ""
+		
+		strReturn = rawHTML.slice( rawHTML.indexOf( '<v:group' ), rawHTML.indexOf( "</v:shape>" ) );
+		strReturn += "</v:shape></v:group>\n";
+				
+		return strReturn;
+	}
+	
+	function load()
+	{
+		viewMgr = new parent.CViewMgr("ConvertedImage", "arrowDiv");
+
+		viewMgr.put_Location = ViewMgrSetVMLLocation;
+
+
+		viewMgr.visBBoxLeft = 0.923530;
+		viewMgr.visBBoxRight = 10.828438;
+		viewMgr.visBBoxBottom = 1.124318;
+		viewMgr.visBBoxTop = 7.143399;
+
+		viewMgr.Zoom = VMLZoomChange;
+		viewMgr.setView= VMLSetView;
+
+		viewMgr.SupportsDetails = true;
+		viewMgr.SupportsSearch = true;
+
+		parent.viewMgr = viewMgr;
+
+		fit();
+	}
+
+	function unload()
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+
+	function fit()
+	{
+		if(parent.frmToolbar)
+		{
+			if (parent.g_WidgetsLoaded)
+			{
+				var zoom100 = parent.frmToolbar.document.all('a100');
+				if (zoom100)
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					zoom100.click();
+				}
+				else
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					viewMgr.Zoom(100);
+				}
+			}
+			else
+			{
+				window.setTimeout("fit()", 500);
+			}
+		}	
+		else
+		{
+			parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+			viewMgr.Zoom(100);
+		}
+	}
+
+	function PostZoomProcessing (newZoomLevel)
+	{
+		parent.viewMgr.PostZoomProcessing = null;
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.viewMgr.getPNZ = getPNZ;
+		parent.CurPageUpdate (pageIndex);
+	}
+
+
+	
+	var isUpLevel = parent.isUpLevel;
+	var OnShapeClick = parent.OnShapeClick;
+	var OnShapeKey = parent.OnShapeKey;
+	var UpdateTooltip = parent.UpdateTooltip;
+	var clickMenu = parent.clickMenu;
+	var toggleMenuDiv = parent.toggleMenuDiv;
+	var toggleMenuLink = parent.toggleMenuLink;
+	var GoToPage = parent.GoToPage;
+
+	window.onload = load;
+	window.onunload = unload;
+	document.onclick = clickMenu;
+
+
+
+
+</script>
+
+</head>
+
+<body style="MARGIN:10px" onresize="VMLOnResize();" onscroll="VMLOnScroll();">
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+
+
+
+<div id="VMLDiv" >
+
+
+<v:group  id="ConvertedImage" style="width:6.582339in;height:4.000000in;position:absolute;visibility=hidden;" coordSize="3291,2000" coordOrigin="-1000,-1000" >
+
+<v:shapetype 
+  id="VISSHAPE"
+  target="_parent"
+  coordsize="3291,2000"
+  coordorigin="-1000,-1000"
+  stroked="f"
+  strokecolor="red"
+  filled="t"
+>
+<v:fill opacity="0.0"/>
+</v:shapetype>
+
+
+<v:shape style="top:-1000.0;left:-1000.0;width:3291.2;height:2000.0;position:absolute" coordSize="3291,2000" coordOrigin="-1000,-1000" >
+<v:imagedata src="vml_1.emz"/>
+</v:shape>
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="远程启动/停止" origTitle="远程启动/停止"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m 910,-333 l 988,-333 l 989,-333 l 991,-333 l 992,-334 l 994,-334 l 995,-334 l 996,-335 l 998,-335 l 999,-336 l 1000,-336 l 1001,-337 l 1003,-338 l 1004,-338 l 1005,-339 l 1006,-340 l 1007,-341 l 1008,-342 l 1009,-343 l 1009,-345 l 1010,-346 l 1011,-347 l 1012,-348 l 1012,-350 l 1013,-351 l 1013,-352 l 1013,-354 l 1014,-355 l 1014,-356 l 1014,-358 l 1014,-359 l 1014,-828 l 1014,-829 l 1014,-831 l 1014,-832 l 1013,-833 l 1013,-835 l 1013,-836 l 1012,-837 l 1012,-839 l 1011,-840 l 1010,-841 l 1009,-842 l 1009,-843 l 1008,-845 l 1007,-846 l 1006,-847 l 1005,-848 l 1004,-848 l 1003,-849 l 1001,-850 l 1000,-851 l 999,-851 l 998,-852 l 996,-852 l 995,-853 l 994,-853 l 992,-853 l 991,-854 l 989,-854 l 988,-854 l 910,-854 l 908,-854 l 907,-854 l 905,-853 l 904,-853 l 903,-853 l 901,-852 l 900,-852 l 899,-851 l 897,-851 l 896,-850 l 895,-849 l 894,-848 l 893,-848 l 892,-847 l 891,-846 l 890,-845 l 889,-843 l 888,-842 l 887,-841 l 887,-840 l 886,-839 l 885,-837 l 885,-836 l 885,-835 l 884,-833 l 884,-832 l 884,-831 l 884,-829 l 884,-828 l 884,-359 l 884,-358 l 884,-356 l 884,-355 l 884,-354 l 885,-352 l 885,-351 l 885,-350 l 886,-348 l 887,-347 l 887,-346 l 888,-345 l 889,-343 l 890,-342 l 891,-341 l 892,-340 l 893,-339 l 894,-338 l 895,-338 l 896,-337 l 897,-336 l 899,-336 l 900,-335 l 901,-335 l 903,-334 l 904,-334 l 905,-334 l 907,-333 l 908,-333 l 910,-333xe" onmouseover="UpdateTooltip(this,6,31)" onclick="OnShapeClick(6,31)" onfocus="UpdateTooltip(this,6,31);" onkeyup="OnShapeKey(6,31)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="远程调价" origTitle="远程调价"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m 1327,-333 l 1405,-333 l 1407,-333 l 1408,-333 l 1409,-334 l 1411,-334 l 1412,-334 l 1414,-335 l 1415,-335 l 1416,-336 l 1417,-336 l 1419,-337 l 1420,-338 l 1421,-338 l 1422,-339 l 1423,-340 l 1424,-341 l 1425,-342 l 1426,-343 l 1427,-345 l 1428,-346 l 1428,-347 l 1429,-348 l 1429,-350 l 1430,-351 l 1430,-352 l 1431,-354 l 1431,-355 l 1431,-356 l 1431,-358 l 1431,-359 l 1431,-828 l 1431,-829 l 1431,-831 l 1431,-832 l 1431,-833 l 1430,-835 l 1430,-836 l 1429,-837 l 1429,-839 l 1428,-840 l 1428,-841 l 1427,-842 l 1426,-843 l 1425,-845 l 1424,-846 l 1423,-847 l 1422,-848 l 1421,-848 l 1420,-849 l 1419,-850 l 1417,-851 l 1416,-851 l 1415,-852 l 1414,-852 l 1412,-853 l 1411,-853 l 1409,-853 l 1408,-854 l 1407,-854 l 1405,-854 l 1327,-854 l 1326,-854 l 1324,-854 l 1323,-853 l 1321,-853 l 1320,-853 l 1319,-852 l 1317,-852 l 1316,-851 l 1315,-851 l 1314,-850 l 1312,-849 l 1311,-848 l 1310,-848 l 1309,-847 l 1308,-846 l 1307,-845 l 1306,-843 l 1305,-842 l 1305,-841 l 1304,-840 l 1303,-839 l 1303,-837 l 1302,-836 l 1302,-835 l 1301,-833 l 1301,-832 l 1301,-831 l 1301,-829 l 1301,-828 l 1301,-359 l 1301,-358 l 1301,-356 l 1301,-355 l 1301,-354 l 1302,-352 l 1302,-351 l 1303,-350 l 1303,-348 l 1304,-347 l 1305,-346 l 1305,-345 l 1306,-343 l 1307,-342 l 1308,-341 l 1309,-340 l 1310,-339 l 1311,-338 l 1312,-338 l 1314,-337 l 1315,-336 l 1316,-336 l 1317,-335 l 1319,-335 l 1320,-334 l 1321,-334 l 1323,-334 l 1324,-333 l 1326,-333 l 1327,-333xe" onmouseover="UpdateTooltip(this,6,32)" onclick="OnShapeClick(6,32)" onfocus="UpdateTooltip(this,6,32);" onkeyup="OnShapeKey(6,32)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥测 项 配置" origTitle="遥测 项 配置"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m -857,543 l -779,543 l -778,543 l -776,543 l -775,543 l -773,542 l -772,542 l -771,542 l -769,541 l -768,541 l -767,540 l -766,539 l -764,538 l -763,538 l -762,537 l -761,536 l -760,535 l -759,534 l -758,533 l -758,532 l -757,530 l -756,529 l -755,528 l -755,527 l -754,525 l -754,524 l -754,523 l -753,521 l -753,520 l -753,518 l -753,517 l -753,48 l -753,47 l -753,46 l -753,44 l -754,43 l -754,41 l -754,40 l -755,39 l -755,37 l -756,36 l -757,35 l -758,34 l -758,33 l -759,32 l -760,31 l -761,30 l -762,29 l -763,28 l -764,27 l -766,26 l -767,25 l -768,25 l -769,24 l -771,24 l -772,23 l -773,23 l -775,23 l -776,23 l -778,22 l -779,22 l -857,22 l -859,22 l -860,23 l -862,23 l -863,23 l -864,23 l -866,24 l -867,24 l -868,25 l -870,25 l -871,26 l -872,27 l -873,28 l -874,29 l -875,30 l -876,31 l -877,32 l -878,33 l -879,34 l -880,35 l -880,36 l -881,37 l -882,39 l -882,40 l -882,41 l -883,43 l -883,44 l -883,46 l -883,47 l -883,48 l -883,517 l -883,518 l -883,520 l -883,521 l -883,523 l -882,524 l -882,525 l -882,527 l -881,528 l -880,529 l -880,530 l -879,532 l -878,533 l -877,534 l -876,535 l -875,536 l -874,537 l -873,538 l -872,538 l -871,539 l -870,540 l -868,541 l -867,541 l -866,542 l -864,542 l -863,542 l -862,543 l -860,543 l -859,543 l -857,543xe" onmouseover="UpdateTooltip(this,6,42)" onclick="OnShapeClick(6,42)" onfocus="UpdateTooltip(this,6,42);" onkeyup="OnShapeKey(6,42)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥测合理性检查" origTitle="遥测合理性检查"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m -662,543 l -583,543 l -582,543 l -581,543 l -579,543 l -578,542 l -577,542 l -575,542 l -574,541 l -573,541 l -571,540 l -570,539 l -569,538 l -568,538 l -567,537 l -566,536 l -565,535 l -564,534 l -563,533 l -562,532 l -561,530 l -560,529 l -560,528 l -559,527 l -559,525 l -558,524 l -558,523 l -558,521 l -558,520 l -557,518 l -557,517 l -557,48 l -557,47 l -558,46 l -558,44 l -558,43 l -558,41 l -559,40 l -559,39 l -560,37 l -560,36 l -561,35 l -562,34 l -563,33 l -564,32 l -565,31 l -566,30 l -567,29 l -568,28 l -569,27 l -570,26 l -571,25 l -573,25 l -574,24 l -575,24 l -577,23 l -578,23 l -579,23 l -581,23 l -582,22 l -583,22 l -662,22 l -663,22 l -665,23 l -666,23 l -667,23 l -669,23 l -670,24 l -671,24 l -673,25 l -674,25 l -675,26 l -676,27 l -678,28 l -679,29 l -680,30 l -681,31 l -682,32 l -682,33 l -683,34 l -684,35 l -685,36 l -685,37 l -686,39 l -686,40 l -687,41 l -687,43 l -687,44 l -688,46 l -688,47 l -688,48 l -688,517 l -688,518 l -688,520 l -687,521 l -687,523 l -687,524 l -686,525 l -686,527 l -685,528 l -685,529 l -684,530 l -683,532 l -682,533 l -682,534 l -681,535 l -680,536 l -679,537 l -678,538 l -676,538 l -675,539 l -674,540 l -673,541 l -671,541 l -670,542 l -669,542 l -667,542 l -666,543 l -665,543 l -663,543 l -662,543xe" onmouseover="UpdateTooltip(this,6,43)" onclick="OnShapeClick(6,43)" onfocus="UpdateTooltip(this,6,43);" onkeyup="OnShapeKey(6,43)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥测跳变处理" origTitle="遥测跳变处理"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m -460,547 l -381,547 l -380,547 l -379,546 l -377,546 l -376,546 l -374,546 l -373,545 l -372,545 l -370,544 l -369,544 l -368,543 l -367,542 l -366,541 l -364,540 l -363,539 l -362,538 l -361,537 l -361,536 l -360,535 l -359,534 l -358,533 l -358,531 l -357,530 l -357,529 l -356,528 l -356,526 l -356,525 l -355,523 l -355,522 l -355,521 l -355,52 l -355,51 l -355,49 l -356,48 l -356,46 l -356,45 l -357,44 l -357,42 l -358,41 l -358,40 l -359,39 l -360,37 l -361,36 l -361,35 l -362,34 l -363,33 l -364,32 l -366,31 l -367,31 l -368,30 l -369,29 l -370,28 l -372,28 l -373,27 l -374,27 l -376,27 l -377,26 l -379,26 l -380,26 l -381,26 l -460,26 l -461,26 l -462,26 l -464,26 l -465,27 l -467,27 l -468,27 l -469,28 l -471,28 l -472,29 l -473,30 l -474,31 l -475,31 l -476,32 l -478,33 l -479,34 l -479,35 l -480,36 l -481,37 l -482,39 l -483,40 l -483,41 l -484,42 l -484,44 l -485,45 l -485,46 l -485,48 l -486,49 l -486,51 l -486,52 l -486,521 l -486,522 l -486,523 l -485,525 l -485,526 l -485,528 l -484,529 l -484,530 l -483,531 l -483,533 l -482,534 l -481,535 l -480,536 l -479,537 l -479,538 l -478,539 l -476,540 l -475,541 l -474,542 l -473,543 l -472,544 l -471,544 l -469,545 l -468,545 l -467,546 l -465,546 l -464,546 l -462,546 l -461,547 l -460,547xe" onmouseover="UpdateTooltip(this,6,45)" onclick="OnShapeClick(6,45)" onfocus="UpdateTooltip(this,6,45);" onkeyup="OnShapeKey(6,45)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="远程对时" origTitle="远程对时"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m 1118,-325 l 1197,-325 l 1198,-325 l 1199,-326 l 1201,-326 l 1202,-326 l 1204,-326 l 1205,-327 l 1206,-327 l 1208,-328 l 1209,-328 l 1210,-329 l 1211,-330 l 1212,-331 l 1213,-332 l 1214,-332 l 1215,-333 l 1216,-335 l 1217,-336 l 1218,-337 l 1219,-338 l 1220,-339 l 1220,-340 l 1221,-342 l 1221,-343 l 1222,-344 l 1222,-346 l 1222,-347 l 1222,-349 l 1223,-350 l 1223,-351 l 1223,-820 l 1223,-821 l 1222,-823 l 1222,-824 l 1222,-825 l 1222,-827 l 1221,-828 l 1221,-830 l 1220,-831 l 1220,-832 l 1219,-833 l 1218,-835 l 1217,-836 l 1216,-837 l 1215,-838 l 1214,-839 l 1213,-840 l 1212,-841 l 1211,-841 l 1210,-842 l 1209,-843 l 1208,-844 l 1206,-844 l 1205,-845 l 1204,-845 l 1202,-845 l 1201,-846 l 1199,-846 l 1198,-846 l 1197,-846 l 1118,-846 l 1117,-846 l 1115,-846 l 1114,-846 l 1113,-845 l 1111,-845 l 1110,-845 l 1109,-844 l 1107,-844 l 1106,-843 l 1105,-842 l 1104,-841 l 1103,-841 l 1101,-840 l 1100,-839 l 1099,-838 l 1098,-837 l 1098,-836 l 1097,-835 l 1096,-833 l 1095,-832 l 1095,-831 l 1094,-830 l 1094,-828 l 1093,-827 l 1093,-825 l 1093,-824 l 1092,-823 l 1092,-821 l 1092,-820 l 1092,-351 l 1092,-350 l 1092,-349 l 1093,-347 l 1093,-346 l 1093,-344 l 1094,-343 l 1094,-342 l 1095,-340 l 1095,-339 l 1096,-338 l 1097,-337 l 1098,-336 l 1098,-335 l 1099,-333 l 1100,-332 l 1101,-332 l 1103,-331 l 1104,-330 l 1105,-329 l 1106,-328 l 1107,-328 l 1109,-327 l 1110,-327 l 1111,-326 l 1113,-326 l 1114,-326 l 1115,-326 l 1117,-325 l 1118,-325xe" onmouseover="UpdateTooltip(this,6,47)" onclick="OnShapeClick(6,47)" onfocus="UpdateTooltip(this,6,47);" onkeyup="OnShapeKey(6,47)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="单价维护" origTitle="单价维护"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m 1536,-325 l 1614,-325 l 1615,-325 l 1617,-326 l 1618,-326 l 1619,-326 l 1621,-326 l 1622,-327 l 1624,-327 l 1625,-328 l 1626,-328 l 1627,-329 l 1628,-330 l 1630,-331 l 1631,-332 l 1632,-332 l 1633,-333 l 1634,-335 l 1635,-336 l 1635,-337 l 1636,-338 l 1637,-339 l 1638,-340 l 1638,-342 l 1639,-343 l 1639,-344 l 1639,-346 l 1640,-347 l 1640,-349 l 1640,-350 l 1640,-351 l 1640,-820 l 1640,-821 l 1640,-823 l 1640,-824 l 1639,-825 l 1639,-827 l 1639,-828 l 1638,-830 l 1638,-831 l 1637,-832 l 1636,-833 l 1635,-835 l 1635,-836 l 1634,-837 l 1633,-838 l 1632,-839 l 1631,-840 l 1630,-841 l 1628,-841 l 1627,-842 l 1626,-843 l 1625,-844 l 1624,-844 l 1622,-845 l 1621,-845 l 1619,-845 l 1618,-846 l 1617,-846 l 1615,-846 l 1614,-846 l 1536,-846 l 1534,-846 l 1533,-846 l 1531,-846 l 1530,-845 l 1529,-845 l 1527,-845 l 1526,-844 l 1525,-844 l 1523,-843 l 1522,-842 l 1521,-841 l 1520,-841 l 1519,-840 l 1518,-839 l 1517,-838 l 1516,-837 l 1515,-836 l 1514,-835 l 1513,-833 l 1513,-832 l 1512,-831 l 1511,-830 l 1511,-828 l 1510,-827 l 1510,-825 l 1510,-824 l 1510,-823 l 1510,-821 l 1510,-820 l 1510,-351 l 1510,-350 l 1510,-349 l 1510,-347 l 1510,-346 l 1510,-344 l 1511,-343 l 1511,-342 l 1512,-340 l 1513,-339 l 1513,-338 l 1514,-337 l 1515,-336 l 1516,-335 l 1517,-333 l 1518,-332 l 1519,-332 l 1520,-331 l 1521,-330 l 1522,-329 l 1523,-328 l 1525,-328 l 1526,-327 l 1527,-327 l 1529,-326 l 1530,-326 l 1531,-326 l 1533,-326 l 1534,-325 l 1536,-325xe" onmouseover="UpdateTooltip(this,6,12)" onclick="OnShapeClick(6,12)" onfocus="UpdateTooltip(this,6,12);" onkeyup="OnShapeKey(6,12)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥信项配置" origTitle="遥信项配置"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m -251,558 l -173,558 l -171,558 l -170,558 l -168,557 l -167,557 l -166,557 l -164,556 l -163,556 l -162,555 l -160,555 l -159,554 l -158,553 l -157,552 l -156,552 l -155,551 l -154,550 l -153,549 l -152,548 l -151,546 l -150,545 l -150,544 l -149,543 l -148,541 l -148,540 l -148,539 l -147,537 l -147,536 l -147,535 l -147,533 l -147,532 l -147,63 l -147,62 l -147,60 l -147,59 l -147,58 l -148,56 l -148,55 l -148,54 l -149,52 l -150,51 l -150,50 l -151,49 l -152,48 l -153,46 l -154,45 l -155,44 l -156,43 l -157,43 l -158,42 l -159,41 l -160,40 l -162,40 l -163,39 l -164,39 l -166,38 l -167,38 l -168,38 l -170,37 l -171,37 l -173,37 l -251,37 l -252,37 l -254,37 l -255,38 l -257,38 l -258,38 l -259,39 l -261,39 l -262,40 l -263,40 l -264,41 l -266,42 l -267,43 l -268,43 l -269,44 l -270,45 l -271,46 l -272,48 l -273,49 l -273,50 l -274,51 l -275,52 l -275,54 l -276,55 l -276,56 l -276,58 l -277,59 l -277,60 l -277,62 l -277,63 l -277,532 l -277,533 l -277,535 l -277,536 l -276,537 l -276,539 l -276,540 l -275,541 l -275,543 l -274,544 l -273,545 l -273,546 l -272,548 l -271,549 l -270,550 l -269,551 l -268,552 l -267,552 l -266,553 l -264,554 l -263,555 l -262,555 l -261,556 l -259,556 l -258,557 l -257,557 l -255,557 l -254,558 l -252,558 l -251,558xe" onmouseover="UpdateTooltip(this,6,13)" onclick="OnShapeClick(6,13)" onfocus="UpdateTooltip(this,6,13);" onkeyup="OnShapeKey(6,13)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥信合理性检查" origTitle="遥信合理性检查"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m -49,561 l 29,561 l 31,561 l 32,561 l 34,561 l 35,561 l 36,560 l 38,560 l 39,560 l 40,559 l 42,558 l 43,558 l 44,557 l 45,556 l 46,555 l 47,554 l 48,553 l 49,552 l 50,551 l 51,550 l 52,549 l 52,548 l 53,546 l 54,545 l 54,544 l 55,542 l 55,541 l 55,540 l 55,538 l 55,537 l 55,535 l 55,67 l 55,65 l 55,64 l 55,63 l 55,61 l 55,60 l 54,59 l 54,57 l 53,56 l 52,55 l 52,53 l 51,52 l 50,51 l 49,50 l 48,49 l 47,48 l 46,47 l 45,46 l 44,45 l 43,45 l 42,44 l 40,43 l 39,43 l 38,42 l 36,42 l 35,41 l 34,41 l 32,41 l 31,41 l 29,41 l -49,41 l -50,41 l -52,41 l -53,41 l -54,41 l -56,42 l -57,42 l -58,43 l -60,43 l -61,44 l -62,45 l -63,45 l -65,46 l -66,47 l -67,48 l -68,49 l -69,50 l -70,51 l -70,52 l -71,53 l -72,55 l -72,56 l -73,57 l -74,59 l -74,60 l -74,61 l -75,63 l -75,64 l -75,65 l -75,67 l -75,535 l -75,537 l -75,538 l -75,540 l -74,541 l -74,542 l -74,544 l -73,545 l -72,546 l -72,548 l -71,549 l -70,550 l -70,551 l -69,552 l -68,553 l -67,554 l -66,555 l -65,556 l -63,557 l -62,558 l -61,558 l -60,559 l -58,560 l -57,560 l -56,560 l -54,561 l -53,561 l -52,561 l -50,561 l -49,561xe" onmouseover="UpdateTooltip(this,6,25)" onclick="OnShapeClick(6,25)" onfocus="UpdateTooltip(this,6,25);" onkeyup="OnShapeKey(6,25)"/> 
+
+<v:shape type="#VISSHAPE"  origHref="" style="cursor: pointer;" tabindex="1" title="遥信变位处理" origTitle="遥信变位处理"  style="top:-1000;left:-1000;width:3291;height:2000;position:absolute" path=" m 147,560 l 225,560 l 226,560 l 228,559 l 229,559 l 231,559 l 232,559 l 233,558 l 235,558 l 236,557 l 237,557 l 238,556 l 240,555 l 241,554 l 242,553 l 243,552 l 244,551 l 245,550 l 246,549 l 247,548 l 247,547 l 248,546 l 249,545 l 249,543 l 250,542 l 250,541 l 250,539 l 251,538 l 251,536 l 251,535 l 251,534 l 251,65 l 251,64 l 251,62 l 251,61 l 250,59 l 250,58 l 250,57 l 249,55 l 249,54 l 248,53 l 247,52 l 247,50 l 246,49 l 245,48 l 244,47 l 243,46 l 242,45 l 241,44 l 240,44 l 238,43 l 237,42 l 236,41 l 235,41 l 233,40 l 232,40 l 231,40 l 229,39 l 228,39 l 226,39 l 225,39 l 147,39 l 145,39 l 144,39 l 143,39 l 141,40 l 140,40 l 138,40 l 137,41 l 136,41 l 135,42 l 133,43 l 132,44 l 131,44 l 130,45 l 129,46 l 128,47 l 127,48 l 126,49 l 125,50 l 124,52 l 124,53 l 123,54 l 123,55 l 122,57 l 122,58 l 121,59 l 121,61 l 121,62 l 121,64 l 121,65 l 121,534 l 121,535 l 121,536 l 121,538 l 121,539 l 122,541 l 122,542 l 123,543 l 123,545 l 124,546 l 124,547 l 125,548 l 126,549 l 127,550 l 128,551 l 129,552 l 130,553 l 131,554 l 132,555 l 133,556 l 135,557 l 136,557 l 137,558 l 138,558 l 140,559 l 141,559 l 143,559 l 144,559 l 145,560 l 147,560xe" onmouseover="UpdateTooltip(this,6,14)" onclick="OnShapeClick(6,14)" onfocus="UpdateTooltip(this,6,14);" onkeyup="OnShapeKey(6,14)"/> 
+
+</v:group>
+
+
+
+</div>
+
+
+
+</body>
+</html>
+

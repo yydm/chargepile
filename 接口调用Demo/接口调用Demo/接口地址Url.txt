@@ -1,0 +1,4 @@
+接口服务器地址：
+http://wl715.mooo.com:90/PowerpileService/
+调用URl：
+见demo

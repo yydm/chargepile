@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="6" Name="功能结构" NameU="功能结构">
+			<Layer IX="0">
+				<Name>连接线</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{5A5A3D74-C840-43DD-BE6D-ACE702AAF12A}" Name="矩形.29" NameU="Rectangle.29" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716535</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{2075F91B-AEFA-4F7A-AC93-D270E6C5D599}" Name="动态连接线.30" NameU="Dynamic connector.30" Master="2">
+					<XForm>
+						<PinX Unit="MM">5.610236220472439</PinX>
+						<PinY Unit="MM">1.795275590551181</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="9" UniqueID="{FCBD8A33-7C35-4D3E-B156-15E18AEB1600}" Name="矩形.9" NameU="Rectangle.9" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">2.322834645669292</PinX>
+						<PinY Unit="MM">5.801727176223045</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="11" UniqueID="{9B37B74E-3133-4D81-B85D-BAF757215000}" Name="矩形.11" NameU="Rectangle.11" Master="0">
+					<Text>桩基本信息维护</Text>
+					<XForm>
+						<PinX Unit="MM">2.618110236220473</PinX>
+						<PinY Unit="MM">5.929133858267713</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="27" UniqueID="{B2B625B7-F3A3-4426-8CFE-723D3134F666}" Name="阴影框" NameU="Shadowed box" Master="3">
+					<Text>充电桩在线监测系统</Text>
+					<XForm>
+						<PinX Unit="MM">5.492125984251966</PinX>
+						<PinY Unit="MM">1.441633169979627</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="29" UniqueID="{79675384-EE75-4D20-BC5F-8248C8AA0644}" Name="Sheet.29" NameU="Sheet.29">
+					<Text>充电桩台账管理</Text>
+					<XForm>
+						<PinX Unit="MM">2.224409448818898</PinX>
+						<PinY Unit="MM">4.866141732283464</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="30" UniqueID="{17377D81-8C93-4ED2-8D9B-53BA69AA7ECA}" Name="矩形.30" NameU="Rectangle.30" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">7.696850393700789</PinX>
+						<PinY Unit="MM">5.801727176223045</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="31" UniqueID="{FFAF8141-429D-4CDF-BF6A-5F59AD71A41D}" Name="矩形.31" NameU="Rectangle.31" Master="0">
+					<Text>远程启动/停止</Text>
+					<XForm>
+						<PinX Unit="MM">6.791338582677164</PinX>
+						<PinY Unit="MM">5.929133858267713</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程启动停止</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="32" UniqueID="{785F9CF6-545A-4B4C-A3CF-43A12F4F8C3C}" Name="矩形.32" NameU="Rectangle.32" Master="0">
+					<Text>远程调价</Text>
+					<XForm>
+						<PinX Unit="MM">8.051181102362204</PinX>
+						<PinY Unit="MM">5.929133858267713</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程调价</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="34" UniqueID="{76B8687C-A88C-403A-8F25-E2A01ECF2D3C}" Name="Sheet.34" NameU="Sheet.34">
+					<Text>充电桩远程控制</Text>
+					<XForm>
+						<PinX Unit="MM">7.736220472440946</PinX>
+						<PinY Unit="MM">4.866141732283464</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{36E73CD9-CC1D-4791-895F-35BA0DEF6F8A}" Name="矩形.2" NameU="Rectangle.2" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">9.744094488188978</PinX>
+						<PinY Unit="MM">5.817475207719109</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{2FF35AF6-742F-4BD7-8C87-65E96FEC4C02}" Name="矩形.4" NameU="Rectangle.4" Master="0">
+					<Text>充电卡解锁</Text>
+					<XForm>
+						<PinX Unit="MM">9.488188976377952</PinX>
+						<PinY Unit="MM">5.946564957991882</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{9A2149BB-2794-4CBB-96F5-8BE5013BD987}" Name="矩形.5" NameU="Rectangle.5" Master="0">
+					<Text>充电卡交易稽查</Text>
+					<XForm>
+						<PinX Unit="MM">10.078740157480318</PinX>
+						<PinY Unit="MM">5.946564957991884</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{0CC369F1-CB7A-4F5B-9AC9-D2A53879D337}" Name="Sheet.6" NameU="Sheet.6">
+					<Text>充电卡管理</Text>
+					<XForm>
+						<PinX Unit="MM">9.645669291338585</PinX>
+						<PinY Unit="MM">4.893415351692671</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="7" UniqueID="{E7B831A0-E1BB-4EC0-81E7-DC47EBCA7486}" Name="矩形.7" NameU="Rectangle.7" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.488188976377953</PinX>
+						<PinY Unit="MM">3.143154713540731</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="10" UniqueID="{CC829591-C030-4765-8970-AD02FDD0EE62}" Name="矩形.10" NameU="Rectangle.10" Master="0">
+					<Text>运行报表</Text>
+					<XForm>
+						<PinX Unit="MM">3.616141732283489</PinX>
+						<PinY Unit="MM">3.290246434955479</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="14" UniqueID="{A6D5A5D9-E858-4C03-83F0-06975F2B3BA7}" Name="矩形.14" NameU="Rectangle.14" Master="0">
+					<Text>交易记录</Text>
+					<XForm>
+						<PinX Unit="MM">4.221456692913391</PinX>
+						<PinY Unit="MM">3.290246434955479</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{B139EA1A-E48F-4B90-98FD-6DB844BEC679}" Name="矩形.15" NameU="Rectangle.15" Master="0">
+					<Text>服务支持</Text>
+					<XForm>
+						<PinX Unit="MM">5.492125984251968</PinX>
+						<PinY Unit="MM">3.290246434955481</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="16" UniqueID="{0F633E73-EE53-4879-8932-177FA1CCA5F9}" Name="Sheet.16" NameU="Sheet.16">
+					<Text>报表分析</Text>
+					<XForm>
+						<PinX Unit="MM">4.547244094488190</PinX>
+						<PinY Unit="MM">2.207569269601150</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="17" UniqueID="{12E41CEC-89A1-4AB0-8CDB-CB24B1A9DBFB}" Name="矩形.17" NameU="Rectangle.17" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">9.064960629921259</PinX>
+						<PinY Unit="MM">3.163931900632495</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="21" UniqueID="{837AD5D2-8115-411F-BC05-0BA0E8B3417F}" Name="Sheet.21" NameU="Sheet.21">
+					<Text>系统管理</Text>
+					<XForm>
+						<PinX Unit="MM">8.838582677165356</PinX>
+						<PinY Unit="MM">2.267716535433070</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="22" UniqueID="{89796501-3876-49BE-BE37-3875C0D98EA0}" Name="矩形.22" NameU="Rectangle.22" Master="0">
+					<Text>角色维护</Text>
+					<XForm>
+						<PinX Unit="MM">7.859251968503961</PinX>
+						<PinY Unit="MM">3.312115769768926</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="23" UniqueID="{1B49BA02-C22C-4E0F-9E72-E7BF245F465B}" Name="矩形.23" NameU="Rectangle.23" Master="0">
+					<Text>用户维护</Text>
+					<XForm>
+						<PinX Unit="MM">8.464566929133859</PinX>
+						<PinY Unit="MM">3.312115769768926</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="24" UniqueID="{3D9C37ED-3233-456C-96AF-50A9DA626A39}" Name="矩形.24" NameU="Rectangle.24" Master="0">
+					<Text>权限分配</Text>
+					<XForm>
+						<PinX Unit="MM">9.094488188976385</PinX>
+						<PinY Unit="MM">3.312115769768928</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="13" UniqueID="{4C3879A1-754E-4838-A54E-DFA1A3743BE4}" Name="矩形.13" NameU="Rectangle.13" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">6.619463582677169</PinX>
+						<PinY Unit="MM">3.163931900632496</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="25" UniqueID="{85EC0779-BE4D-4C67-B272-BF28C8DC8657}" Name="矩形.25" NameU="Rectangle.25" Master="0">
+					<Text>...</Text>
+					<XForm>
+						<PinX Unit="MM">6.337229330708683</PinX>
+						<PinY Unit="MM">3.291338582677164</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="26" UniqueID="{C6333278-3AFE-4E49-9945-655B08232597}" Name="矩形.26" NameU="Rectangle.26" Master="0">
+					<Text>...</Text>
+					<XForm>
+						<PinX Unit="MM">6.942544291338584</PinX>
+						<PinY Unit="MM">3.291338582677164</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="28" UniqueID="{1A837FEB-C62C-4AD5-9F6E-AA4B41A97135}" Name="Sheet.28" NameU="Sheet.28">
+					<Text>告警管理</Text>
+					<XForm>
+						<PinX Unit="MM">6.521776574803162</PinX>
+						<PinY Unit="MM">2.228346456692915</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{40A5ECF2-4198-49F5-BFF8-5D4F6FB3B682}" Name="矩形.3" NameU="Rectangle.3" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.000000000000001</PinX>
+						<PinY Unit="MM">5.817475207719109</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="19" UniqueID="{A639364F-0C4F-440C-8DBE-73BC41742DF8}" Name="矩形.19" NameU="Rectangle.19" Master="0">
+					<Text>通信状况监视</Text>
+					<XForm>
+						<PinX Unit="MM">4.114173228346458</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="33" UniqueID="{9BA7A9A1-57DF-4984-A95A-9FD10A5023E3}" Name="矩形.33" NameU="Rectangle.33" Master="0">
+					<Text>运行状况监视</Text>
+					<XForm>
+						<PinX Unit="MM">4.704724409448820</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="35" UniqueID="{549E0CA1-E732-48E7-AD3C-3E0D6E880423}" Name="矩形.35" NameU="Rectangle.35" Master="0">
+					<Text>充电桩台账绘制</Text>
+					<XForm>
+						<PinX Unit="MM">1.437007874015748</PinX>
+						<PinY Unit="MM">5.902887139107608</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{F8B4099F-54AA-475D-9D15-8F8E917CF91E}" Name="矩形.18" NameU="Rectangle.18" Master="0">
+					<Text>充电桩通信日志</Text>
+					<XForm>
+						<PinX Unit="MM">9.698162729658794</PinX>
+						<PinY Unit="MM">3.312115769768928</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{F3843E10-87C8-4C89-8B2D-9B1E612EF32C}" Name="矩形.36" NameU="Rectangle.36" Master="0">
+					<Text>充电桩参数维护</Text>
+					<XForm>
+						<PinX Unit="MM">3.248031496062993</PinX>
+						<PinY Unit="MM">5.931758530183728</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="20" UniqueID="{9969ACB1-9825-4F56-980A-97FBB3375F3C}" Name="矩形.20" NameU="Rectangle.20" Master="0">
+					<Text>巡检记录</Text>
+					<XForm>
+						<PinX Unit="MM">4.862204724409449</PinX>
+						<PinY Unit="MM">3.267716535433071</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="37" UniqueID="{E02A5A4C-F918-4400-9AC8-40EB2421D9B8}" Name="Sheet.37" NameU="Sheet.37">
+					<Text>充电桩运行监视</Text>
+					<XForm>
+						<PinX Unit="MM">5.078740157480316</PinX>
+						<PinY Unit="MM">4.872047244094488</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="38" UniqueID="{51680B47-287D-4705-90E3-0DA509D59E24}" Name="矩形.38" NameU="Rectangle.38" Master="0">
+					<Text>充电站
+GI
+S
+分布</Text>
+					<XForm>
+						<PinX Unit="MM">2.027559055118111</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="39" UniqueID="{20E43623-B8E9-4E8E-8068-4578C3FFEA27}" Name="矩形.39" NameU="Rectangle.39" Master="0">
+					<Text>停电状况监视</Text>
+					<XForm>
+						<PinX Unit="MM">5.295275590551183</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="40" UniqueID="{057E62E2-4D12-4D90-A705-3378D18D6446}" Name="矩形.40" NameU="Rectangle.40" Master="0">
+					<Text>实时交易监视</Text>
+					<XForm>
+						<PinX Unit="MM">5.885826771653544</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="41" UniqueID="{83CBB675-8AAC-4663-A88A-50EE875654FC}" Name="矩形.41" NameU="Rectangle.41" Master="0">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">2.037401574803150</PinX>
+						<PinY Unit="MM">3.149606299212598</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="42" UniqueID="{31A0B485-D738-49B4-883A-6C905C337BDD}" Name="矩形.42" NameU="Rectangle.42" Master="0">
+					<Text>遥信处理</Text>
+					<XForm>
+						<PinX Unit="MM">1.456692913385825</PinX>
+						<PinY Unit="MM">3.278696049485371</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="43" UniqueID="{2FE0A6DB-97A2-4600-BFD0-2656FFBE54E7}" Name="矩形.43" NameU="Rectangle.43" Master="0">
+					<Text>遥测处理</Text>
+					<XForm>
+						<PinX Unit="MM">2.047244094488192</PinX>
+						<PinY Unit="MM">3.278696049485372</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="44" UniqueID="{F81E8BAF-6B9A-43AE-A461-F1CFABE0D18E}" Name="Sheet.44" NameU="Sheet.44">
+					<Text>SCADA</Text>
+					<XForm>
+						<PinX Unit="MM">2.106299212598426</PinX>
+						<PinY Unit="MM">2.225546443186159</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="45" UniqueID="{EBB99605-4835-43D6-8A21-DC815D35C1EA}" Name="矩形.45" NameU="Rectangle.45" Master="0">
+					<Text>异常分析</Text>
+					<XForm>
+						<PinX Unit="MM">2.657480314960630</PinX>
+						<PinY Unit="MM">3.267716535433071</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="46" UniqueID="{52E62613-6C7D-4EF9-8FFA-895AE7F5E072}" Name="矩形.46" NameU="Rectangle.46" Master="0">
+					<Text>系统运行日志</Text>
+					<XForm>
+						<PinX Unit="MM">10.295275590551181</PinX>
+						<PinY Unit="MM">3.267716535433071</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="47" UniqueID="{0D5025AF-60B9-42F8-8E03-19D1CB0B5E4C}" Name="矩形.47" NameU="Rectangle.47" Master="0">
+					<Text>远程对时</Text>
+					<XForm>
+						<PinX Unit="MM">7.421259842519682</PinX>
+						<PinY Unit="MM">5.905511811023622</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="12" UniqueID="{680E3B40-A2AA-4830-859D-BDED9FE76382}" Name="矩形.12" NameU="Rectangle.12" Master="0">
+					<Text>充电单价维护</Text>
+					<XForm>
+						<PinX Unit="MM">8.681102362204726</PinX>
+						<PinY Unit="MM">5.905511811023622</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>充电单价维护</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="9" Name="远程启动停止" NameU="远程启动停止.选择桩">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{5358B71E-7881-48EF-9064-6FC1106AC31E}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.864296259842520</PinX>
+						<PinY Unit="MM">4.125984251968505</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{759C4300-70C7-4126-B7EC-965A0CABD34A}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.921259842519689</PinX>
+						<PinY Unit="MM">4.175393700787403</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="26" UniqueID="{74C71A78-E9DD-47BE-BC0E-81F3696A51D4}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>桩号</Text>
+					<XForm>
+						<PinX Unit="MM">5.310199580119081</PinX>
+						<PinY Unit="MM">4.175393700787403</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="47" UniqueID="{FBB615DF-F87F-4478-B86A-D88888070850}" Name="网格列.2" NameU="Grid column.2" Master="9">
+					<Text>充电桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">7.642945041277830</PinX>
+						<PinY Unit="MM">4.171062992125985</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="131" UniqueID="{014CFACA-88E1-4A59-9DE0-952E4CBD35CA}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.042151993709744</PinX>
+						<PinY Unit="MM">3.895472440944881</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="137" UniqueID="{7A24B490-4B19-40C3-BCEC-05BDB77AC0A1}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.042151993709744</PinX>
+						<PinY Unit="MM">3.723228346456692</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="143" UniqueID="{CA98B576-EAAB-41BC-9E6E-E56333EB3994}" Name="复选框.243" NameU="Check box.243" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.042151993709744</PinX>
+						<PinY Unit="MM">3.526377952755905</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="149" UniqueID="{EB38459F-892E-4022-A14A-657AC4F3F911}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.042151993709744</PinX>
+						<PinY Unit="MM">4.077559055118110</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="166" UniqueID="{F68BF1DA-8C28-4F83-A4F6-89B900C70363}" Name="Sheet.166" NameU="Sheet.166">
+					<XForm>
+						<PinX Unit="MM">6.884278625328086</PinX>
+						<PinY Unit="MM">2.267921587926509</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="173" UniqueID="{4A55D509-72CA-4587-A1CE-470276FE13CC}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>取消</Text>
+					<XForm>
+						<PinX Unit="MM">8.538385826771657</PinX>
+						<PinY Unit="MM">2.283464566929135</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="195" UniqueID="{DA8A6D10-650F-40B5-BD2E-318F7C0B5C61}" Name="网格列.195" NameU="Grid column.195" Master="9">
+					<Text>工作状态</Text>
+					<XForm>
+						<PinX Unit="MM">8.365216840644797</PinX>
+						<PinY Unit="MM">4.171062992125985</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="74" UniqueID="{452E8E18-101C-4220-8E73-E50E40DDB8AD}" Name="网格列.74" NameU="Grid column.74" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.708661417322834</PinX>
+						<PinY Unit="MM">4.175393700787403</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="110" UniqueID="{5422E3DF-0F67-465E-A307-E0CF9B783D8C}" Name="命令按钮.179" NameU="Command button.179" Master="8">
+					<Text>启动</Text>
+					<XForm>
+						<PinX Unit="MM">5.310039370078743</PinX>
+						<PinY Unit="MM">2.283464566929135</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程启动停止-指令下发</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="216" UniqueID="{9C92B204-9583-4BC1-A018-D02CA8D84854}" Name="批注" NameU="Annotation" Master="12">
+					<Text>注：
+1.用户如果又选启动桩又选停止状态做启动，程序提示桩号XX已是启动状态等
+2.执行后，需要记录执行前的详细日志记录</Text>
+					<XForm>
+						<PinX Unit="MM">5.393700787401578</PinX>
+						<PinY Unit="MM">1.598630249343832</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="68" UniqueID="{4094B02B-BDA4-4D7A-B3BD-0DF0B2EE7E3D}" Name="命令按钮.68" NameU="Command button.68" Master="8">
+					<Text>停止</Text>
+					<XForm>
+						<PinX Unit="MM">6.102362204724413</PinX>
+						<PinY Unit="MM">2.283464566929135</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="116" UniqueID="{8509343A-AEE9-44E1-BDD2-042A72BE8CA2}" Name="命令按钮.116" NameU="Command button.116" Master="8">
+					<Text>暂停</Text>
+					<XForm>
+						<PinX Unit="MM">6.894685039370081</PinX>
+						<PinY Unit="MM">2.283464566929135</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{3E92A4B8-579D-445D-9C31-8457BD7CFE85}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">6.954304051837267</PinX>
+						<PinY Unit="MM">4.826976706036745</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{CCB395A4-6C81-483B-B776-74806CFB0E33}" Name="Sheet.3" NameU="Sheet.3">
+					<Text>请选择充电站：</Text>
+					<XForm>
+						<PinX Unit="MM">5.309475475721782</PinX>
+						<PinY Unit="MM">4.812992125984253</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{44BBEDF6-AFAD-4506-898E-F5FF445A4BFE}" Name="组合框" NameU="Combo box" Master="10">
+					<Text>请选择</Text>
+					<XForm>
+						<PinX Unit="MM">6.352782562335954</PinX>
+						<PinY Unit="MM">4.808070866141733</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="97" UniqueID="{6612763F-B40C-41B1-A03E-0653EBF67984}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">8.503373113517055</PinX>
+						<PinY Unit="MM">4.827755905511811</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="103" UniqueID="{1FFA1B96-09ED-4A41-A633-E1C7C596ABC7}" Name="Sheet.103" NameU="Sheet.103">
+					<XForm>
+						<PinX Unit="MM">6.905118110236221</PinX>
+						<PinY Unit="MM">3.632677165354330</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="104" UniqueID="{AA2F313C-34AE-48DE-9779-64C347A4F026}" Name="批注.104" NameU="Annotation.104" Master="12">
+					<Text>默认显示6行的高度，超过6行，滚动条</Text>
+					<XForm>
+						<PinX Unit="MM">6.648058152887136</PinX>
+						<PinY Unit="MM">5.285433070866142</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="107" UniqueID="{17FC1276-D73F-438F-9C80-4EB00ED8CBA4}" Name="Sheet.107" NameU="Sheet.107">
+					<Text>查询之前，表格数据为空，后同</Text>
+					<XForm>
+						<PinX Unit="MM">9.483460464478277</PinX>
+						<PinY Unit="MM">3.677253778037621</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="7" Name="远程启动停止-指令下发" NameU="远程启动停止.选择充电点">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{69C5BA7B-D5A5-4419-BE28-69335B164F14}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291339</PinX>
+						<PinY Unit="MM">4.833156002449845</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{84D84E84-0E0B-49DB-9416-12FBC66514C8}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.044855232939642</PinX>
+						<PinY Unit="MM">5.229322506561680</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="24" UniqueID="{5993CFE2-5930-42D8-B7E5-15750E0AA3E5}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>桩号</Text>
+					<XForm>
+						<PinX Unit="MM">5.433794970539035</PinX>
+						<PinY Unit="MM">5.229322506561681</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="45" UniqueID="{68673E28-BFC4-49F3-9293-AB7D842FA846}" Name="网格列.2" NameU="Grid column.2" Master="9">
+					<Text>充电桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">7.766540431697783</PinX>
+						<PinY Unit="MM">5.224991797900263</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="66" UniqueID="{676FE9AE-10DC-4CAE-81B0-683B681873AD}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.165747384129698</PinX>
+						<PinY Unit="MM">4.949401246719159</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="72" UniqueID="{9F4C4AD5-1D08-4A36-A25E-FD37468A5CB1}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.165747384129698</PinX>
+						<PinY Unit="MM">4.777157152230970</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="78" UniqueID="{750D4CE0-4ECE-4FEA-90E1-AE084227C57C}" Name="复选框.243" NameU="Check box.243" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.165747384129698</PinX>
+						<PinY Unit="MM">4.580306758530182</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="84" UniqueID="{4570D1DE-BE7C-42D4-8D60-415D33296CB4}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">5.165747384129698</PinX>
+						<PinY Unit="MM">5.131487860892388</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="90" UniqueID="{13CEFF43-49C5-46FF-97A9-D795B3D04DEB}" Name="Sheet.90" NameU="Sheet.90">
+					<XForm>
+						<PinX Unit="MM">7.007874015748040</PinX>
+						<PinY Unit="MM">3.321850393700787</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="91" UniqueID="{FCB95A19-D651-4675-BB6A-337619C99E01}" Name="命令按钮.8" NameU="Command button.8" Master="8">
+					<Text>取消</Text>
+					<XForm>
+						<PinX Unit="MM">8.661981217191610</PinX>
+						<PinY Unit="MM">3.337393372703412</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="97" UniqueID="{5A54CFFE-A17D-4AAA-974D-4FD0EAC58D5C}" Name="网格列.195" NameU="Grid column.195" Master="9">
+					<Text>工作状态</Text>
+					<XForm>
+						<PinX Unit="MM">8.488812231064749</PinX>
+						<PinY Unit="MM">5.224991797900263</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="118" UniqueID="{408BA0EB-E5B4-462E-958E-D38E2ED1CD75}" Name="网格列.74" NameU="Grid column.74" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.832256807742787</PinX>
+						<PinY Unit="MM">5.229322506561680</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">4</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="139" UniqueID="{D3873B47-F934-4607-AE35-085F29E8FB7C}" Name="命令按钮.179" NameU="Command button.179" Master="8">
+					<Text>启动</Text>
+					<XForm>
+						<PinX Unit="MM">5.433634760498696</PinX>
+						<PinY Unit="MM">3.337393372703412</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程启动停止-操作结果</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="145" UniqueID="{C3C17D95-7212-4CDC-AE37-6B2A8ACE6B74}" Name="命令按钮.68" NameU="Command button.68" Master="8">
+					<Text>停止</Text>
+					<XForm>
+						<PinX Unit="MM">6.225957595144366</PinX>
+						<PinY Unit="MM">3.337393372703412</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="151" UniqueID="{E63E875C-2676-44C6-BC54-665A0324F533}" Name="命令按钮.116" NameU="Command button.116" Master="8">
+					<Text>暂停</Text>
+					<XForm>
+						<PinX Unit="MM">7.018280429790035</PinX>
+						<PinY Unit="MM">3.337393372703412</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="157" UniqueID="{6714EE88-F7F4-4D6F-A27D-DBE5A6108007}" Name="Sheet.157" NameU="Sheet.157">
+					<XForm>
+						<PinX Unit="MM">7.077899442257221</PinX>
+						<PinY Unit="MM">5.880905511811022</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="158" UniqueID="{898BB19A-BDE9-4B4F-B1FD-57BA79AD6328}" Name="组合框" NameU="Combo box" Master="10">
+					<Text>请选择</Text>
+					<XForm>
+						<PinX Unit="MM">6.476377952755907</PinX>
+						<PinY Unit="MM">5.861999671916011</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="167" UniqueID="{2C39F7CF-5831-4F71-94BA-88B99838216E}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">8.626968503937007</PinX>
+						<PinY Unit="MM">5.881684711286089</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="174" UniqueID="{B991CFAA-E554-4873-9E7C-730742751865}" Name="批注.104" NameU="Annotation.104" Master="12">
+					<Text>默认显示6行的高度，超过6行，滚动条</Text>
+					<XForm>
+						<PinX Unit="MM">6.771653543307089</PinX>
+						<PinY Unit="MM">6.339361876640419</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="2" UniqueID="{4C2588AA-E21E-4832-8B4D-639C0F844075}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">7.097440944881890</PinX>
+						<PinY Unit="MM">4.533661417322835</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="173" UniqueID="{2555B5CA-4C90-4CA4-B76F-C24C4C8F5C01}" Name="Sheet.173" NameU="Sheet.173">
+					<Text>请选择充电站：</Text>
+					<XForm>
+						<PinX Unit="MM">5.596036335301839</PinX>
+						<PinY Unit="MM">5.846456692913385</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="8" Name="远程启动停止-操作结果" NameU="远程启动停止.执行操作">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{B0754FA9-E125-41B4-9A70-7BC23B665773}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.864296259842520</PinX>
+						<PinY Unit="MM">4.125984251968505</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="67" UniqueID="{EAF86BFD-C983-4BA6-8FD5-6A376D099012}" Name="Sheet.67" NameU="Sheet.67">
+					<XForm>
+						<PinX Unit="MM">7.092099327427822</PinX>
+						<PinY Unit="MM">2.342519685039370</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="68" UniqueID="{C1381960-387D-4FF3-BE16-F7DA9F5062B5}" Name="命令按钮.68" NameU="Command button.68" Master="8">
+					<Text>返回</Text>
+					<XForm>
+						<PinX Unit="MM">8.559198654855646</PinX>
+						<PinY Unit="MM">2.358062664041994</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程启动停止</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="74" UniqueID="{FB5F73F1-81A0-4ED7-9178-2D52F41C7B38}" Name="选择框" NameU="Selection box" Master="15">
+					<XForm>
+						<PinX Unit="MM">7.018844324146982</PinX>
+						<PinY Unit="MM">4.149401246719160</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="270" UniqueID="{83DFDE5A-E7C4-41F8-8600-B5632C9F9260}" Name="Sheet.270" NameU="Sheet.270">
+					<XForm>
+						<PinX Unit="MM">7.007874015748031</PinX>
+						<PinY Unit="MM">4.055118110236221</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="66" UniqueID="{FE7D82BE-8938-4719-AFA8-195B6324EA63}" Name="网格列" NameU="Grid column" Master="9">
+					<Text>序号</Text>
+					<XForm>
+						<PinX Unit="MM">5.871626886482937</PinX>
+						<PinY Unit="MM">4.921259842519684</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">8</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="170" UniqueID="{0252AC8B-EE7C-4493-AD12-FED83E8F91E1}" Name="网格列.170" NameU="Grid column.170" Master="9">
+					<Text>桩编号</Text>
+					<XForm>
+						<PinX Unit="MM">6.245642634514435</PinX>
+						<PinY Unit="MM">4.921259842519684</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">8</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="214" UniqueID="{60CF0F9E-C483-42C1-984B-A7E68B3175C1}" Name="网格列.214" NameU="Grid column.214" Master="9">
+					<Text>操作结果</Text>
+					<XForm>
+						<PinX Unit="MM">6.959065101639451</PinX>
+						<PinY Unit="MM">4.921259842519684</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">8</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="271" UniqueID="{2CAA4F3B-D312-4E62-B1C3-FDC6C911B623}" Name="Sheet.271" NameU="Sheet.271">
+					<Text>成功：5   失败： 2</Text>
+					<XForm>
+						<PinX Unit="MM">6.619658382545931</PinX>
+						<PinY Unit="MM">3.302165354330708</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="272" UniqueID="{406020DB-89A2-42BE-9B52-B866B270F7C0}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>确定</Text>
+					<XForm>
+						<PinX Unit="MM">7.781075705380577</PinX>
+						<PinY Unit="MM">3.346456692913385</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程启动停止-指令下发</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="248" UniqueID="{84708C3A-6A15-4402-8282-B8DCF7F879BE}" Name="批注.242" NameU="Annotation.242" Master="12">
+					<Text>1.执行前仍然记录执行前状态日志记录
+2.点击执行后，父页面列表刷新，默认选择失败的打钩，可继续遥控
+</Text>
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">1.692913385826772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="65" UniqueID="{9C7C91DA-0028-4847-8451-D350992403FF}" Name="Sheet.65" NameU="Sheet.65">
+					<Text>1.成功的够选框自动取消，且不能购选操作
+2.失败，暂不可点击查看详情。也可自动转到日志内查看</Text>
+					<XForm>
+						<PinX Unit="MM">9.286610070777488</PinX>
+						<PinY Unit="MM">3.606210788891511</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="0" Name="远程对时" NameU="对时">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="21" UniqueID="{14193CBC-86A7-40E6-85C6-D37EF8593F27}" Name="Sheet.21" NameU="Sheet.21">
+					<XForm>
+						<PinX Unit="MM">3.622047244094488</PinX>
+						<PinY Unit="MM">4.645669291338582</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="1" UniqueID="{456DAE41-525D-4692-9C4E-68276BDE5D22}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.125984251968506</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="316" UniqueID="{15B09065-89A7-4ACC-8703-4F3F8AB663C4}" Name="Sheet.316" NameU="Sheet.316">
+					<XForm>
+						<PinX Unit="MM">6.583917521274660</PinX>
+						<PinY Unit="MM">2.377747703412073</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{F9F74C66-FF28-445C-86CF-843841963973}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">6.648581072022902</PinX>
+						<PinY Unit="MM">5.496268044619422</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="12" UniqueID="{F40B5BC0-F7EB-447B-9D1E-9CA99C8E52B1}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>新建</Text>
+					<XForm>
+						<PinX Unit="MM">4.182246346715338</PinX>
+						<PinY Unit="MM">4.921259842519684</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时-计划明细</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="343" UniqueID="{49D9EAAD-7720-46CB-AB5C-612D7E41733A}" Name="网格列.343" NameU="Grid column.343" Master="9">
+					<Text>序号</Text>
+					<XForm>
+						<PinX Unit="MM">3.788545559313763</PinX>
+						<PinY Unit="MM">4.724409448818896</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="364" UniqueID="{841319B9-85AB-468A-A3BC-B4ADD66B5C72}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>计划名称</Text>
+					<XForm>
+						<PinX Unit="MM">4.177485296913155</PinX>
+						<PinY Unit="MM">4.724409448818897</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="430" UniqueID="{B00845D8-753A-4895-8C51-5D0DD31AC8D7}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>成功率</Text>
+					<XForm>
+						<PinX Unit="MM">8.638788940531864</PinX>
+						<PinY Unit="MM">4.724409448818897</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="472" UniqueID="{FE50EB36-D235-45C2-822C-8ACD4FE7597A}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>计划执行时间</Text>
+					<XForm>
+						<PinX Unit="MM">6.898781779786204</PinX>
+						<PinY Unit="MM">4.724409448818897</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{A440098B-E7D3-4587-979D-3E60A1EB6660}" Name="Sheet.31" NameU="Sheet.31">
+					<Text>对时计划：</Text>
+					<XForm>
+						<PinX Unit="MM">4.642926714238844</PinX>
+						<PinY Unit="MM">5.511811023621998</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{68441BC6-2DB0-4803-9788-D15FAB6323A0}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>状态</Text>
+					<XForm>
+						<PinX Unit="MM">7.916517141164894</PinX>
+						<PinY Unit="MM">4.724409448818897</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="61" UniqueID="{D55314D3-BEA1-4369-B9BA-EDE40CDFBC3F}" Name="选择框" NameU="Selection box" Master="15">
+					<XForm>
+						<PinX Unit="MM">9.005080992384627</PinX>
+						<PinY Unit="MM">4.330708661417322</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时-计划明细执行结果</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="62" UniqueID="{6A7D87C9-D215-440F-B860-598E70E5E7A6}" Name="Sheet.62" NameU="Sheet.62">
+					<Text>执行结果记录日志</Text>
+					<XForm>
+						<PinX Unit="MM">7.007874015748032</PinX>
+						<PinY Unit="MM">2.804021741716926</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="10" Name="远程对时-计划明细" NameU="远程对时.选择充电桩">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{1B56C575-3CF0-41FB-A2CD-FEE07E2283F5}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.258284120734910</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="91" UniqueID="{BE2810FE-1DEB-4844-B8D3-8AA4A4CC569B}" Name="Sheet.91" NameU="Sheet.91">
+					<XForm>
+						<PinX Unit="MM">6.940652538813537</PinX>
+						<PinY Unit="MM">2.740362532808399</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="76" UniqueID="{7FAE6B89-50EB-44E0-AA8E-8DF83DB368D1}" Name="Sheet.76" NameU="Sheet.76">
+					<XForm>
+						<PinX Unit="MM">6.944461532152230</PinX>
+						<PinY Unit="MM">5.102567257217847</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="258" UniqueID="{F1937F3D-877B-450C-BC48-C3674D4D6F34}" Name="Sheet.258" NameU="Sheet.258">
+					<Text>请选择充电站：</Text>
+					<XForm>
+						<PinX Unit="MM">4.625420357611549</PinX>
+						<PinY Unit="MM">5.088582677165353</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="259" UniqueID="{60A1A930-2B50-492A-AFAE-DCE816EEE6B9}" Name="命令按钮.223" NameU="Command button.223" Master="8">
+					<Text>返回</Text>
+					<XForm>
+						<PinX Unit="MM">8.406424006619183</PinX>
+						<PinY Unit="MM">2.755905511811023</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="2" UniqueID="{34D779A5-AFF3-4086-969B-7717547DF608}" Name="组合框" NameU="Combo box" Master="10">
+					<Text>请选择</Text>
+					<XForm>
+						<PinX Unit="MM">5.103205483103675</PinX>
+						<PinY Unit="MM">5.088582677165350</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="11" UniqueID="{A03FB8CB-E961-4421-A04C-3B0F8FD4ED7B}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">6.727362204724409</PinX>
+						<PinY Unit="MM">5.088582677165351</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="17" UniqueID="{7DD12DB8-BA38-48E5-9A55-F8FF5BA4F476}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.162337634209633</PinX>
+						<PinY Unit="MM">4.825000000000001</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="38" UniqueID="{76A09254-27C5-43CA-A985-3D0B006E4E7E}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>桩编号</Text>
+					<XForm>
+						<PinX Unit="MM">4.553451749250431</PinX>
+						<PinY Unit="MM">4.825000000000001</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="60" UniqueID="{3CAB5EE6-910B-4B7B-8F12-5A1CBAC8F64A}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>桩型号</Text>
+					<XForm>
+						<PinX Unit="MM">6.256838024541695</PinX>
+						<PinY Unit="MM">4.820669291338581</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="110" UniqueID="{36805477-1881-46B5-AAA2-522873447285}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.129529235259517</PinX>
+						<PinY Unit="MM">4.820669291338581</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="152" UniqueID="{008F723F-E4A9-477B-8220-29CE93771065}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.545078740157480</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="158" UniqueID="{C415C2E6-0452-4889-83FB-892FE792EC51}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.372834645669291</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="164" UniqueID="{6915FFDF-E7E6-41DD-870B-B6C0E6DAEC86}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.727165354330708</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="265" UniqueID="{10A29F36-0A40-4347-873C-877CB5F5FD25}" Name="命令按钮.55" NameU="Command button.55" Master="8">
+					<Text>保存</Text>
+					<XForm>
+						<PinX Unit="MM">7.642716535433070</PinX>
+						<PinY Unit="MM">2.755905511811023</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="271" UniqueID="{8B69DD8E-5501-495D-A465-376C9BEE6B8F}" Name="Sheet.271" NameU="Sheet.271">
+					<Text>请设置计划执行时间：</Text>
+					<XForm>
+						<PinX Unit="MM">4.825577222769030</PinX>
+						<PinY Unit="MM">2.755905511811024</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="272" UniqueID="{AFAF86CB-12D0-48B3-8C70-FAE1A025D813}" Name="组合框.272" NameU="Combo box.272" Master="10">
+					<Text>2013-10-12 23:59:59</Text>
+					<XForm>
+						<PinX Unit="MM">5.551181102362205</PinX>
+						<PinY Unit="MM">2.755905511811023</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="281" UniqueID="{EB7E5F73-2567-4E2E-A1BD-58B5CEA956C9}" Name="网格列.281" NameU="Grid column.281" Master="9">
+					<Text>桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">6.979109823908665</PinX>
+						<PinY Unit="MM">4.820669291338581</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="5" Name="远程对时-计划明细执行结果" NameU="远程对时-计划明细执行结果">
+			<Shapes>
+				<Shape ID="1" UniqueID="{74CB268C-C9A2-4BFD-AAE5-0A225A4AC98C}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.125984251968505</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{245F8D07-CE1B-4C37-A21F-D786561E8940}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">6.940652538813537</PinX>
+						<PinY Unit="MM">2.608062664041994</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{082A0319-A82F-4F45-B724-EBF2FB995925}" Name="Sheet.3" NameU="Sheet.3">
+					<XForm>
+						<PinX Unit="MM">6.944461532152230</PinX>
+						<PinY Unit="MM">4.970267388451441</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{C062C2A6-34B1-4C05-A6B3-0120BB256E43}" Name="Sheet.4" NameU="Sheet.4">
+					<Text>计划名称：</Text>
+					<XForm>
+						<PinX Unit="MM">4.625420357611549</PinX>
+						<PinY Unit="MM">4.956282808398948</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{B15AEE7F-C6FB-4ADC-A34D-DBC6151DE2B3}" Name="命令按钮.223" NameU="Command button.223" Master="8">
+					<Text>返回</Text>
+					<XForm>
+						<PinX Unit="MM">8.406424006619183</PinX>
+						<PinY Unit="MM">2.623605643044618</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="26" UniqueID="{2A7F0E85-E477-4CE0-8D9C-D58CE1B2FC92}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.162337634209633</PinX>
+						<PinY Unit="MM">4.692700131233596</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="47" UniqueID="{1E7E3113-E115-4C8D-A692-8103B012A4B3}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>桩编号</Text>
+					<XForm>
+						<PinX Unit="MM">4.553451749250431</PinX>
+						<PinY Unit="MM">4.692700131233596</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="68" UniqueID="{FA9AF14A-6299-4D32-B70D-3863DC9587DB}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>桩型号</Text>
+					<XForm>
+						<PinX Unit="MM">6.256838024541695</PinX>
+						<PinY Unit="MM">4.688369422572175</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="89" UniqueID="{7973F022-C80F-4186-A563-A91B9956A5C8}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.129529235259517</PinX>
+						<PinY Unit="MM">4.688369422572175</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="110" UniqueID="{1BEE4C04-AD4B-4BF4-9CAB-D845DCE0EFC2}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.412778871391074</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="116" UniqueID="{E86E0B89-19E4-4A5D-9F34-A6FF89D61897}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.240534776902885</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="122" UniqueID="{899F4BD4-1C4B-4711-903F-6E588BACB4A1}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.283229785399689</PinX>
+						<PinY Unit="MM">4.594865485564303</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="128" UniqueID="{67E07528-FB53-465E-A9AA-49007EDDB5FB}" Name="网格列.49" NameU="Grid column.49" Master="9">
+					<Text>执行结果</Text>
+					<XForm>
+						<PinX Unit="MM">7.858909775759428</PinX>
+						<PinY Unit="MM">4.690534776902886</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="149" UniqueID="{ABE1D2FA-16EF-4C3A-A7CE-5DB5D72F0AAE}" Name="Sheet.149" NameU="Sheet.149">
+					<Text>成功、失败链接查看日志</Text>
+					<XForm>
+						<PinX Unit="MM">4.334363434112624</PinX>
+						<PinY Unit="MM">5.379511154855641</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="166" UniqueID="{C3CAFBC9-6561-4C18-AE0D-4504064901B6}" Name="网格列.281" NameU="Grid column.281" Master="9">
+					<Text>桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">6.979109823908665</PinX>
+						<PinY Unit="MM">4.688369422572175</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{AFE59C61-D701-40CC-8D52-93BF521B0AD9}" Name="Sheet.11" NameU="Sheet.11">
+					<Text>柳树塘充电站 桩数量（20）</Text>
+					<XForm>
+						<PinX Unit="MM">6.136529076443569</PinX>
+						<PinY Unit="MM">4.950787401574804</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="远程调价" NameU="下发单价">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{9FD888F7-21A7-4713-9ED9-D434E618CE4D}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.125984251968506</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{969D7A71-A59C-42E5-83F6-86FC25DC0FB0}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">6.846690951481243</PinX>
+						<PinY Unit="MM">2.426960301837295</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{16E9A1C3-825D-48BF-8899-F495DE4C739F}" Name="Sheet.3" NameU="Sheet.3">
+					<XForm>
+						<PinX Unit="MM">6.911625197117521</PinX>
+						<PinY Unit="MM">5.545480643044643</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{985A8305-66F9-487A-9953-B055216DC2B2}" Name="命令按钮" NameU="Command button" Master="8">
+					<Text>新建</Text>
+					<XForm>
+						<PinX Unit="MM">4.439540272309711</PinX>
+						<PinY Unit="MM">5.004921259842520</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程对时-计划明细</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="10" UniqueID="{11FC88E1-67B7-4086-A259-0440FE7059D0}" Name="网格列.343" NameU="Grid column.343" Master="9">
+					<Text>序号</Text>
+					<XForm>
+						<PinX Unit="MM">4.055118110236220</PinX>
+						<PinY Unit="MM">4.773622047244118</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{21F86938-1AD6-4F1A-AD69-DE2971F1ECB2}" Name="网格列.31" NameU="Grid column.31" Master="9">
+					<Text>计划名称</Text>
+					<XForm>
+						<PinX Unit="MM">4.444057847835612</PinX>
+						<PinY Unit="MM">4.773622047244119</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="52" UniqueID="{FF76E73C-D23A-4E3B-98A9-F82BA08B74EB}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>执行率</Text>
+					<XForm>
+						<PinX Unit="MM">8.905361491454320</PinX>
+						<PinY Unit="MM">4.773622047244119</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="73" UniqueID="{FA9B42F4-9B17-4F30-B86B-F3B3DB80DB46}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>计划执行时间</Text>
+					<XForm>
+						<PinX Unit="MM">7.165354330708661</PinX>
+						<PinY Unit="MM">4.773622047244119</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="94" UniqueID="{A396F843-A4FA-4F48-9C2C-69D40AF77DF2}" Name="Sheet.94" NameU="Sheet.94">
+					<Text>调价计划：</Text>
+					<XForm>
+						<PinX Unit="MM">4.893347071850392</PinX>
+						<PinY Unit="MM">5.561023622047220</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="95" UniqueID="{6B1A6F8C-1AFE-4B9D-A16D-1B96C62726E7}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>状态</Text>
+					<XForm>
+						<PinX Unit="MM">8.183089692087350</PinX>
+						<PinY Unit="MM">4.773622047244119</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="145" UniqueID="{BC28FBD5-B0E4-4D16-A0E3-B096EADDBCDB}" Name="选择框" NameU="Selection box" Master="15">
+					<XForm>
+						<PinX Unit="MM">9.277138697506569</PinX>
+						<PinY Unit="MM">4.409448818897639</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程调价-计划明细执行结果</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="146" UniqueID="{9CA333BC-AF18-4EC0-AA7B-8B2B70744136}" Name="Sheet.146" NameU="Sheet.146">
+					<Text>执行结果记录日志</Text>
+					<XForm>
+						<PinX Unit="MM">7.274185941601050</PinX>
+						<PinY Unit="MM">3.622047244094488</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="13" Name="远程调价-计划明细" NameU="远程调价.选择充电桩">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{60AD780E-D462-47E3-AFAA-5AD89C4F432E}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.215116554776270</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="91" UniqueID="{DD3C0A45-0577-4D39-B1C5-88C13F518E82}" Name="Sheet.91" NameU="Sheet.91">
+					<XForm>
+						<PinX Unit="MM">6.899644334736729</PinX>
+						<PinY Unit="MM">2.495857939632545</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="203" UniqueID="{9079734C-D8C4-4039-9AD8-A1EB871F0581}" Name="Sheet.203" NameU="Sheet.203">
+					<XForm>
+						<PinX Unit="MM">6.859070396234392</PinX>
+						<PinY Unit="MM">5.610236220472439</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="223" UniqueID="{A49FD258-E677-4FFE-A063-E527DE89B748}" Name="命令按钮.223" NameU="Command button.223" Master="8">
+					<Text>返回</Text>
+					<XForm>
+						<PinX Unit="MM">8.407972440944882</PinX>
+						<PinY Unit="MM">2.485236220472441</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程调价</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="2" UniqueID="{7CAE5F83-03C9-49F6-A825-956290BD3539}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.091863517060361</PinX>
+						<PinY Unit="MM">4.993736378615743</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="23" UniqueID="{87358BA7-5044-4F75-8920-4EA6944E59CE}" Name="网格列.52" NameU="Grid column.52" Master="9">
+					<Text>桩编号</Text>
+					<XForm>
+						<PinX Unit="MM">4.480803254659753</PinX>
+						<PinY Unit="MM">4.993736378615743</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="44" UniqueID="{4CC3B175-52BC-4377-AD38-DE9D416269CA}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">6.186363907392423</PinX>
+						<PinY Unit="MM">4.991165582420848</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="65" UniqueID="{67EB26A0-F8C6-465E-B040-39FA1E8C7D8A}" Name="网格列.108" NameU="Grid column.108" Master="9">
+					<Text>峰单价</Text>
+					<XForm>
+						<PinX Unit="MM">6.904016682695877</PinX>
+						<PinY Unit="MM">4.989405669954323</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="87" UniqueID="{D7515603-27CD-4BB5-89B5-F06510905FA9}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.059055118110244</PinX>
+						<PinY Unit="MM">4.989405669954322</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="109" UniqueID="{935277FD-3ED3-498E-BC1B-F843661EAAF5}" Name="网格列.218" NameU="Grid column.218" Master="9">
+					<Text>平单价</Text>
+					<XForm>
+						<PinX Unit="MM">7.404067107551127</PinX>
+						<PinY Unit="MM">4.989405669954324</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="130" UniqueID="{517118DE-217D-4B1C-8DE6-D480254481B0}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.713815118773221</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="136" UniqueID="{147F61E8-E9F5-4B87-B37D-C8D6861EB24D}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.541571024285032</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="142" UniqueID="{A1167412-9C36-4173-87DD-76F542353546}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.895901732946450</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="148" UniqueID="{4CD98534-CB3D-427A-8658-FEC8306C832D}" Name="网格列.249" NameU="Grid column.249" Master="9">
+					<Text>谷单价</Text>
+					<XForm>
+						<PinX Unit="MM">7.907493961815466</PinX>
+						<PinY Unit="MM">4.991571024285030</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="169" UniqueID="{2764A095-C9B3-4753-A934-3E7974043413}" Name="网格列.270" NameU="Grid column.270" Master="9">
+					<Text>尖单价</Text>
+					<XForm>
+						<PinX Unit="MM">8.409924911571803</PinX>
+						<PinY Unit="MM">4.991165582420848</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="190" UniqueID="{FF9B3FC3-EFD6-4F38-9B81-57AAB3B9C3EA}" Name="Sheet.190" NameU="Sheet.190">
+					<Text>参考单价：   峰：0.00   谷：0.00    平：0.00   尖：0.00</Text>
+					<XForm>
+						<PinX Unit="MM">6.003937007874010</PinX>
+						<PinY Unit="MM">5.110523147617351</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="191" UniqueID="{F38260D7-C059-4DCF-9649-691F8A8C02DE}" Name="Sheet.191" NameU="Sheet.191">
+					<Text>单位:元</Text>
+					<XForm>
+						<PinX Unit="MM">8.523622047244103</PinX>
+						<PinY Unit="MM">5.130208186987430</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="192" UniqueID="{B23A2B3D-3C30-4A99-9282-D1A6C69557CA}" Name="Sheet.192" NameU="Sheet.192">
+					<Text>选择充电站：</Text>
+					<XForm>
+						<PinX Unit="MM">4.701981832349079</PinX>
+						<PinY Unit="MM">5.629921259842520</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="193" UniqueID="{27ED4E9C-5DB7-4744-8BE7-58A15526F9A8}" Name="组合框" NameU="Combo box" Master="10">
+					<Text>请选择</Text>
+					<XForm>
+						<PinX Unit="MM">4.886670050032808</PinX>
+						<PinY Unit="MM">5.615157480314959</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="209" UniqueID="{0EBE2697-F9D1-4E2E-821F-21035246C0DF}" Name="命令按钮.209" NameU="Command button.209" Master="8">
+					<Text>查询</Text>
+					<XForm>
+						<PinX Unit="MM">6.737204724409449</PinX>
+						<PinY Unit="MM">5.624999999999999</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="237" UniqueID="{C33222B9-B205-484F-A9DE-9629E09E8C0B}" Name="Sheet.237" NameU="Sheet.237">
+					<Text>请设置计划执行时间：</Text>
+					<XForm>
+						<PinX Unit="MM">4.780721989829396</PinX>
+						<PinY Unit="MM">2.490157480314961</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="238" UniqueID="{5BE715DC-E321-4046-8E0D-5D2C39031FAE}" Name="组合框.272" NameU="Combo box.272" Master="10">
+					<Text>2013-10-12 23:59:59</Text>
+					<XForm>
+						<PinX Unit="MM">5.506325869422571</PinX>
+						<PinY Unit="MM">2.490157480314959</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="247" UniqueID="{7E977E7A-0445-4603-B423-B6DD0C3EC5B3}" Name="命令按钮.55" NameU="Command button.55" Master="8">
+					<Text>保存</Text>
+					<XForm>
+						<PinX Unit="MM">7.655019685039370</PinX>
+						<PinY Unit="MM">2.485236220472441</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="253" UniqueID="{4435011D-AFD3-4387-9519-16FC9DC41922}" Name="网格列.253" NameU="Grid column.253" Master="9">
+					<Text>桩型号</Text>
+					<XForm>
+						<PinX Unit="MM">5.708661417322834</PinX>
+						<PinY Unit="MM">4.989405669954322</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="11" Name="远程调价-计划明细执行结果" NameU="远程调价-计划明细执行结果">
+			<Shapes>
+				<Shape ID="1" UniqueID="{D5DED1FD-6233-41C6-8C37-75C794DC03AB}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.834645669291340</PinX>
+						<PinY Unit="MM">4.125984251968505</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{E2C6F782-FB64-4FCF-A4AF-5A403BD60281}" Name="Sheet.2" NameU="Sheet.2">
+					<XForm>
+						<PinX Unit="MM">6.899644334736729</PinX>
+						<PinY Unit="MM">2.406725636824780</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{A840858A-CCF3-4739-AAF7-DE7498F1F7BE}" Name="Sheet.3" NameU="Sheet.3">
+					<XForm>
+						<PinX Unit="MM">6.859070396234392</PinX>
+						<PinY Unit="MM">5.521103917664674</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{2D949DE3-2DB6-4E20-913C-80D8761A4CE8}" Name="命令按钮.223" NameU="Command button.223" Master="8">
+					<Text>返回</Text>
+					<XForm>
+						<PinX Unit="MM">8.407972440944882</PinX>
+						<PinY Unit="MM">2.396103917664676</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>远程调价</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="10" UniqueID="{E6BE63F0-9E27-4BBC-865A-DA644387E4A2}" Name="网格列.3" NameU="Grid column.3" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.091863517060361</PinX>
+						<PinY Unit="MM">4.904604075807978</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{7EACE78D-E1D1-4E20-8D6B-652B046D8A05}" Name="网格列.31" NameU="Grid column.31" Master="9">
+					<Text>桩编号</Text>
+					<XForm>
+						<PinX Unit="MM">4.480803254659753</PinX>
+						<PinY Unit="MM">4.904604075807978</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="52" UniqueID="{FE2FDE88-1BFC-4A43-9E54-CE901DC9F91A}" Name="网格列.84" NameU="Grid column.84" Master="9">
+					<Text>桩类型</Text>
+					<XForm>
+						<PinX Unit="MM">6.186363907392423</PinX>
+						<PinY Unit="MM">4.902033279613083</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="73" UniqueID="{4A941E5D-966F-4927-8324-5470F4273066}" Name="网格列.108" NameU="Grid column.108" Master="9">
+					<Text>峰单价</Text>
+					<XForm>
+						<PinX Unit="MM">6.904016682695877</PinX>
+						<PinY Unit="MM">4.900273367146558</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="94" UniqueID="{62F7ECCD-4B32-4B63-A4B5-F47778AB6E1F}" Name="网格列.197" NameU="Grid column.197" Master="9">
+					<Text>厂家</Text>
+					<XForm>
+						<PinX Unit="MM">5.059055118110244</PinX>
+						<PinY Unit="MM">4.900273367146557</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="115" UniqueID="{861EEDE6-DB98-40C7-A6CF-B9CFCF7387E9}" Name="网格列.218" NameU="Grid column.218" Master="9">
+					<Text>平单价</Text>
+					<XForm>
+						<PinX Unit="MM">7.404067107551127</PinX>
+						<PinY Unit="MM">4.900273367146559</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="136" UniqueID="{D530FE88-7F23-464E-A678-8B4300188CD1}" Name="复选框" NameU="Check box" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.624682815965456</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="142" UniqueID="{0791FBE5-01E8-4780-8E9D-0EA4920FDE50}" Name="复选框.237" NameU="Check box.237" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.452438721477267</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="148" UniqueID="{AE1CC8FF-3553-4C85-81F9-AC9A6BDDA085}" Name="复选框.249" NameU="Check box.249" Master="16">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">4.212755668250416</PinX>
+						<PinY Unit="MM">4.806769430138685</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="154" UniqueID="{285A9FF4-06E6-4FDB-BC95-6DACFE4D1C29}" Name="网格列.249" NameU="Grid column.249" Master="9">
+					<Text>谷单价</Text>
+					<XForm>
+						<PinX Unit="MM">7.907493961815466</PinX>
+						<PinY Unit="MM">4.902438721477266</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="175" UniqueID="{B0BEC064-CDCF-4C55-8D35-7B7CBC50EF38}" Name="网格列.270" NameU="Grid column.270" Master="9">
+					<Text>尖单价</Text>
+					<XForm>
+						<PinX Unit="MM">8.409924911571803</PinX>
+						<PinY Unit="MM">4.902033279613083</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="196" UniqueID="{21507DCE-5981-4B64-81F9-D5683C79D043}" Name="Sheet.196" NameU="Sheet.196">
+					<Text>参考单价：   峰：0.00   谷：0.00    平：0.00   尖：0.00</Text>
+					<XForm>
+						<PinX Unit="MM">6.003937007874010</PinX>
+						<PinY Unit="MM">5.021390844809586</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="197" UniqueID="{DA672EF0-0001-41A1-89E3-41B98EBAE9EF}" Name="Sheet.197" NameU="Sheet.197">
+					<Text>单位:元</Text>
+					<XForm>
+						<PinX Unit="MM">8.523622047244103</PinX>
+						<PinY Unit="MM">5.041075884179665</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="198" UniqueID="{3D718F31-6987-4104-B489-91AE39B66FF0}" Name="Sheet.198" NameU="Sheet.198">
+					<Text>计划名称：</Text>
+					<XForm>
+						<PinX Unit="MM">4.701981832349079</PinX>
+						<PinY Unit="MM">5.540788957034755</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="214" UniqueID="{24DB9A5A-35B6-4773-ACC7-606066D1CDE0}" Name="网格列.201" NameU="Grid column.201" Master="9">
+					<Text>执行结果</Text>
+					<XForm>
+						<PinX Unit="MM">8.912355861328141</PinX>
+						<PinY Unit="MM">4.902033279613083</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="235" UniqueID="{E144D33E-B802-48C3-87A5-C8DF1990ED7E}" Name="Sheet.235" NameU="Sheet.235">
+					<Text>成功、失败链接查看日志</Text>
+					<XForm>
+						<PinX Unit="MM">9.563274361162968</PinX>
+						<PinY Unit="MM">4.122873310985450</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="252" UniqueID="{596F1502-87C6-4779-A6F4-76C83E39BB34}" Name="网格列.253" NameU="Grid column.253" Master="9">
+					<Text>桩型号</Text>
+					<XForm>
+						<PinX Unit="MM">5.708661417322834</PinX>
+						<PinY Unit="MM">4.900273367146557</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">10</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="199" UniqueID="{9C493C0A-D661-47DE-BE83-17DC80919E20}" Name="Sheet.199" NameU="Sheet.199">
+					<Text>...</Text>
+					<XForm>
+						<PinX Unit="MM">5.416128403871393</PinX>
+						<PinY Unit="MM">5.551181102362205</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="12" Name="充电单价维护" NameU="收费标准设置">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{2CC1F73E-3CF7-431D-B38C-D8C0BBB5C566}" Name="Sheet.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">5.846456692913385</PinX>
+						<PinY Unit="MM">4.133858267716535</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="345" UniqueID="{B8F94AA4-2253-4028-A721-E06CF9DED36E}" Name="Sheet.345" NameU="Sheet.345">
+					<XForm>
+						<PinX Unit="MM">6.816037155511809</PinX>
+						<PinY Unit="MM">5.212409776902887</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="82" UniqueID="{EEFB1AF0-1C6A-4C9A-9118-05F81B2C1A68}" Name="Sheet.82" NameU="Sheet.82">
+					<Text>单位:元</Text>
+					<XForm>
+						<PinX Unit="MM">8.444881889763778</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="261" UniqueID="{123084C5-9ED5-45A9-9C49-A5F5CFD164FD}" Name="网格列.261" NameU="Grid column.261" Master="9">
+					<Text>序号</Text>
+					<XForm>
+						<PinX Unit="MM">4.697823959746964</PinX>
+						<PinY Unit="MM">4.656881561679788</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="303" UniqueID="{17167445-5619-4EC8-AC6A-B31F910B858F}" Name="网格列.303" NameU="Grid column.303" Master="9">
+					<Text>价格</Text>
+					<XForm>
+						<PinX Unit="MM">7.340272178932310</PinX>
+						<PinY Unit="MM">4.652550853018371</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="324" UniqueID="{5A7FD6F2-F26D-421B-B2A4-930F0DDA4C52}" Name="网格列.324" NameU="Grid column.324" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">7.901295800979542</PinX>
+						<PinY Unit="MM">4.649794947506561</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="40" UniqueID="{F22B051E-7D6F-4F06-9962-66E7A867CD6E}" Name="网格列.310" NameU="Grid column.310" Master="9">
+					<Text>时间段</Text>
+					<XForm>
+						<PinX Unit="MM">6.332462787231535</PinX>
+						<PinY Unit="MM">4.656881561679790</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="346" UniqueID="{408A2675-6A07-416A-AAA4-6236B9598E07}" Name="Sheet.346" NameU="Sheet.346">
+					<XForm>
+						<PinX Unit="MM">6.787577679349131</PinX>
+						<PinY Unit="MM">3.401369750656168</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{12F82E25-016C-4145-BDE2-281015D1F946}" Name="命令按钮.26" NameU="Command button.26" Master="8">
+					<Text>增加单价</Text>
+					<XForm>
+						<PinX Unit="MM">5.073661252137380</PinX>
+						<PinY Unit="MM">4.837598425196850</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="347" UniqueID="{C78364CE-2BAB-4625-BD2D-22FD8D3C8196}" Name="Sheet.347" NameU="Sheet.347">
+					<Text>充电价格维护</Text>
+					<XForm>
+						<PinX Unit="MM">5.954908956692913</PinX>
+						<PinY Unit="MM">5.216535433070866</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="282" UniqueID="{A25D34B2-82F9-4B80-932A-1CF006536727}" Name="网格列.282" NameU="Grid column.282" Master="9">
+					<Text>名称</Text>
+					<XForm>
+						<PinX Unit="MM">5.268690101479250</PinX>
+						<PinY Unit="MM">4.662393372703409</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="348" UniqueID="{8A1344B4-C1B7-4B29-9359-EC750B13BB88}" Name="网格列.348" NameU="Grid column.348" Master="9">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">8.359682102299637</PinX>
+						<PinY Unit="MM">4.649794947506560</PinY>
+					</XForm>
+					<Prop ID="1" Name="Rows" NameU="Rows">
+						<Value Unit="STR">5</Value>
+						<Label>行数</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="369" UniqueID="{1B105D9C-820D-40BD-9EBB-D73B860DAA7B}" Name="Sheet.369" NameU="Sheet.369">
+					<Text>增加、修改直接在表格中操作</Text>
+					<XForm>
+						<PinX Unit="MM">6.749915597877213</PinX>
+						<PinY Unit="MM">5.385485238109000</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

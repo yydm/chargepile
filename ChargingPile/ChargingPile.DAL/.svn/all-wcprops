@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/txwh/!svn/ver/1895/trunk/TXWH/ChargingPile/ChargingPile.DAL
+END
+GatItemDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1594/trunk/TXWH/ChargingPile/ChargingPile.DAL/GatItemDal.cs
+END
+BranchDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/450/trunk/TXWH/ChargingPile/ChargingPile.DAL/BranchDal.cs
+END
+ChargPileTypeDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/txwh/!svn/ver/697/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargPileTypeDal.cs
+END
+RoleDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/510/trunk/TXWH/ChargingPile/ChargingPile.DAL/RoleDal.cs
+END
+OprLogDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/995/trunk/TXWH/ChargingPile/ChargingPile.DAL/OprLogDal.cs
+END
+JobsDetailsDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/510/trunk/TXWH/ChargingPile/ChargingPile.DAL/JobsDetailsDal.cs
+END
+IcCard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/1123/trunk/TXWH/ChargingPile/ChargingPile.DAL/IcCard.cs
+END
+ChargPriceDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/1596/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargPriceDal.cs
+END
+BaseDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/570/trunk/TXWH/ChargingPile/ChargingPile.DAL/BaseDal.cs
+END
+ChargPileCollectionDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/txwh/!svn/ver/1053/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargPileCollectionDal.cs
+END
+ScheduleJobsDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/txwh/!svn/ver/1881/trunk/TXWH/ChargingPile/ChargingPile.DAL/ScheduleJobsDal.cs
+END
+ChargPileMainTainDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1641/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargPileMainTainDal.cs
+END
+MenuPowerDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/933/trunk/TXWH/ChargingPile/ChargingPile.DAL/MenuPowerDal.cs
+END
+ChargRecordDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/txwh/!svn/ver/1802/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargRecordDal.cs
+END
+Common_DAl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1614/trunk/TXWH/ChargingPile/ChargingPile.DAL/Common_DAl.cs
+END
+WarnDetailDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/1802/trunk/TXWH/ChargingPile/ChargingPile.DAL/WarnDetailDal.cs
+END
+GetPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/372/trunk/TXWH/ChargingPile/ChargingPile.DAL/GetPage.cs
+END
+EmployerDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/1433/trunk/TXWH/ChargingPile/ChargingPile.DAL/EmployerDal.cs
+END
+DTUDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/1623/trunk/TXWH/ChargingPile/ChargingPile.DAL/DTUDal.cs
+END
+ChargPileDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/txwh/!svn/ver/1788/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargPileDal.cs
+END
+ScheduleLogDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/txwh/!svn/ver/510/trunk/TXWH/ChargingPile/ChargingPile.DAL/ScheduleLogDal.cs
+END
+UseRolesDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/598/trunk/TXWH/ChargingPile/ChargingPile.DAL/UseRolesDal.cs
+END
+WarnRecDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1900/trunk/TXWH/ChargingPile/ChargingPile.DAL/WarnRecDal.cs
+END
+SmsOutBoxDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/574/trunk/TXWH/ChargingPile/ChargingPile.DAL/SmsOutBoxDal.cs
+END
+DepartmentDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/txwh/!svn/ver/739/trunk/TXWH/ChargingPile/ChargingPile.DAL/DepartmentDal.cs
+END
+ChargingPile.DAL.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/txwh/!svn/ver/346/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargingPile.DAL.csproj
+END
+WarnDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/txwh/!svn/ver/510/trunk/TXWH/ChargingPile/ChargingPile.DAL/WarnDal.cs
+END
+PointCfgDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/1802/trunk/TXWH/ChargingPile/ChargingPile.DAL/PointCfgDal.cs
+END
+ResMenuDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/394/trunk/TXWH/ChargingPile/ChargingPile.DAL/ResMenuDal.cs
+END
+ChargStationDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/txwh/!svn/ver/1514/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargStationDal.cs
+END
+ChargStationFileDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/txwh/!svn/ver/1425/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargStationFileDal.cs
+END
+ChargePileStatesDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/txwh/!svn/ver/962/trunk/TXWH/ChargingPile/ChargingPile.DAL/ChargePileStatesDal.cs
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/txwh/!svn/ver/1595/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile
+END
+ChargeStation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/txwh/!svn/ver/1107/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/ChargeStation.cs
+END
+RankParam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/txwh/!svn/ver/1269/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/RankParam.cs
+END
+RankParam2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/txwh/!svn/ver/1595/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/RankParam2.cs
+END
+ChargingInfoParam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/txwh/!svn/ver/1576/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/ChargingInfoParam.cs
+END
+ChargePileInfoParam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/txwh/!svn/ver/1410/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/ChargePileInfoParam.cs
+END
+TelesignallingParam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/txwh/!svn/ver/1107/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/TelesignallingParam.cs
+END
+TelesignallingParam2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/1260/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/TelesignallingParam2.cs
+END
+TelesignallingParam3.cs
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/txwh/!svn/ver/1319/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/TelesignallingParam3.cs
+END
+CardParam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/txwh/!svn/ver/1486/trunk/TXWH/ChargingPile/ChargingPile.Model/ChargePile/CardParam.cs
+END

@@ -1,0 +1,238 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ChargingPile.DAL;
+using System.Data;
+using ChargingPile.Model;
+
+namespace ChargingPile.BLL
+{
+    public class ChargPileBll
+    {
+        ChargPileDal cpd = new ChargPileDal();
+        ChargStationDal csdal = new ChargStationDal();
+        /// <summary>
+        /// 根据分支箱id查询充电桩
+        /// </summary>
+        /// <param name="boxid"></param>
+        /// <returns></returns>
+        public DataTable QueryChargPileID(decimal? boxid) 
+        {
+            return cpd.QueryChargPileID(boxid);
+        }
+        /// <summary>
+        /// 根据分支箱id查询充电桩是否存在
+        /// </summary>
+        /// <param name="boxid"></param>
+        /// <returns></returns>
+        public bool QueryBoxid(decimal? boxid) 
+        {
+            DataTable dt = cpd.QueryBoxid(boxid);
+            if (dt.Rows.Count == 0)
+                return false;
+            else
+                return true;
+        }
+        /// <summary>
+        /// 添加充电桩
+        /// </summary>
+        /// <param name="chargpile"></param>
+        public void AddChargPile(ChargPile chargpile)
+        {
+            decimal? boxid = chargpile.BOX_ID;
+            DataTable dt = QueryChargPileID(boxid);
+            bool b = QueryBoxid(boxid);
+            if (b == false)
+                chargpile.DEV_CHARGPILE = boxid * 1000 + 1;
+            else if (b == true)
+                chargpile.DEV_CHARGPILE =decimal.Parse( dt.Rows[0]["DEV_CHARGPILE"].ToString()) + 1;
+            string zhuangxing_h = chargpile.ZHUANGXING_H;
+            DataTable dtable = cpd.QueryLXBYXH(zhuangxing_h);
+            chargpile.PILETYPEID = dtable.Rows[0]["PARSERKEY"].ToString();
+            csdal.AddPile(chargpile);
+        }
+        /// <summary>
+        /// 修改充电桩
+        /// </summary>
+        /// <param name="chargpile"></param>
+        public void EditChargPile(ChargPile chargpile)
+        {
+            decimal? boxid = chargpile.BOX_ID;
+            DataTable dt = cpd.QueryChargPileID(boxid);
+            bool b = QueryBoxid(boxid);
+
+            decimal? DEV_CHARGPILE = chargpile.DEV_CHARGPILE;
+            DataTable de = cpd.QueryBoxidByPileID(DEV_CHARGPILE);
+            decimal bid = decimal.Parse(de.Rows[0]["BOX_ID"].ToString());
+            if(bid !=chargpile.BOX_ID)
+                if (b == false)
+                    chargpile.DEV_CHARGPILE = boxid * 1000 + 1;
+                else if (b == true)
+                    chargpile.DEV_CHARGPILE =decimal.Parse( dt.Rows[0]["DEV_CHARGPILE"].ToString()) + 1;
+
+            string zhuangxing_h = chargpile.ZHUANGXING_H;
+            DataTable dtable = cpd.QueryLXBYXH(zhuangxing_h);
+            chargpile.PILETYPEID = dtable.Rows[0]["PARSERKEY"].ToString();
+
+            cpd.EditChargPile(chargpile);
+        }
+        /// <summary>
+        /// 根据运行编号查询充电桩
+        /// </summary>
+        /// <param name="yxbh"></param>
+        /// <returns></returns>
+        public DataTable QueryPileByYXBH(string yxbh) 
+        {
+            return cpd.QueryPileByYXBH(yxbh);
+        }
+
+        /// <summary>
+        /// 根据运行编号站编号查询充电桩
+        /// </summary>
+        /// <param name="yxbh"></param>
+        /// <returns></returns>
+        public DataTable QueryPileByYXBHandZBH(string yxbh, string zhanbh)
+        {
+            return cpd.QueryPileByYXBHandZBH(yxbh, zhanbh);
+        }
+
+        /// <summary>
+        /// 根据运行编号和桩id查询充电桩
+        /// </summary>
+        /// <param name="yxbh"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public DataTable QueryPileByYXBHandID(string yxbh, string id,string zhanbh)
+        {
+            return cpd.QueryPileByYXBHandID(yxbh,id,zhanbh);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="zhuangmc"></param>
+        /// <returns></returns>
+        public DataTable QueryPileByZMC(string zhuangmc) 
+        {
+            return cpd.QueryPileByZMC(zhuangmc);
+        }
+        /// <summary>
+        /// 根据桩id删除充电桩
+        /// </summary>
+        /// <param name="pileId"></param>
+        public void DelChargPile(string pileId)
+        {
+            cpd.DelChargPile(pileId);
+        }
+        /// <summary>
+        /// 根据充电站获取分支箱
+        /// </summary>
+        /// <param name="zhanbh"></param>
+        /// <returns></returns>
+        public DataTable QueryBranch(string zhanbh) 
+        {
+            return cpd.QueryBranch(zhanbh);
+        }
+        /// <summary>
+        /// 获取桩厂家
+        /// </summary>
+        /// <returns></returns>
+        public DataTable QueryChangJia()
+        {
+            return cpd.QueryChangJia();
+        }
+        /// <summary>
+        /// 根据桩厂家获取桩型号
+        /// </summary>
+        /// <param name="cj"></param>
+        /// <returns></returns>
+        public DataTable QueryXHBYCJ(string cj) 
+        {
+            return cpd.QueryXHBYCJ(cj);
+        }
+        /// <summary>
+        /// 根据桩型号获取桩类型
+        /// </summary>
+        /// <param name="xh"></param>
+        /// <returns></returns>
+        public DataTable QueryLXBYXH(string xh) 
+        {
+            return cpd.QueryLXBYXH(xh);
+        }
+        /// <summary>
+        /// 根据充电桩id获取充电桩
+        /// </summary>
+        /// <param name="zhuangbh"></param>
+        /// <returns></returns>
+        public DataTable QueryChargPileByPilebh(decimal zhuangbh) 
+        {
+            return cpd.QueryChargPileByPilebh(zhuangbh);
+        }
+        /// <summary>
+        /// 获取充电桩
+        /// </summary>
+        /// <param name="zhanbh"></param>
+        /// <param name="page"></param>
+        /// <param name="rows"></param>
+        /// <param name="total"></param>
+        /// <returns></returns>
+        public List<ChargPile> GetChargPileList(decimal zhanbh, int page, int rows, ref int total)
+        {
+            return cpd.GetChargPileList( zhanbh,  page,  rows, ref  total);
+        }
+
+
+        /// <summary>
+        /// 根据桩id获取桩基本信息
+        /// </summary>
+        /// <param name="zhuanid"></param>
+        /// <returns></returns>
+        public DataTable FindByChargePileDetailInfo(int zhuanid)
+        {
+            return cpd.FindByChargePileDetailInfo(zhuanid);
+        }
+
+        /// <summary>
+        /// 根据桩id获取桩类型
+        /// </summary>
+        /// <param name="zhuanid"></param>
+        /// <returns></returns>
+        public DataTable FindByChargePileType(int zhuanid)
+        {
+            return cpd.FindByChargePileType(zhuanid);
+        }
+
+        /// <summary>
+        /// 查询充电桩总数量
+        /// </summary>
+        /// <returns></returns>
+        public int? FindByChargePileCount()
+        {
+            var dt= cpd.FindByChargePileCount();
+            if (dt.Rows.Count > 0)
+            {
+                return int.Parse(dt.Rows[0]["count"].ToString());
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// 查询场站桩数量
+        /// </summary>
+        /// <returns></returns>
+        public DataTable FindByChargePileStationCount()
+        {
+            return cpd.FindByChargePileStationCount();
+        }
+
+        /// <summary>
+        /// 根据充电桩id获取充电站名称和充电桩编号
+        /// </summary>
+        /// <param name="zhuanid"></param>
+        /// <returns></returns>
+        public DataTable QueryByParam(string zhuanid)
+        {
+            return cpd.QueryByParam(zhuanid);
+        }
+    }
+}

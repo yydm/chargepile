@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/txwh/!svn/ver/516/trunk/TXWH/ChargingPile/ChargingPile.BLL/command
+END
+CmdRequest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/txwh/!svn/ver/516/trunk/TXWH/ChargingPile/ChargingPile.BLL/command/CmdRequest.cs
+END
+CmdRespose.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/txwh/!svn/ver/516/trunk/TXWH/ChargingPile/ChargingPile.BLL/command/CmdRespose.cs
+END
+CmdTaskType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/txwh/!svn/ver/516/trunk/TXWH/ChargingPile/ChargingPile.BLL/command/CmdTaskType.cs
+END

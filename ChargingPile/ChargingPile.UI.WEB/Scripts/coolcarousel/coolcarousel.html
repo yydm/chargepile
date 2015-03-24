@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+			This carousel example is created with jQuery and the carouFredSel-plugin.
+			http://jquery.com
+			http://caroufredsel.frebsite.nl
+		-->
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+    <meta name="description" value="An image gallery example showing one image with a horizontal thumbnail carousel below the image centering the selected thumbnail." />
+    <meta name="keywords" value="diashow, slideshow, gallery, thumbnails, slider, carousel, example, imageviewer" />
+    <title>Image gallery with a horizontal thumbnail carousel</title>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#thumbs').carouFredSel({
+                synchronise: ['#images', false, true],
+                auto: false,
+                width: 450,
+                items: {
+                    visible: 3,
+                    start: -1
+                },
+                scroll: {
+                    onBefore: function (data) {
+                        data.items.old.eq(1).removeClass('selected');
+                        data.items.visible.eq(1).addClass('selected');
+                    }
+                },
+                prev: '#prev',
+                next: '#next'
+            });
+
+            $('#images').carouFredSel({
+                auto: false,
+                items: 1,
+                scroll: {
+                    fx: 'fade'
+                }
+            });
+
+            $('#thumbs img').click(function () {
+                $('#thumbs').trigger('slideTo', [this, -1]);
+            });
+            $('#thumbs img:eq(1)').addClass('selected');
+        });
+		</script>
+    <style type="text/css">
+        html, body
+        {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            min-height: 600px;
+            background-color: #e6e6e6;
+        }
+        body *
+        {
+            font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+            font-size: 14px;
+            color: #333;
+            line-height: 22px;
+        }
+        #wrapper
+        {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            width: 450px;
+            height: 575px;
+            margin: -300px 0 0 -225px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        #wrapper img
+        {
+            display: block;
+            float: left;
+        }
+        #images, #thumbs
+        {
+            height: 350px;
+            overflow: hidden;
+        }
+        #images
+        {
+            width: 350px;
+            margin: 50px 0 25px 50px;
+        }
+        #thumbs
+        {
+            width: 450px;
+            height: 100px;
+        }
+        #thumbs img
+        {
+            border: 1px solid #ccc;
+            padding: 14px;
+            margin: 0 12px 0 12px;
+            cursor: pointer;
+        }
+        #thumbs img.selected, #thumbs img:hover
+        {
+            border-color: #333;
+        }
+        #prev, #next
+        {
+            width: 15px;
+            height: 21px;
+            display: block;
+            text-indent: -999em;
+            background: transparent url(img/carousel_control.png) no-repeat 0 0;
+            position: absolute;
+            bottom: 85px;
+        }
+        #prev
+        {
+            background-position: 0 0;
+            left: 15px;
+        }
+        #prev:hover
+        {
+            left: 14px;
+        }
+        #next
+        {
+            background-position: -18px 0;
+            right: 15px;
+        }
+        #next:hover
+        {
+            right: 14px;
+        }
+        #source
+        {
+            text-align: center;
+            width: 400px;
+            margin: 0 0 0 -200px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+        }
+        #source, #source a
+        {
+            color: #999;
+            font-size: 12px;
+        }
+        #donate-spacer
+        {
+            height: 100%;
+        }
+        #donate
+        {
+            border-top: 1px solid #999;
+            width: 750px;
+            padding: 50px 75px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #donate p, #donate form
+        {
+            margin: 0;
+            float: left;
+        }
+        #donate p
+        {
+            width: 650px;
+        }
+        #donate form
+        {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="images">
+            <img src="img/large/ek-aanhanger.gif" alt="ek-aanhanger" width="350" height="350" />
+            <img src="img/large/ek-alien.gif" alt="ek-alien" width="350" height="350" />
+            <img src="img/large/ek-artsen.gif" alt="ek-artsen" width="350" height="350" />
+            <img src="img/large/ek-brandweer.gif" alt="ek-brandweer" width="350" height="350" />
+            <img src="img/large/ek-dommel.gif" alt="ek-dommel" width="350" height="350" />
+            <img src="img/large/ek-freudiaans.gif" alt="ek-freudiaans" width="350" height="350" />
+            <img src="img/large/ek-kamikazepiloot.gif" alt="ek-kamikazepiloot" width="350" height="350" />
+            <img src="img/large/ek-langselkaarheen.gif" alt="ek-langselkaarheen" width="350"
+                height="350" />
+            <img src="img/large/ek-perswee.gif" alt="ek-perswee" width="350" height="350" />
+            <img src="img/large/ek-politiekannietzeggen.gif" alt="ek-politiekannietzeggen" width="350"
+                height="350" />
+            <img src="img/large/ek-rollenpatroon.gif" alt="ek-rollenpatroon" width="350" height="350" />
+            <img src="img/large/ek-suikerspin.gif" alt="ek-suikerspin" width="350" height="350" />
+            <img src="img/large/ek-uitvallen.gif" alt="ek-uitvallen" width="350" height="350" />
+            <img src="img/large/ek-vaassen.gif" alt="ek-vaassen" width="350" height="350" />
+            <img src="img/large/ek-vreedzaamverzet.gif" alt="ek-vreedzaamverzet" width="350"
+                height="350" />
+            <img src="img/large/ek-zelfspotter.gif" alt="ek-zelfspotter" width="350" height="350" />
+        </div>
+        <div id="thumbs">
+            <img src="img/large/ek-aanhanger.gif" alt="ek-aanhanger" width="70" height="70" />
+            <img src="img/large/ek-alien.gif" alt="ek-alien" width="70" height="70" />
+            <img src="img/large/ek-artsen.gif" alt="ek-artsen" width="70" height="70" />
+            <img src="img/large/ek-brandweer.gif" alt="ek-brandweer" width="70" height="70" />
+            <img src="img/large/ek-dommel.gif" alt="ek-dommel" width="70" height="70" />
+            <img src="img/large/ek-freudiaans.gif" alt="ek-freudiaans" width="70" height="70" />
+            <img src="img/large/ek-kamikazepiloot.gif" alt="ek-kamikazepiloot" width="70" height="70" />
+            <img src="img/large/ek-langselkaarheen.gif" alt="ek-langselkaarheen" width="70" height="70" />
+            <img src="img/large/ek-perswee.gif" alt="ek-perswee" width="70" height="70" />
+            <img src="img/large/ek-politiekannietzeggen.gif" alt="ek-politiekannietzeggen" width="70"
+                height="70" />
+            <img src="img/large/ek-rollenpatroon.gif" alt="ek-rollenpatroon" width="70" height="70" />
+            <img src="img/large/ek-suikerspin.gif" alt="ek-suikerspin" width="70" height="70" />
+            <img src="img/large/ek-uitvallen.gif" alt="ek-uitvallen" width="70" height="70" />
+            <img src="img/large/ek-vaassen.gif" alt="ek-vaassen" width="70" height="70" />
+            <img src="img/large/ek-vreedzaamverzet.gif" alt="ek-vreedzaamverzet" width="70" height="70" />
+            <img src="img/large/ek-zelfspotter.gif" alt="ek-zelfspotter" width="70" height="70" />
+        </div>
+        <a id="prev" href="#"></a><a id="next" href="#"></a>
+    </div>
+    <p id="source">
+        Source: <a href="http://www.evertkwok.nl" target="_blank">evertkwok.nl</a></p>
+    <div id="donate-spacer">
+    </div>
+    <div id="donate">
+        <p>
+            This carousel-example is created for your inspiration, you may use it for free in
+            all of your projects.<br />
+            If you like it, please help me &quot;keep up the good work&quot; and donate.</p>
+        <form id="c-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="ENVLWPR4QMU3U" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif"
+            border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif"
+            width="1" height="1" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-场站首页
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 6;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.600925;
+	viewMgr.visBBoxRight = 11.068367;
+	viewMgr.visBBoxBottom = 0.855559;
+	viewMgr.visBBoxTop = 7.396409;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="系统首页-缓存页面" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="跳过..." origTitle="跳过..." TITLE="跳过..." HREF="gif_2.htm" target="frmDrawing" COORDS="679,161,654,161,654,178,679,178,699,178,699,161,679,161" onmouseover="UpdateTooltip(this,6,3)" onfocus="UpdateTooltip(this,6,3)" onclick="return OnShapeClick(6,3);" onkeyup="OnShapeKey(6,3);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_2.htm" target="frmDrawing" COORDS="693,183,748,183,748,183,749,183,749,183,749,183,749,183,749,183,750,183,750,183,750,183,750,183,750,182,750,182,750,182,750,182,750,182,751,182,751,181,751,181,751,168,751,167,751,167,750,167,750,167,750,167,750,167,750,166,750,166,750,166,750,166,750,166,749,166,749,166,749,166,749,165,749,165,748,165,748,165,693,165,692,165,692,165,692,165,692,166,692,166,691,166,691,166,691,166,691,166,691,166,691,166,691,167,691,167,691,167,690,167,690,167,690,167,690,168,690,181,690,181,690,182,690,182,691,182,691,182,691,182,691,182,691,183,691,183,691,183,691,183,691,183,692,183,692,183,692,183,692,183,692,183,693,183" onmouseover="UpdateTooltip(this,6,2)" onfocus="UpdateTooltip(this,6,2)" onclick="return OnShapeClick(6,2);" onkeyup="OnShapeKey(6,2);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+﻿body {
+}
+.td-name {
+    width: 61px;
+}

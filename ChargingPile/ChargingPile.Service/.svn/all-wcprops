@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/txwh/!svn/ver/1756/trunk/TXWH/ChargingPile/ChargingPile.Service
+END
+SmsApi.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1732/trunk/TXWH/ChargingPile/ChargingPile.Service/SmsApi.cs
+END
+EmailAndSmsModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/txwh/!svn/ver/1756/trunk/TXWH/ChargingPile/ChargingPile.Service/EmailAndSmsModel.cs
+END
+UnitTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/txwh/!svn/ver/1756/trunk/TXWH/ChargingPile/ChargingPile.Service/UnitTest.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/txwh/!svn/ver/1734/trunk/TXWH/ChargingPile/ChargingPile.Service/app.config
+END
+Sms.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/txwh/!svn/ver/1756/trunk/TXWH/ChargingPile/ChargingPile.Service/Sms.cs
+END
+ChargingPile.Service.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/txwh/!svn/ver/589/trunk/TXWH/ChargingPile/ChargingPile.Service/ChargingPile.Service.csproj
+END
+Email.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/txwh/!svn/ver/585/trunk/TXWH/ChargingPile/ChargingPile.Service/Email.cs
+END
+Emails.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/txwh/!svn/ver/1756/trunk/TXWH/ChargingPile/ChargingPile.Service/Emails.cs
+END

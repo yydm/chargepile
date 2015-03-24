@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+界面原型-告警服务
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 7;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.555138;
+	viewMgr.visBBoxRight = 11.220472;
+	viewMgr.visBBoxBottom = 0.134358;
+	viewMgr.visBBoxTop = 8.133359;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_4.gif" ALT="告警服务-通信告警查询" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="返回" origTitle="返回" TITLE="返回" HREF="" target="_top" COORDS="347,125,344,125,344,125,344,125,344,125,344,125,343,125,343,125,343,126,343,126,343,126,343,126,343,126,342,126,342,126,342,127,342,127,342,127,342,127,342,127,342,140,342,140,342,140,342,140,342,141,342,141,342,141,343,141,343,141,343,141,343,142,343,142,343,142,343,142,344,142,344,142,344,142,344,142,344,142,394,142,394,142,394,142,394,142,395,142,395,142,395,142,395,142,395,142,395,141,395,141,396,141,396,141,396,141,396,141,396,140,396,140,396,140,396,140,396,127,396,127,396,127,396,127,396,127,396,126,396,126,396,126,395,126,395,126,395,126,395,126,395,125,395,125,395,125,394,125,394,125,394,125,394,125,347,125" onmouseover="UpdateTooltip(this,7,69)" onfocus="UpdateTooltip(this,7,69)" onclick="return OnShapeClick(7,69);" onkeyup="OnShapeKey(7,69);">
+  <AREA shape="POLYGON" tabindex="1" ALT="返回" origTitle="返回" TITLE="返回" HREF="" target="_top" COORDS="380,126,394,126,394,126,394,126,394,126,394,126,395,126,395,126,395,126,395,126,395,127,395,127,395,127,395,127,395,127,395,127,395,127,395,140,395,140,395,140,395,140,395,141,395,141,395,141,395,141,395,141,395,141,395,141,394,141,394,141,394,141,394,141,394,141,344,141,344,141,344,141,344,141,344,141,344,141,343,141,343,141,343,141,343,141,343,141,343,141,343,140,343,140,343,140,343,140,343,127,343,127,343,127,343,127,343,127,343,127,343,127,343,126,343,126,343,126,344,126,344,126,344,126,344,126,344,126,344,126,347,126,359,126,359,140,380,140,380,126" onmouseover="UpdateTooltip(this,7,69)" onfocus="UpdateTooltip(this,7,69)" onclick="return OnShapeClick(7,69);" onkeyup="OnShapeKey(7,69);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_2.htm" target="frmDrawing" COORDS="302,229,316,229,317,229,317,229,317,229,317,229,317,229,318,228,318,228,318,228,318,228,318,228,318,228,318,228,318,227,319,227,319,227,319,227,319,227,319,227,319,212,319,212,319,212,319,211,319,211,318,211,318,211,318,211,318,211,318,210,318,210,318,210,318,210,317,210,317,210,317,210,317,210,317,210,316,210,302,210,301,210,301,210,301,210,301,210,301,210,301,210,300,210,300,210,300,210,300,211,300,211,300,211,300,211,300,211,300,211,299,212,299,212,299,212,299,227,299,227,299,227,300,227,300,227,300,227,300,228,300,228,300,228,300,228,300,228,300,228,301,228,301,229,301,229,301,229,301,229,301,229,302,229" onmouseover="UpdateTooltip(this,7,68)" onfocus="UpdateTooltip(this,7,68)" onclick="return OnShapeClick(7,68);" onkeyup="OnShapeKey(7,68);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

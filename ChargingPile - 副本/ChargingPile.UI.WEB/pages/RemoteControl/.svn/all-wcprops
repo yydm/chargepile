@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/txwh/!svn/ver/1582/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl
+END
+PairAdjustment.htm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/1582/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PairAdjustment.htm
+END
+PriceManage.htm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/txwh/!svn/ver/975/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PriceManage.htm
+END
+StartStopManage.htm
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/740/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/StartStopManage.htm
+END
+PriceManage.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/txwh/!svn/ver/418/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PriceManage.aspx
+END
+StartStopManage.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/txwh/!svn/ver/1531/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/StartStopManage.aspx
+END
+PriceManage.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/txwh/!svn/ver/418/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PriceManage.aspx.designer.cs
+END
+PriceAdjustment.htm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/txwh/!svn/ver/1582/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PriceAdjustment.htm
+END
+PriceManage.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/txwh/!svn/ver/418/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/PriceManage.aspx.cs
+END
+StartStopManage.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/txwh/!svn/ver/949/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/StartStopManage.aspx.designer.cs
+END
+StartStopManage.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/txwh/!svn/ver/537/trunk/TXWH/ChargingPile/ChargingPile.UI.WEB/pages/RemoteControl/StartStopManage.aspx.cs
+END

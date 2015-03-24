@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>首页</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/jquery-easyui-1.3.1/themes/icon.css" />
+    <link href="../../Scripts/jquery-easyui-1.3.1/demo.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/index.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/datagrid-detailview.js" type="text/javascript"></script>
+    <script src="../../Scripts/main/index.js" type="text/javascript"></script>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'center'" style="overflow: hidden;" border="false">
+        <div class="easyui-panel" style="height: 320px; width: 725px" title="充电桩充电信息" iconcls="icon-form"
+            tools="#t_chargeingpile_info">
+            <table id="dg_chargeingpile_info">
+            </table>
+        </div>
+        <div class="easyui-panel" style="height: 170px; width: 725px" title="告警信息" iconcls="icon-form"
+            id="p_yxyc_warn" tools="#t_yxyc_warn">
+            <table id="dg_yxyc_warn">
+            </table>
+        </div>
+        <div class="easyui-panel" style="height: 170px; width: 725px" title="充电卡异常使用告警" iconcls="icon-form"
+            tools="#t_chargepile_warn">
+            <table id="dg_chargepile_warn">
+            </table>
+        </div>
+    </div>
+    <div data-options="region:'east'" style="width: 300px;" border="false">
+        <div class="easyui-tabs" style="height: 125px;">
+            <div id="status" title="充电桩信息" style="padding-top: 5px; padding-left: 10px;">
+                <table class="table-height">
+                    <tr>
+                        <td class="td-font">
+                            充电桩总数量：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="zsl" class="txt-input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-font">
+                            待充电总数量：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="dcd" class="txt-input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-font">
+                            充电中总数量：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="cdz" class="txt-input" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="easyui-tabs" style="height: 125px;">
+            <div id="Div1" title="交易信息" style="padding-top: 5px; padding-left: 10px;">
+                <table class="table-height">
+                    <tr>
+                        <td class="td-font">
+                            本月累计充电总电量：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="zdl" class="txt-input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-font">
+                            本月累计充电总金额：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="zje" class="txt-input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-font">
+                            本月累计充电总时长：
+                        </td>
+                        <td class="td-wid">
+                            <input type="text" id="zsc" class="txt-input" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="easyui-tabs" style="height: 225px;">
+            <div title="快捷导航" style="padding: 5px;">
+                <div class="info-row">
+                    <div class="info-row-1">
+                        <a href="javascript:void(0)" onclick="ssjy()">
+                            <img src="../../Images/实时交易.png" title="实时交易" width="53px" height="48px" />实时交易</a>
+                    </div>
+                    <div class="info-row-2">
+                        <a href="javascript:void(0)" onclick="ssjs()">
+                            <img src="../../Images/实时监视.png" title="实时监视" width="53px" height="48px" />实时监视</a>
+                    </div>
+                    <div class="info-row-2">
+                        <a href="javascript:void(0)" onclick="gisjy()">
+                            <img src="../../Images/GIS交易.png" title="GIS交易" width="53px" height="48px" /><br />
+                            GIS信息</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-row-1">
+                        <a href="javascript:void(0)" onclick="gjfw()">
+                            <img src="../../Images/告警服务.png" title="告警服务" width="53px" height="48px" />告警服务</a>
+                    </div>
+                    <div class="info-row-2">
+                        <a href="javascript:void(0)" onclick="cdk()">
+                            <img src="../../Images/充电卡.png" title="充电卡" width="53px" height="48px" />充电卡</a>
+                    </div>
+                    <div class="info-row-2">
+                        <a href="javascript:void(0)" onclick="czsc()">
+                            <img src="../../Images/操作手册.png" title="操作手册" width="53px" height="48px" />操作手册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-rank" class="easyui-tabs" style="height: 185px;" tools="#t_rank">
+            <div id="rankname" title="充电总金额">
+                <table id="dg_rank">
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="t_chargeingpile_info">
+        <a href="#" style="text-align: left; width: 40px; text-decoration: none;"
+            title="更多" onclick="ztMore()">更多>></a>
+    </div>
+    <div id="t_yxyc_warn">
+        <a href="#" style="text-align: left;
+            width: 40px; text-decoration: none;" title="更多" onclick="gjMore()">更多>></a>
+    </div>
+    <div id="t_chargepile_warn">
+        <a href="#" style="text-align: left;
+            width: 40px; text-decoration: none;" title="更多" onclick="cwMore()">更多>></a>
+    </div>
+    <div id="t_rank">
+        <a href="#" style="text-align: left; width: 40px; text-decoration: none;" title="更多">
+            更多>></a>
+    </div>
+    <div id="toolbar" class="datagrid-toolbar">
+        <a id="rank1" class="easyui-linkbutton" plain="true" onclick="rankZje_onclick()"
+            title="按充电总金额">1</a> <a id="rank2" class="easyui-linkbutton" plain="true" onclick="rankKWH_onclick()"
+                title="按平均充电量">2</a> <a id="rank3" class="easyui-linkbutton" plain="true" onclick="rankGzl_onclick()"
+                    title="按运行故障率">3</a> <a id="rank4" class="easyui-linkbutton" plain="true" onclick="rankCardZje_onclick()"
+                        title="按卡消费总额">4</a>
+    </div>
+    <div id="dlg" class="easyui-dialog" data-options="closed:true,modal:true,buttons:'#dlg_buttons',title:'告警处理',iconCls: 'icon-info'">
+        <div style="height: 100px; width: 100%;">
+            <div id="dlg-select">
+                <input type="radio" id="r_gjcl_done" name="r_gjcl" checked="checked" value="1" />
+                <label for="r_gjcl_done">
+                    灭警完成</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="r_gjcl_wait" name="r_gjcl" value="0" /><label for="r_gjcl_wait">继续等待</label>
+            </div>
+        </div>
+        <div id="dlg_buttons">
+            <a href="#" class="easyui-linkbutton" iconcls="icon-save" onclick="btn_ok();">确定</a>
+            <a href="#" class="easyui-linkbutton" iconcls="icon-remove" onclick="btn_close();">取消</a>
+        </div>
+    </div>
+    <input id="hidd_warnid" type="hidden" />
+    <input id="hidd_warntype" type="hidden" />
+</body>
+</html>
